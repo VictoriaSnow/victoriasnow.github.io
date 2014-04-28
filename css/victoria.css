@@ -235,9 +235,9 @@ background-color: rgba(0,0,0,0.2)
 }
 #up , #down {cursor:pointer;}
 
-.nuvola1{ background-image:url(nuvola-1.png); width:314px; height:81px; margin-top: 10px; margin-left: -22px;}
+.nuvola1{ width:314px; height:81px; margin-top: 10px; margin-left: -22px;}
 .nuvola2{ 
-background: url(nuvola.png);
+
 	background-repeat:no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
