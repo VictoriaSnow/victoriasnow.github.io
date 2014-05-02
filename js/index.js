@@ -30,35 +30,35 @@ $container2.imagesLoaded( function() {
 	
 	
 	
-	/*controllo del form*/
+
 	$("#contact-form").submit(function(e) {
 		
-		var erroriModulo = "";
-		//nome e cognome
+		var errorModule = "";
+
 		var nomeCognome_regExp = /^[a-zA-Zàèìòù \'\-]{4,40}$/;
 		
 		if(!nomeCognome_regExp.test($("#name").val())){
-			erroriModulo += "Invalid name.\n";
+			errorModule += "Invalid name.\n";
 			$("#name").addClass("check-error");}
 		else{ $("#name").removeClass("check-error");}
 
 		var mail_regExp = /^([a-zA-Z0-9]+([\.+_-][a-zA-Z0-9]+)*)@(([a-zA-Z0-9]+((\.|[-]{1,2})[a-zA-Z0-9]+)*)\.[a-zA-Z]{2,})$/;
 		if(!mail_regExp.test($("#email").val())){
-			erroriModulo += "Invalid email.\n";
+			errorModule += "Invalid email.\n";
 			$("#email").addClass("check-error");}
 		else{ $("#email").removeClass("check-error");}
 		
 		if($("#message").val() == ""){
-			erroriModulo += "inserire richiesta \n";
+			errorModule += "insert request \n";
 			$("#message").addClass("check-error");
 			}
 		else{ 
 		$("#message").removeClass("check-error");
 		}
 	
-		// verifico se ci sono errori
-		if(erroriModulo != ""){
-			alert("You filled out the form incorrectly"/* + erroriModulo*/)}
+
+		if(errorModule != ""){
+			alert("You filled out the form incorrectly"/* + errorModule*/)}
 		else{
 			alert("Thank you for contacting me. I'll answer you as soon as possible.").stop();
 			$("#contact-form").submit();
@@ -77,7 +77,7 @@ $container2.imagesLoaded( function() {
 	
 	$("#menu ul li").click(function(e) {
 		
-		$("#menu ul li, .me, .skills, .process, .contact").removeClass("li-a-active");
+		$("#menu ul li, .me, .skills, .experience, .contact").removeClass("li-a-active");
 		$(this).addClass("li-a-active");
 		$("html, body").animate({scrollTop: ((dimension/4) + 30)},1000);
 		if($(window).width() <= 768){ $("#menu").fadeOut(500);}
@@ -85,7 +85,7 @@ $container2.imagesLoaded( function() {
 		    });
 	
 	
-	/*animazioni menu-sezioni*/
+
 	$(".me").click(function(e) {
 		$("html, body").animate({scrollTop: ((dimension/4) + 30)},1000);
 		$("#menu ul li").removeClass("li-a-active");
@@ -123,11 +123,11 @@ $container2.imagesLoaded( function() {
 		e.preventDefault();
 		
 		    });
-	$(".process").click(function(e) {
+	$(".experience").click(function(e) {
 		$("html, body").animate({scrollTop: ((dimension/4) + 30)},1000);
 		
 		$("#menu ul li").removeClass("li-a-active");
-		$("#menu ul li .process").addClass("li-a-active");
+		$("#menu ul li .experience").addClass("li-a-active");
 		
         $(".level-0").animate({
 			top:"-300%"
@@ -147,8 +147,7 @@ $container2.imagesLoaded( function() {
 		$("#down2").show(); $("#down").hide();
 		e.preventDefault();
 		    });
-			
-	/*FUNZIONI FRECCETTE*/
+
 	
     var topPosition = $( ".level-0" ).position().top;
 	
@@ -170,32 +169,32 @@ $container2.imagesLoaded( function() {
 		    }
 		
 		if (topPosition == 0){
-			$("#menu ul li, .me, .skills, .process, .contact").removeClass("li-a-active");
+			$("#menu ul li, .me, .skills, .experience, .contact").removeClass("li-a-active");
 			$("#menu ul li .me").addClass("li-a-active");
 			}
 			
 		else if (topPosition == (-dimension)){
-			$("#menu ul li, .me, .skills, .process, .contact").removeClass("li-a-active");
+			$("#menu ul li, .me, .skills, .experience, .contact").removeClass("li-a-active");
 			$("#menu ul li .skills").addClass("li-a-active");
 			
-			$("#photoshop").delay(500).animate({width:"75%"});
-			$("#illustrator").delay(600).animate({width:"85%"});
-			$("#indesign").delay(700).animate({width:"80%"});
-			$("#dreamweaver").delay(800).animate({width:"95%"});
-			$("#html5").delay(500).animate({width:"95%"});
-			$("#css3").delay(600).animate({width:"99%"});
-			$("#jquery").delay(700).animate({width:"90%"});
-			$("#php").delay(800).animate({width:"55%"});
-			$("#wordpress").delay(900).animate({width:"85%"});
-			$("#magento").delay(1000).animate({width:"70%"});
+		$("#photoshop").delay(500).animate({width:"75%"});
+		$("#illustrator").delay(600).animate({width:"55%"});
+		$("#indesign").delay(700).animate({width:"30%"});
+		$("#dreamweaver").delay(800).animate({width:"75%"});
+		$("#html5").delay(500).animate({width:"90%"});
+		$("#css3").delay(600).animate({width:"85%"});
+		$("#jquery").delay(700).animate({width:"60%"});
+		$("#php").delay(800).animate({width:"30%"});
+		$("#wordpress").delay(900).animate({width:"60%"});
+		$("#magento").delay(1000).animate({width:"70%"});
 			}
 		else if (topPosition == (-dimension*2)){
-			$("#menu ul li, .me, .skills, .process, .contact").removeClass("li-a-active");
-			$("#menu ul li .process").addClass("li-a-active");
+			$("#menu ul li, .me, .skills, .experience, .contact").removeClass("li-a-active");
+			$("#menu ul li .experience").addClass("li-a-active");
 			
 			}
 		else if (topPosition == (-dimension*3)){
-			$("#menu ul li, .me, .skills, .process, .contact").removeClass("li-a-active");
+			$("#menu ul li, .me, .skills, .experience, .contact").removeClass("li-a-active");
 			$("#menu ul li .contact").addClass("li-a-active");
 			};
 		
@@ -221,32 +220,32 @@ $container2.imagesLoaded( function() {
 			}
 		
 		if (topPosition == (-dimension)){
-			$("#menu ul li, .me, .skills, .process, .contact").removeClass("li-a-active");
+			$("#menu ul li, .me, .skills, .experience, .contact").removeClass("li-a-active");
 			}
 			
 		else if (topPosition == (-dimension*2)){
-			$("#menu ul li, .me, .skills, .process, .contact").removeClass("li-a-active");
+			$("#menu ul li, .me, .skills, .experience, .contact").removeClass("li-a-active");
 			$("#menu ul li .me").addClass("li-a-active");
 			
 			}
 		else if (topPosition == (-dimension*3)){
-			$("#menu ul li, .me, .skills, .process, .contact").removeClass("li-a-active");
+			$("#menu ul li, .me, .skills, .experience, .contact").removeClass("li-a-active");
 			$("#menu ul li .skills").addClass("li-a-active");
 			
-			$("#photoshop").delay(500).animate({width:"75%"});
-			$("#illustrator").delay(600).animate({width:"85%"});
-			$("#indesign").delay(700).animate({width:"80%"});
-			$("#dreamweaver").delay(800).animate({width:"95%"});
-			$("#html5").delay(500).animate({width:"95%"});
-			$("#css3").delay(600).animate({width:"99%"});
-			$("#jquery").delay(700).animate({width:"90%"});
-			$("#php").delay(800).animate({width:"55%"});
-			$("#wordpress").delay(900).animate({width:"85%"});
-			$("#magento").delay(1000).animate({width:"70%"});
+		$("#photoshop").delay(500).animate({width:"75%"});
+		$("#illustrator").delay(600).animate({width:"55%"});
+		$("#indesign").delay(700).animate({width:"30%"});
+		$("#dreamweaver").delay(800).animate({width:"75%"});
+		$("#html5").delay(500).animate({width:"90%"});
+		$("#css3").delay(600).animate({width:"85%"});
+		$("#jquery").delay(700).animate({width:"60%"});
+		$("#php").delay(800).animate({width:"30%"});
+		$("#wordpress").delay(900).animate({width:"60%"});
+		$("#magento").delay(1000).animate({width:"70%"});
 			}
 		else if (topPosition == (-dimension*4)){
-			$("#menu ul li, .me, .skills, .process, .contact").removeClass("li-a-active");
-			$("#menu ul li .process").addClass("li-a-active");
+			$("#menu ul li, .me, .skills, .experience, .contact").removeClass("li-a-active");
+			$("#menu ul li .experience").addClass("li-a-active");
 			};
 		});
 	
@@ -431,32 +430,32 @@ $(window).resize(function(e) {
 		    }
 		
 		if (topPosition == 0){
-			$("#menu ul li, .me, .skills, .process, .contact").removeClass("li-a-active");
+			$("#menu ul li, .me, .skills, .experience, .contact").removeClass("li-a-active");
 			$("#menu ul li .me").addClass("li-a-active");
 			}
 			
 		else if (topPosition == (-dimension)){
-			$("#menu ul li, .me, .skills, .process, .contact").removeClass("li-a-active");
+			$("#menu ul li, .me, .skills, .experience, .contact").removeClass("li-a-active");
 			$("#menu ul li .skills").addClass("li-a-active");
 			
-			$("#photoshop").delay(500).animate({width:"75%"});
-			$("#illustrator").delay(600).animate({width:"85%"});
-			$("#indesign").delay(700).animate({width:"80%"});
-			$("#dreamweaver").delay(800).animate({width:"95%"});
-			$("#html5").delay(500).animate({width:"95%"});
-			$("#css3").delay(600).animate({width:"99%"});
-			$("#jquery").delay(700).animate({width:"90%"});
-			$("#php").delay(800).animate({width:"55%"});
-			$("#wordpress").delay(900).animate({width:"85%"});
-			$("#magento").delay(1000).animate({width:"70%"});
+		$("#photoshop").delay(500).animate({width:"75%"});
+		$("#illustrator").delay(600).animate({width:"55%"});
+		$("#indesign").delay(700).animate({width:"30%"});
+		$("#dreamweaver").delay(800).animate({width:"75%"});
+		$("#html5").delay(500).animate({width:"90%"});
+		$("#css3").delay(600).animate({width:"85%"});
+		$("#jquery").delay(700).animate({width:"60%"});
+		$("#php").delay(800).animate({width:"30%"});
+		$("#wordpress").delay(900).animate({width:"60%"});
+		$("#magento").delay(1000).animate({width:"70%"});
 			}
 		else if (topPosition == (-dimension*2)){
-			$("#menu ul li, .me, .skills, .process, .contact").removeClass("li-a-active");
-			$("#menu ul li .process").addClass("li-a-active");
+			$("#menu ul li, .me, .skills, .experience, .contact").removeClass("li-a-active");
+			$("#menu ul li .experience").addClass("li-a-active");
 			
 			}
 		else if (topPosition == (-dimension*3)){
-			$("#menu ul li, .me, .skills, .process, .contact").removeClass("li-a-active");
+			$("#menu ul li, .me, .skills, .experience, .contact").removeClass("li-a-active");
 			$("#menu ul li .contact").addClass("li-a-active");
 			};
 		
@@ -482,32 +481,32 @@ $(window).resize(function(e) {
 			}
 		
 		if (topPosition == (-dimension)){
-			$("#menu ul li, .me, .skills, .process, .contact").removeClass("li-a-active");
+			$("#menu ul li, .me, .skills, .experience, .contact").removeClass("li-a-active");
 			}
 			
 		else if (topPosition == (-dimension*2)){
-			$("#menu ul li, .me, .skills, .process, .contact").removeClass("li-a-active");
+			$("#menu ul li, .me, .skills, .experience, .contact").removeClass("li-a-active");
 			$("#menu ul li .me").addClass("li-a-active");
 			
 			}
 		else if (topPosition == (-dimension*3)){
-			$("#menu ul li, .me, .skills, .process, .contact").removeClass("li-a-active");
+			$("#menu ul li, .me, .skills, .experience, .contact").removeClass("li-a-active");
 			$("#menu ul li .skills").addClass("li-a-active");
 			
-			$("#photoshop").delay(500).animate({width:"75%"});
-			$("#illustrator").delay(600).animate({width:"85%"});
-			$("#indesign").delay(700).animate({width:"80%"});
-			$("#dreamweaver").delay(800).animate({width:"95%"});
-			$("#html5").delay(500).animate({width:"95%"});
-			$("#css3").delay(600).animate({width:"99%"});
-			$("#jquery").delay(700).animate({width:"90%"});
-			$("#php").delay(800).animate({width:"55%"});
-			$("#wordpress").delay(900).animate({width:"85%"});
-			$("#magento").delay(1000).animate({width:"70%"});
+		$("#photoshop").delay(500).animate({width:"75%"});
+		$("#illustrator").delay(600).animate({width:"55%"});
+		$("#indesign").delay(700).animate({width:"30%"});
+		$("#dreamweaver").delay(800).animate({width:"75%"});
+		$("#html5").delay(500).animate({width:"90%"});
+		$("#css3").delay(600).animate({width:"85%"});
+		$("#jquery").delay(700).animate({width:"60%"});
+		$("#php").delay(800).animate({width:"30%"});
+		$("#wordpress").delay(900).animate({width:"60%"});
+		$("#magento").delay(1000).animate({width:"70%"});
 			}
 		else if (topPosition == (-dimension*4)){
-			$("#menu ul li, .me, .skills, .process, .contact").removeClass("li-a-active");
-			$("#menu ul li .process").addClass("li-a-active");
+			$("#menu ul li, .me, .skills, .experience, .contact").removeClass("li-a-active");
+			$("#menu ul li .experience").addClass("li-a-active");
 			};
 		});
 	

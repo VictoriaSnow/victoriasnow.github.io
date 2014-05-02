@@ -3,18 +3,15 @@
 a{
 	text-decoration:none;
 	color:#fff;}
-html {
-	
-	
-	min-height: 101%;
-	
+html {		
+	min-height: 101%;	
 }
+
 body {
 	font-family: 'metanormalregular';
 	font-weight: normal;
     font-style: normal;
 	font-size:25px;
-	
 }
 
 #container-total {
@@ -71,38 +68,40 @@ height: 100%;
 #menu ul{ width:100%; height:80px; line-height:80px; }
 #menu ul li{ float:left; width:25%; text-align:center; background-color: rgba(255,255,255,0.4);}
 #menu ul li a{ display:block;color: rgba(255,255,255,0.8);}
-#menu ul li a:hover, .li-a-active{ background:rgba(0,0,0,0.1); color:rgba(255,255,255,0.9)}
+#menu ul li a:hover, .li-a-active{ background:rgba(255,255,255,0.2); color:rgba(255,255,255,1)}
 
 
 .color1 {
-background-color: rgba(0,0,0,0.2)
+	background-color: rgba(0,0,0,0.1);
 }
 .color1-sec {
 	/*background-color: #d93822;*/
-	background-color: rgba(0,0,0,0.2)
+	background-color: rgba(0,0,0,0.1);
 }
 .color2 {
-	background-color: rgba(0,0,0,0.2)
+	background-color: rgba(0,0,0,0.1);
 }
 .color2-sec {
 	/*background-color: #54958f;*/
-	background-color: rgba(0,0,0,0.2)
+	background-color: rgba(0,0,0,0.1);
 }
 .color3 {
-	background-color: rgba(0,0,0,0.2)
+	background-color: rgba(0,0,0,0.1);
 }
 .color3-sec {
 	/*background-color: #ce3f49;*/
-	background-color: rgba(0,0,0,0.2)
+	background-color: rgba(0,0,0,0.1)
 }
 .color4 {
-	background-color: rgba(0,0,0,0.2)
+	background-color: rgba(0,0,0,0.1);
 }
 .color4-sec {
-/*	background-color: #06b478;*/
-background-color: rgba(0,0,0,0.2)
+	/*	background-color: #06b478;*/
+	background-color: rgba(0,0,0,0.1);
 }
-.color5{background-color:rgba(255,255,255,0.5);}
+.color5{
+	background-color:rgba(255,255,255,0.5);
+}
 
 
 .level-0 {
@@ -248,8 +247,8 @@ background-color: rgba(0,0,0,0.2)
 }
 .nuvola1 p, .nuvola2 p{ 
     padding-top:20%; 
-	/*padding-bottom:20px; 
-	 */padding-left: 24px;
+	/*padding-bottom:20px;*/
+	padding-left: 24px;
 	color:#fff; 
 	font-size:22px; 
 	text-align:center;
@@ -258,19 +257,18 @@ background-color: rgba(0,0,0,0.2)
     font-style: normal;}
 
 #social {
-
 	margin-left:auto;
 	margin-right:auto;
 }
 #social ul{
 	width:100%;
 	height:100%;
-text-align: center;
-vertical-align: middle;
-margin-top: 50px;}
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 50px;
+}
 #social ul li {
 	display: inline-block;
-
 	height:100%;
 }
 #social ul li a{
@@ -278,22 +276,22 @@ margin-top: 50px;}
 	height:100%;
 	vertical-align:middle;
 	text-align:center;
-
-color: white;
-font-size: 2.5em;
-padding: 3px;}
+	color: white;
+	font-size: 3em;
+	padding: 3px;
+}
 
 .social-icon#tumblr-icon:hover{
-  color: #2C4762;
+	color: #2C4762;
 }
-.social-icon#github-icon:hover{
-color: #171515;
+.social-icon#github-icon:hover {
+	color: #171515;
 }
 .social-icon#facebook-icon:hover {
-  color: #3350ae;
+	color: #3350ae;
 }
 .social-icon#linkedin-icon:hover {
-  color: #0084d7;
+	color: #0084d7;
 }
 
 /*#mail{ background-image:url(mail.png);}
@@ -307,25 +305,26 @@ color: #171515;
 
 
 /*SECTIONS*/
-#me, #skills, #process, #contact,#me-section, #skills-section,  #contact-section, #process-section{
+#me, #skills, #experience, #contact,#me-section, #skills-section,  #contact-section, #experience-section{
 	background-repeat: no-repeat;
 	background-position: center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;}
-#me, #me-section{background-color: rgba(0,0,0,0.3); opacity: 0.7;}
-#skills, #skills-section{background-color: rgba(0,0,0,0.3);opacity: 0.7;}
-#process,  #process-section{background-color: rgba(0,0,0,0.3);opacity: 0.7;}
-#contact, #contact-section{background-color: rgba(0,0,0,0.3);opacity: 0.7;}
-#me-section, #skills-section, #contact-section, #process-section {
+#me, #me-section{background-color: rgba(255,255,255,0.3); opacity: 0.7;}
+#skills, #skills-section{background-color: rgba(255,255,255,0.3);opacity: 0.7;}
+#experience,  #experience-section{background-color: rgba(255,255,255,0.3);opacity: 0.7;}
+#contact, #contact-section{background-color: rgba(255,255,255,0.3);opacity: 0.7;}
+#me-section, #skills-section, #contact-section, #experience-section {
 	position: absolute;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
 	width: 100%;
-	height: 100%;}
+	height: 100%;
+}
 .section{
 	width:90%;
 	padding:5%;
@@ -333,7 +332,8 @@ color: #171515;
 	color:rgba(255,255,255,0.8);
 	position:relative;
 	font-family: 'arquitecta_lightlight';
-	font-size:22px; }
+	font-size:22px; 
+}
 
 .title-section{
 	font-size:20px; 
@@ -344,27 +344,30 @@ color: #171515;
 	text-transform:uppercase;
 	height:15%;
 	color: rgba(255,255,255,0.8);
-	}
+}
 
 .sub-title-section{
 	font-size:40px; 
 	text-align:center;
 	font-family: 'arquitecta_boldbold';
 	font-weight: normal;
-    font-style: normal;}
+    font-style: normal;
+}
 .big{
 	font-family: 'arquitecta_boldbold';
 	font-weight: normal;
-    font-style: normal;}
+    font-style: normal;
+}
 .medium{
 	 font-family: 'arquitecta_mediummedium';
-	}
+}
 .corsivo{
 	font-family: 'Libre Baskerville', serif;
 	font-weight: 400;
 	font-style: italic;
 }
 .text-shadow{/*text-shadow: 0px 0px 2px #333; color:#fff;*/}
+
 /*ME SECTION*/
 .background-me-evidence{ 
     background-image: url(holly.png);
@@ -375,57 +378,64 @@ color: #171515;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;}
+	background-size: cover;
+}
 .background-me-evidence-2{ 
-
-	
     width:100%; 
 	height:100%; 
 	background-repeat:no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;}
+	background-size: cover;
+}
 #hello{
 	height: 40%;
-margin-top: 35%;
-font-size: 25px;
-text-align: right;}
+	margin-top: 35%;
+	font-size: 25px;
+	text-align: right;}
+
 #job{
 	position:absolute;
 	bottom:0;
-	height:20%;}
+	height:20%;
+}
 #iam{
 	height: 40%;
-margin-top: 35%;
-font-size: 25px;}
-	 #ofcourse{
+	margin-top: 35%;
+	font-size: 25px;
+}
+#ofcourse{
 	height: 35%;
-top: 55%;
-margin-left: 5%;
-position: absolute;}
+	top: 55%;
+	margin-left: 5%;
+	position: absolute;
+}
 .font-16{
 	font-size:16px;}
-/*PROCESS SECTION*/
-#process-back-1, #process-back-2, #process-back-3{ 
+
+/*experience SECTION*/
+#experience-back-1, #experience-back-2, #experience-back-3{ 
     width:100%; 
 	height:100%; 
 	background-repeat:no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;}
-/*#process-back-1{ background-image:url(process-1.png);}
-#process-back-2{ background-image:url(process-2.png);}
-#process-back-3{ background-image:url(process-3.png);}*/
+	background-size: cover;
+}
+/*#experience-back-1{ background-image:url(experience-1.png);}
+#experience-back-2{ background-image:url(experience-2.png);}
+#experience-back-3{ background-image:url(experience-3.png);}*/
 
 #brief-block{
 	position:absolute;
 	height:50%;
 	top:40%;
 	left:25%;
-	width:55%;}
-#brief-block p, #research-block p, #concept-block p, #blocco-design p, #blocco-launch p{
+	width:55%;
+}
+#brief-block p, #research-block p, #concept-block p, #design-block p, #launch-block p{
 	font-size:18px; 
 	font-family: 'arquitecta_lightlight';
 	font-weight: normal;
@@ -437,20 +447,23 @@ position: absolute;}
 	height:40%;
 	top:20%;
 	left:25%;
-	width:55%;}
+	width:55%;
+}
 #concept-block{
 	position:absolute;
 	height:40%;
 	bottom:0;
 	left:25%;
-	width:55%;}
-#blocco-design{
+	width:55%;
+}
+#design-block{
 	position:absolute;
 	height:40%;
 	top:20%;
 	left:25%;
-	width:55%;}
-#blocco-launch{
+	width:55%;
+}
+#launch-block{
 	position:absolute;
 	height:40%;
 	bottom:0;
@@ -581,7 +594,7 @@ textarea{
 .solo-2-3-colonne{
 	display:block;}
 .check-error, input[type="text"].check-error{
-	background-color:#25b596;}
+	background-color:rgba(255,255,255,0.3);}
 	
 #copyright{
 	height:50px;
@@ -611,10 +624,10 @@ textarea{
 	.font-16, .section p{
 	font-size:11px;}
 	
-	#brief-block p, #research-block p, #concept-block p, #blocco-design p, #blocco-launch p{
+	#brief-block p, #research-block p, #concept-block p, #design-block p, #launch-block p{
 		font-size:10px;}
 	
-	#blocco-launch{
+	#launch-block{
 		height:50%;}
 	#menu ul li a{
 		font-size:20px;
@@ -631,7 +644,7 @@ textarea{
 	display:none;
 	float:left;
 	z-index:999;
-	background:rgba(186,214,71,1);
+	background:rgba(0,0,0,0.2);
 	margin-top:30px;
 	border-right:rgba(255,255,255,0);
 	border-top:rgba(255,255,255,0);
@@ -650,7 +663,7 @@ textarea{
 .solo-2-3-colonne{
 	display:none;}
 
-#process-back-3{ background-image:url(process-png3-2.png);}
+#experience-back-3{ background-image:url(experience-png3-2.png);}
 }
 
 @media only screen and (min-width:651px) and (max-width:768px) {
@@ -658,7 +671,7 @@ textarea{
 	display:none;
 	float:left;
 	z-index:999;
-	background:rgba(186,214,71,1);
+	background:rgba(0,0,0,0.2);
 	margin-top:30px;
 	border-right:rgba(255,255,255,0);
 	border-top:rgba(255,255,255,0);
@@ -671,12 +684,12 @@ textarea{
 		display:block;}
 	.solo-2-3-colonne{
 	display:none;}
-	#process-back-3{ background-image:url(process-png3-2.png);}
+	#experience-back-3{ background-image:url(experience-png3-2.png);}
 
 
 }
 @media only screen and (min-width:769px) and (max-width:1024px) {
-	#process-back-3{ background-image:url(process-png3-2.png);}
+	#experience-back-3{ background-image:url(experience-png3-2.png);}
 
 	
 }
