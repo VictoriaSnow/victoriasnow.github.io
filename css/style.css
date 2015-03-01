@@ -1,49 +1,7 @@
 @charset "UTF-8";
 /* Styles for www.victoriabian.com */
 /* RESET CSS */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
+@import url(_reset.css);
 /* GENERAL */
 html {
   -webkit-tap-highlight-color: transparent;
@@ -62,17 +20,17 @@ html {
   html {
     font-size: 105%; } }
 body {
-  background-attachment: fixed !important;
-  background-position: center center;
   width: 100%;
   height: 100%;
-  font-family: "josefin sans", "Lato", "verdana", "helvetica neue", "helvetica", "arial", sans-serif;
+  font-family: "brandon-grotesque", "josefin sans", "Lato", "verdana", "helvetica neue", "helvetica", "arial", sans-serif;
   color: #777;
   line-height: 1.75; }
 
 .wrapper {
   width: 100%;
-  margin: 0 auto; }
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fff; }
 
 *, *:before, *:after {
   text-rendering: geometricPrecision;
@@ -80,16 +38,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border: none;
+  outline: none; }
 
 /* CLEARFIX */
-.clearfix, .wrapper, .clearfix:before, .clearfix:after {
+.clearfix, .clearfix:before, .clearfix:after {
   zoom: 1; }
-  .clearfix:before, .wrapper:before, .clearfix:after, .wrapper:after {
+  .clearfix:before, .clearfix:after {
     content: "\0020";
     display: block;
     height: 0; }
-  .clearfix:after, .wrapper:after {
+  .clearfix:after {
     clear: both; }
 
 @media screen and (min-width: 62.5em) {
@@ -108,7 +68,9 @@ body {
   -webkit-animation: fade 15s infinite;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-attachment: fixed !important;
+  background-position: center center; }
 
 @-webkit-keyframes fade {
   0% {
@@ -128,17 +90,35 @@ body {
     background: #bd3e62; }
   100% {
     background: #3a85b1; } }
+.more-button, .resume-button {
+  position: relative;
+  float: right;
+  margin-top: 0.8em;
+  margin-right: 0.8em;
+  vertical-align: top;
+  border-width: 1px solid #fff;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.3); }
+  .more-button a, .resume-button a {
+    color: #fff;
+    text-align: center;
+    padding: 0.25em 0.75em 0.25em 0.75em;
+    vertical-align: top;
+    display: inline-block;
+    font-weight: bold; }
+
 .profile {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
 
 .photo {
   width: 7.5rem;
   margin: auto;
-  display: block;
-  border-radius: 50%; }
+  display: block; }
 
 .img {
   height: auto;
@@ -155,13 +135,6 @@ body {
       font-size: 1.75rem;
       letter-spacing: 0.1875rem; } }
 
-/*
-.no-touch {
-  .photo, .name {
-    opacity: 1 !important;
-  }
-}
-*/
 /* ABOUT */
 .about {
   text-align: center; }
@@ -182,8 +155,8 @@ body {
   text-align: center; }
 
 .icon {
-  width: 2rem;
-  height: 2rem; }
+  width: 2.5rem;
+  height: 2.5rem; }
 
 .quotes {
   list-style: none;
@@ -219,6 +192,15 @@ body {
     text-align: center;
     font-size: 1.4375rem;
     margin-bottom: 3.75rem; }
+  .portfolio h3 {
+    text-align: center;
+    font-size: 1.4375rem;
+    max-width: 75%;
+    margin: 3.125rem auto; }
+
+.work {
+  color: #999;
+  border-bottom: 0.125rem solid #999; }
 
 .thumb-wrapper {
   margin: 0 auto; }
@@ -414,11 +396,6 @@ a {
   .contact-button:hover .tooltip {
     opacity: 1; }
 
-/*
-.no-touch .tooltip {
-  display: none;
-}
-*/
 /* FOOTER */
 .footer {
   opacity: .9;
@@ -464,7 +441,6 @@ a {
       .links li a:hover {
         opacity: 0.75; }
     .links li .link-to {
-      width: 120px;
       width: 7.5rem;
       font-size: 14px;
       font-size: 0.875rem;
@@ -472,8 +448,7 @@ a {
       position: absolute;
       bottom: 10px;
       bottom: 0.625rem;
-      left: -44px;
-      left: -2.75rem;
+      left: -2.5rem;
       line-height: 100%;
       opacity: 0;
       padding: 6px 0;
@@ -509,18 +484,26 @@ a {
       -webkit-transform: scale(1);
       -ms-transform: scale(1);
       transform: scale(1); }
-    .links li .paperplane .link-to {
-      background: #f7ba34; }
-      .links li .paperplane .link-to:after {
-        background: #f7ba34; }
     .links li .twitter .link-to {
       background: #55acee; }
       .links li .twitter .link-to:after {
         background: #55acee; }
+    .links li .pinterest .link-to {
+      background: #c92228; }
+      .links li .pinterest .link-to:after {
+        background: #c92228; }
     .links li .dribbble .link-to {
       background: #ea4c89; }
       .links li .dribbble .link-to:after {
         background: #ea4c89; }
+    .links li .github .link-to {
+      background: #000000; }
+      .links li .github .link-to:after {
+        background: #000000; }
+    .links li .linkedin .link-to {
+      background: #4875B4; }
+      .links li .linkedin .link-to:after {
+        background: #4875B4; }
 
 @media screen and (max-width: 40em) {
   .links li {
@@ -531,11 +514,6 @@ a {
   border-bottom: 0.125rem solid #999;
   letter-spacing: 0.125rem; }
 
-/*
-.no-touch .count {
-  display: none;
-}
-*/
 .animated:hover {
   -webkit-animation: wobble .75s both;
   animation: wobble 0.75s both; }
@@ -605,17 +583,17 @@ a {
 
 .icon {
   display: inline-block;
-  width: 32px;
-  width: 2rem;
-  height: 32px;
-  height: 2rem; }
+  width: 2.5rem;
+  height: 2.5rem; }
 
 .icon-tools {
   fill: #555;
   margin: 30px auto;
   margin: 1.875rem auto;
   display: block;
-  text-align: center; }
+  text-align: center;
+  width: 2rem;
+  height: 2rem; }
 
 .icon-feather {
   width: 25px;
@@ -637,14 +615,20 @@ a {
     width: 1.875rem;
     height: 30px;
     height: 1.875rem; } }
-.icon-paperplane {
-  fill: #f7ba34; }
-
 .icon-twitter {
   fill: #55ACEE; }
 
+.icon-pinterest {
+  fill: #c92228; }
+
 .icon-dribbble {
   fill: #ea4c89; }
+
+.icon-github {
+  fill: #000000; }
+
+.icon-linkedin {
+  fill: #4875B4; }
 
 /* MODAL */
 #modal {
@@ -685,5 +669,53 @@ a {
   opacity: 0.8; }
 .mfp-zoom-in.mfp-removing.mfp-bg {
   opacity: 0; }
+
+/* LINKS */
+#more, #resume {
+  background: white;
+  padding: 20px 30px;
+  max-width: 1024px;
+  margin: 40px auto;
+  position: relative;
+  height: auto;
+  /*
+  	a {
+  		color: #28BC91;
+  		font-weight: bold;
+  	}
+  */ }
+  #more h1, #resume h1 {
+    font-size: 25px;
+    font-size: 1.5625rem; }
+  #more img, #resume img {
+    width: 100%;
+    height: auto; }
+
+.download-button {
+  max-width: 18.75rem;
+  margin: auto;
+  position: relative; }
+  .download-button .download {
+    text-align: center;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    background: #3BBCB7;
+    padding: 0.625rem 0;
+    border-radius: 0.3125rem;
+    -webkit-box-shadow: 0 0.1875rem 0 #2a8e69;
+    box-shadow: 0 0.1875rem 0 #2a8e69;
+    -webkit-transition: background .3s linear;
+    transition: background 0.3s linear; }
+    .download-button .download:hover {
+      background: #139390; }
+    .download-button .download:active {
+      position: relative;
+      top: 1px;
+      top: 0.0625rem;
+      -webkit-box-shadow: 0 0.125rem 0 #2a8e69;
+      box-shadow: 0 0.125rem 0 #2a8e69; }
+    .download-button .download span {
+      display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */

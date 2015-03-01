@@ -112,4 +112,26 @@ function(t) {
             removalDelay: 300,
             mainClass: "mfp-zoom-in"
         })
+        $(".more-link").magnificPopup({
+            type: "inline",
+            fixedContentPos: !1,
+            fixedBgPos: !0,
+            overflowY: "auto",
+            closeBtnInside: !0,
+            preloader: !1,
+            midClick: !0,
+            removalDelay: 300,
+            mainClass: "mfp-zoom-in"
+        })
+        $(".resume-link").magnificPopup({
+            type: "inline",
+            fixedContentPos: !1,
+            fixedBgPos: !0,
+            overflowY: "auto",
+            closeBtnInside: !0,
+            preloader: !1,
+            midClick: !0,
+            removalDelay: 300,
+            mainClass: "mfp-zoom-in"
+        })
 }), "ontouchstart" in document.documentElement && (document.documentElement.className += " no-touch");
