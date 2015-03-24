@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* Styles for www.victoriabian.me */
 /* RESET CSS */
-@import url(reset/_reset.css);
+@import url(reset/reset.css);
 /* GENERAL */
 html {
   -webkit-tap-highlight-color: transparent;
