@@ -90,22 +90,23 @@ body {
     background: #bd3e62; }
   100% {
     background: #3a85b1; } }
-.more-button, .resume-button {
+.resume-button {
   position: relative;
-  float: right;
-  margin-top: 0.8em;
-  margin-right: 0.8em;
-  vertical-align: top;
-  border-width: 1px solid #fff;
-  border-radius: 3px;
-  background-color: rgba(255, 255, 255, 0.3); }
-  .more-button a, .resume-button a {
-    color: #fff;
+  margin: auto;
+  margin-top: 1em;
+  max-width: 10em; }
+  .resume-button .resume {
+    color: white;
+    display: block;
+    background: #52bdca;
     text-align: center;
-    padding: 0.25em 0.75em 0.25em 0.75em;
-    vertical-align: top;
-    display: inline-block;
-    font-weight: bold; }
+    padding: 0.4em 0;
+    border-radius: 0.25em;
+    font-weight: bold;
+    box-shadow: 0 0.15em 0 #37a5b2;
+    -webkit-box-shadow: 0 0.15em 0 #37a5b2;
+    -webkit-transition: background .3s linear;
+    transition: background 0.3s linear; }
 
 .profile {
   position: absolute;
@@ -671,26 +672,6 @@ a {
   opacity: 0; }
 
 /* LINKS */
-#more, #resume {
-  background: white;
-  padding: 20px 30px;
-  max-width: 1024px;
-  margin: 40px auto;
-  position: relative;
-  height: auto;
-  /*
-  	a {
-  		color: #28BC91;
-  		font-weight: bold;
-  	}
-  */ }
-  #more h1, #resume h1 {
-    font-size: 25px;
-    font-size: 1.5625rem; }
-  #more img, #resume img {
-    width: 100%;
-    height: auto; }
-
 .download-button {
   max-width: 18.75rem;
   margin: auto;
