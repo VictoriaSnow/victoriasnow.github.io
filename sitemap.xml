@@ -7,11 +7,13 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://www.victoriabian.me/</loc>
+  <loc>http://victoriabian.me/</loc>
+  <lastmod>2015-03-24T17:14:01+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://www.victoriabian.me/index.html</loc>
+  <loc>http://victoriabian.me/doc/Victoria_Bian_Resume.pdf</loc>
+  <lastmod>2015-03-24T17:14:01+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 </urlset>
