@@ -173,13 +173,15 @@ body {
     font-weight: bold;
     font-style: italic;
     font-size: 1.5625rem;
-    opacity: 0;
     -webkit-transition: opacity .6s linear;
-    transition: opacity .6s linear; }
-    .quotes li.active {
-      opacity: 1;
-      -webkit-transition: opacity .6s linear;
-      transition: opacity 0.6s linear; }
+    transition: opacity .6s linear;
+    /*
+    		&.active {
+    			opacity: 1;
+    			-webkit-transition:opacity .6s linear;
+    			transition:opacity .6s linear
+    		}
+    */ }
     .quotes li:before {
       content: "· "; }
     .quotes li:after {
