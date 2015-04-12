@@ -115,7 +115,8 @@ function(t) {
             e && (1 - o.scrollTop() / 200 > -10 && n.css({
                 opacity: 1 - o.scrollTop() / 200
             }), e = !1)
-        }, 50), $(".quotes li").removeClass("active").eq(0).addClass(
+        }, 50), /*
+$(".quotes li").removeClass("active").eq(0).addClass(
             "active"),
         function(t) {
             function e() {
@@ -125,7 +126,8 @@ function(t) {
             }
             var n = 0;
             return t.length ? void e() : !1
-        }($(".quotes").children()), $(".colophon").magnificPopup({
+        }($(".quotes").children()),
+*/ $(".colophon").magnificPopup({
             type: "inline",
             fixedContentPos: !1,
             fixedBgPos: !0,
