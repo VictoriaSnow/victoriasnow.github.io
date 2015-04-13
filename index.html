@@ -22,8 +22,6 @@
 	<script>try{Typekit.load();}catch(e){}</script>
 	
 	<!-- Google Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
 	
 	<!-- Stylesheets -->
@@ -41,6 +39,7 @@
 		ga('send', 'pageview');
 
 	</script>
+<!--
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -51,175 +50,168 @@
 		ga('send', 'pageview');
 			
 	</script>
+-->
 	
 	<!-- Modernizr -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-	
 </head>
 
 
 <body>	
-
-	<!-- header -->
-	<header class="header">
-		<div class="profile">
-			<figure>
-				<img src="css/images/icon.png" alt="Victoria Bian" class="photo">
-			</figure>
-			<h1 class="name">Victoria Bian</h1>
-		</div>
-	</header>
 	
-	<!-- about -->
-	<section class="about container">
-		<svg class="icon animated icon-tools"
-		viewBox="0 0 32 32"><use xlink:href="#icon-tools"></use></svg>
-		<p>Hello, I'm Victoria, a UX designer and developer currently studying Cognitive Science and Design at University of California, Berkeley. I am passionate about new technologies, products and ideas. I love playing around with layouts and colors to create simple and intuitive interfaces.
-		</p>
-		<div class="resume-button"><a href="doc/Victoria_Bian_Resume.pdf" class="resume">Resume</a></div>
-		<ul class="quotes">
-			<li>"Happy, free, confused & lonely at the same time."</li>
-<!--
-			<li>"I love design and code"</li>
-			<li>"I always design with simplicity in mind"</li>
-            <li>"I like to take pictures"</li>
--->
-		</ul>
-	</section>
-	
-	<!-- portfolio -->
-	<section class="portfolio">
-		<h2><a href="https://github.com/VictoriaSnow" class="work">My latest work.</a></h2>
-<!-- 		<h3>There’s no mystery or grand scheme. It’s about working tirelessly until it feels right.</h3> -->
-		<div class="thumb-wrapper">
-			<ul class="thumb-list">
-				<li class="thumb">
-					<a href="https://www.behance.net/gallery/22897165/Trav-iOS-App-UI">
-						<figure class="rift">
-							<img src="css/images/travl.png" alt="travl">
-							<figcaption class="caption">Travl UI</figcaption>
-						</figure>
-					</a>
-				</li>
-				<li class="thumb">
-					<a href="https://dribbble.com/shots/1932747-Pandora-Web-Player-Redesign">
-						<figure class="rift">
-							<img src="css/images/pandora.png" alt="pandora">
-							<figcaption class="caption">Pandora Player Redesign</figcaption>
-						</figure>
-					</a>
-				</li>
-				<li class="thumb">
-					<a href="https://github.com/VictoriaSnow/humans-of-berkeley">
-						<figure class="rift">
-							<img src="css/images/berkeley.png" alt="berkeley">
-							<figcaption class="caption">Humans of Berkeley</figcaption>
-						</figure>
-					</a>
-				</li>
-				<li class="thumb">
-					<a href="https://github.com/VictoriaSnow/lifespice">
-						<figure class="rift">
-							<img src="css/images/daybox.png" alt="daybox">
-							<figcaption class="caption">Daybox App</figcaption>
-						</figure>
-					</a>
-				</li>
-				<li class="thumb">
-					<a href="https://medium.com/@jesuisVic/yelp-user-detail-page-redesign-f36be637eea7">
-						<figure class="rift">
-							<img src="css/images/yelp.png" alt="yelp">
-							<figcaption class="caption">Yelp User Details Concept</figcaption>
-						</figure>
-					</a>
-				</li>
-				<li class="thumb">
-					<a href="https://www.behance.net/gallery/23261305/Coursera-iOS-App-Redesign">
-						<figure class="rift">
-							<img src="css/images/coursera.png" alt="coursera">
-							<figcaption class="caption">Coursera Redesign</figcaption>
-						</figure>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</section>
+	<!-- cover -->
+	<div class="cover">
+		<div class="regular" style="background-image: url('css/images/background.jpg')"></div>
+		<div class="blurred" style="background-image: url('css/images/background.jpg')"></div>
+	</div>
 	
 	
-	<!-- contact -->
-	<section class="contact">
-		<h3>I live in Berkeley. A liberal city in San Francisco Bay Area.</h3>
-		<i class="mg map-it">
-			<div class="pulse"></div>
-		</i>
-		<h3>Contact me for any information. 510-333-9472:)</h3>
-		<div class="contact-button">
-			<a href="mailto:victoriasnow1124@gmail.com" class="email">
-				<span class="animated">Write Me</span>
-				<svg class="icon icon-feather" viewBox="0 0 32 32">
-					<use xlink:href="#icon-feather"></use>
-				</svg>
-			</a>
-			<p class="tooltip">I'm available for small freelance projects.</p>
-		</div>
+	<div class="foreground">
+		<!-- header -->
+			<header class="header profile">
 		
-	</section>
+				<div class="avatar">
+					<span class="avatar-container avatar-large">
+						<img src="css/images/logo.png" alt="Victoria Bian" class="avatar-image">
+					</span>	
+				</div>
+				<h1 class="name">Victoria Bian</h1>
+<!-- 				<p class="description">Happy, free, confused & lonely at the same time.</p> -->	
+			</header>
+			
+			<!-- about -->
+			<section class="about container">
+<!--
+				<svg class="icon animated icon-tools"
+				viewBox="0 0 32 32"><use xlink:href="#icon-tools"></use></svg>
+-->
+				<p>Hello, I'm Victoria, a UX designer and developer currently studying Cognitive Science and Design at University of California, Berkeley. I am passionate about new technologies, products and ideas. I love playing around with layouts and colors to create simple and intuitive interfaces.
+				</p>
+				<div class="resume-button"><a href="doc/Victoria_Bian_Resume.pdf" class="resume">Resume</a></div>
+				<ul class="quotes">
+					<li>"Happy, free, confused & lonely at the same time."</li>
+				</ul>
+			</section>
+			
+			<!-- portfolio -->
+			<section class="portfolio">
+				<div class="thumb-wrapper">
+<!-- 					<div class="separator"></div> -->
+					<ul class="thumb-list">
+						<li class="thumb">
+							<a href="https://www.behance.net/gallery/22897165/Trav-iOS-App-UI">
+								<figure class="rift">
+									<img src="css/images/travl.png" alt="travl">
+									<figcaption class="caption">Travl UI</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li class="thumb">
+							<a href="https://dribbble.com/shots/1932747-Pandora-Web-Player-Redesign">
+								<figure class="rift">
+									<img src="css/images/pandora.png" alt="pandora">
+									<figcaption class="caption">Pandora Player Redesign</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li class="thumb">
+							<a href="https://github.com/VictoriaSnow/humans-of-berkeley">
+								<figure class="rift">
+									<img src="css/images/berkeley.png" alt="berkeley">
+									<figcaption class="caption">Humans of Berkeley</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li class="thumb">
+							<a href="https://github.com/VictoriaSnow/lifespice">
+								<figure class="rift">
+									<img src="css/images/daybox.png" alt="daybox">
+									<figcaption class="caption">Daybox App</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li class="thumb">
+							<a href="https://medium.com/@jesuisVic/yelp-user-detail-page-redesign-f36be637eea7">
+								<figure class="rift">
+									<img src="css/images/yelp.png" alt="yelp">
+									<figcaption class="caption">Yelp User Details Concept</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li class="thumb">
+							<a href="https://www.behance.net/gallery/23261305/Coursera-iOS-App-Redesign">
+								<figure class="rift">
+									<img src="css/images/coursera.png" alt="coursera">
+									<figcaption class="caption">Coursera Redesign</figcaption>
+								</figure>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- contact -->
+
+	
+			<!-- footer -->
+			<footer class="footer">
+				<section class="container">
+					<ul class="links">
+						<li>
+							<a class="linkedin" href="https://www.linkedin.com/in/victoriabian/">
+								<svg class="icon animated icon-linkedin" viewBox="0 0 20 20">
+									<use xlink:href="#icon-linkedin"></use>
+								</svg>
+								<span class="visually-hidden">LinkedIn</span>
+								<span class="link-to">LinkedIn</span>
+							</a>
+						</li>
+						<li>
+							<a class="github" href="https://github.com/VictoriaSnow">
+								<svg class="icon animated icon-github" viewBox="0 0 20 20">
+									<use xlink:href="#icon-github"></use>
+								</svg>
+								<span class="visually-hidden">GitHub</span>
+								<span class="link-to">GitHub</span>
+							</a>
+						</li>
+						<li>
+							<a class="dribbble" href="https://dribbble.com/victoriabian">
+								<svg class="icon animated icon-dribbble" viewBox="0 0 20 20">
+									<use xlink:href="#icon-dribbble"></use>
+								</svg>
+								<span class="visually-hidden">Dribbble</span>
+								<span class="link-to">Dribbble</span>
+							</a>
+						</li>
+						<li>
+							<a class="twitter" href="https://twitter.com/jesuisVic">
+								<svg class="icon animated icon-twitter" viewBox="0 0 20 20">
+									<use xlink:href="#icon-twitter"></use>
+								</svg>
+								<span class="visually-hidden">Twitter</span>
+								<span class="link-to">Twitter</span>
+							</a>
+						</li>
+						<li>
+							<a class="pinterest" href="https://www.pinterest.com/VictoriaBian/">
+								<svg class="icon animated icon-pinterest" viewBox="0 0 20 20">
+									<use xlink:href="#icon-pinterest"></use>
+								</svg>
+								<span class="visually-hidden">Pinterest</span>
+								<span class="link-to">Pinterest</span>
+							</a>
+						</li>
+					</ul>
+					<p>&copy; 2015 - Victoria Bian - Made with lots of Love and Caffeine - <a href="#modal" class="colophon">Colophon</a></p>
+					<h4>THANKS FOR STOPPING BY</h4>
+				</section>
+			</footer>
+	</div>
 	
 	
-	<!-- footer -->
-	<footer class="footer">
-		<section class="container">
-			<ul class="links">
-				<li>
-					<a class="linkedin" href="https://www.linkedin.com/in/victoriabian/">
-						<svg class="icon animated icon-linkedin" viewBox="0 0 20 20">
-							<use xlink:href="#icon-linkedin"></use>
-						</svg>
-						<span class="visually-hidden">LinkedIn</span>
-						<span class="link-to">LinkedIn</span>
-					</a>
-				</li>
-				<li>
-					<a class="github" href="https://github.com/VictoriaSnow">
-						<svg class="icon animated icon-github" viewBox="0 0 20 20">
-							<use xlink:href="#icon-github"></use>
-						</svg>
-						<span class="visually-hidden">GitHub</span>
-						<span class="link-to">GitHub</span>
-					</a>
-				</li>
-				<li>
-					<a class="dribbble" href="https://dribbble.com/victoriabian">
-						<svg class="icon animated icon-dribbble" viewBox="0 0 20 20">
-							<use xlink:href="#icon-dribbble"></use>
-						</svg>
-						<span class="visually-hidden">Dribbble</span>
-						<span class="link-to">Dribbble</span>
-					</a>
-				</li>
-				<li>
-					<a class="twitter" href="https://twitter.com/jesuisVic">
-						<svg class="icon animated icon-twitter" viewBox="0 0 20 20">
-							<use xlink:href="#icon-twitter"></use>
-						</svg>
-						<span class="visually-hidden">Twitter</span>
-						<span class="link-to">Twitter</span>
-					</a>
-				</li>
-				<li>
-					<a class="pinterest" href="https://www.pinterest.com/VictoriaBian/">
-						<svg class="icon animated icon-pinterest" viewBox="0 0 20 20">
-							<use xlink:href="#icon-pinterest"></use>
-						</svg>
-						<span class="visually-hidden">Pinterest</span>
-						<span class="link-to">Pinterest</span>
-					</a>
-				</li>
-			</ul>
-			<p>&copy; 2015 - Victoria Bian - Made with lots of Love and Caffeine - <a href="#modal" class="colophon">Colophon</a></p>
-			<h4>THANKS FOR STOPPING BY</h4>
-		</section>
-	</footer>
+	
+
 	
 	<!-- Popup -->
 	
