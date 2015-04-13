@@ -90,7 +90,7 @@ body {
 .profile {
   height: auto;
   margin-top: 300px;
-  margin-bottom: 20px; }
+  margin-bottom: 1em; }
   .profile .avatar {
     margin-top: -60px;
     display: inline-block;
@@ -145,7 +145,7 @@ body {
   font-family: "homemade apple";
   position: relative;
   font-size: 1.5625em;
-  top: 0.9375em; }
+  top: 0.5em; }
   @media screen and (min-width: 20em) {
     .name {
       font-size: 1.75em;
@@ -163,16 +163,6 @@ body {
   width: 95%;
   max-width: 700px;
   margin: 0 auto; }
-
-.icon-tools {
-  fill: #555;
-  margin: 1.875em auto;
-  display: block;
-  text-align: center; }
-
-.icon {
-  width: 2.5em;
-  height: 2.5em; }
 
 .quotes {
   list-style: none;
@@ -385,26 +375,10 @@ a {
       -webkit-transform: scale(1);
       -ms-transform: scale(1);
       transform: scale(1); }
-    .links li .twitter .link-to {
-      background: #55acee; }
-      .links li .twitter .link-to:after {
-        background: #55acee; }
-    .links li .pinterest .link-to {
-      background: #c92228; }
-      .links li .pinterest .link-to:after {
-        background: #c92228; }
-    .links li .dribbble .link-to {
-      background: #ea4c89; }
-      .links li .dribbble .link-to:after {
-        background: #ea4c89; }
-    .links li .github .link-to {
-      background: #000000; }
-      .links li .github .link-to:after {
-        background: #000000; }
-    .links li .linkedin .link-to {
-      background: #4875B4; }
-      .links li .linkedin .link-to:after {
-        background: #4875B4; }
+    .links li .twitter .link-to, .links li .pinterest .link-to, .links li .dribbble .link-to, .links li .github .link-to, .links li .linkedin .link-to {
+      background: #494949; }
+      .links li .twitter .link-to:after, .links li .pinterest .link-to:after, .links li .dribbble .link-to:after, .links li .github .link-to:after, .links li .linkedin .link-to:after {
+        background: #494949; }
 
 @media screen and (max-width: 40em) {
   .links li {
@@ -487,35 +461,6 @@ a {
   width: 2.5em;
   height: 2.5em; }
 
-.icon-tools {
-  fill: #555;
-  margin: 30px auto;
-  margin: 1.875em auto;
-  display: block;
-  text-align: center;
-  width: 2em;
-  height: 2em; }
-
-.icon-feather {
-  width: 25px;
-  width: 1.5625em;
-  height: 25px;
-  height: 1.5625em;
-  right: 45px;
-  right: 2.8125em;
-  fill: rgba(255, 255, 255, 0.35);
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
-
-@media screen and (min-width: 40em) {
-  .icon-feather {
-    width: 30px;
-    width: 1.875em;
-    height: 30px;
-    height: 1.875em; } }
 .icon-twitter, .icon-pinterest, .icon-dribbble, .icon-github, .icon-linkedin {
   fill: #494949; }
 
