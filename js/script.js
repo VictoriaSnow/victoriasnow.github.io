@@ -1,22 +1,3 @@
-/*
-function fader() {
-var r = $('.blurred'),
-wh = $(window).height(),
-dt = $(document).scrollTop(),
-elView, opacity;
-// Loop elements with class "blurred"
-r.each(function() {
-elView = wh - ($(this).offset().top - dt + 200);
-if (elView > 0) { // Top of DIV above bottom of window.
-opacity = 1 / (wh + $(this).height()) * elView * 2
-if (opacity < 1) // Bottom of DIV below top of window.
-$(this).css('opacity', opacity);
-}
-});
-}
-$(document).bind('scroll', fader);
-*/
-
 ! function(t, e, n, o) {
     t.fn.freeMason = function(n) {
         return n = t.extend({}, t.fn.freeMason.options, n), this.each(
@@ -125,15 +106,14 @@ function(t) {
         speed: "0.5s",
         maxCols: 3
     }), $(".rift").rift();
-
     var e = !1,
-        n = $(".cover"),
+        n = $(".photo, .name"),
         o = $(window);
     $(window).scroll(function() {
             e = !0
         }), window.setInterval(function() {
-            e && (1 - o.scrollTop() / 300 > -10 && n.css({
-                opacity: 1 - o.scrollTop() / 300
+            e && (1 - o.scrollTop() / 200 > -10 && n.css({
+                opacity: 1 - o.scrollTop() / 200
             }), e = !1)
         }, 50), /*
 $(".quotes li").removeClass("active").eq(0).addClass(
