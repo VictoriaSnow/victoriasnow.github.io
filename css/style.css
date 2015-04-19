@@ -72,7 +72,7 @@ body {
   overflow: hidden;
   display: block;
   background-position: center; }
-  .cover .regular, .cover .blurred {
+  .cover .regular {
     position: absolute;
     top: 0;
     left: 0;
@@ -85,12 +85,9 @@ body {
 .regular {
   opacity: 1; }
 
-.blurred {
-  opacity: 0; }
-
 .profile {
   height: 7em;
-  margin-top: 270px;
+  margin-top: 300px;
   margin-bottom: 0.2em; }
   .profile .avatar {
     top: -4em;
@@ -127,17 +124,17 @@ body {
   position: relative;
   margin: auto;
   max-width: 10em;
-  margin-top: 1em; }
+  margin-top: 0.7em; }
   .resume-button .resume {
     color: white;
     display: block;
-    background: #52bdca;
+    background: #d7cda5;
     text-align: center;
     padding: 0.4em 0;
     border-radius: 0.25em;
     font-weight: bold;
-    box-shadow: 0 0.15em 0 #37a5b2;
-    -webkit-box-shadow: 0 0.15em 0 #37a5b2;
+    box-shadow: 0 0.15em 0 #c6ba88;
+    -webkit-box-shadow: 0 0.15em 0 #c6ba88;
     -webkit-transition: background .3s linear;
     transition: background 0.3s linear; }
 
@@ -145,8 +142,8 @@ body {
   color: #000;
   font-family: "homemade apple";
   position: relative;
-  font-size: 1.5625em;
-  top: -2em; }
+  font-size: 1.6em;
+  top: -1.8em; }
   @media screen and (min-width: 20em) {
     .name {
       font-size: 1.75em;
