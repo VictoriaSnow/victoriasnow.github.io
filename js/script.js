@@ -106,14 +106,15 @@ function(t) {
         speed: "0.5s",
         maxCols: 3
     }), $(".rift").rift();
+
     var e = !1,
-        n = $(".photo, .name"),
+        n = $(".cover"),
         o = $(window);
     $(window).scroll(function() {
             e = !0
         }), window.setInterval(function() {
-            e && (1 - o.scrollTop() / 200 > -10 && n.css({
-                opacity: 1 - o.scrollTop() / 200
+            e && (1 - o.scrollTop() / 300 > -10 && n.css({
+                opacity: 1 - o.scrollTop() / 300
             }), e = !1)
         }, 50), /*
 $(".quotes li").removeClass("active").eq(0).addClass(

@@ -79,8 +79,8 @@ $pink: #ee478d;
 $blue: #00bcdd;
 $gray: #42393c;
 $green: #8dc73f;
-$white: #fff;
 
+$nice-gray: #494949;
 $light_gray: #e4e1e2;
 $light_pink: #fcdce4;
 $light_blue: #9edbed;
@@ -105,6 +105,7 @@ $black: #000;
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
   overflow: hidden;
   display: block;
   background-position: center;
@@ -129,16 +130,16 @@ $black: #000;
 }
 
 .profile {
-  height: auto;
-  margin-top: 300px;
+  height: 7em;
+  margin-top: 270px;
   margin-bottom: 0.2em;
   .avatar {
-    margin-top: -60px;
+    top: -4em;
     display: inline-block;
-    width: 120px;
-    height: 120px;
-    background-color: #fff;
-    border: 3px solid #fff;
+    width: 7em;
+    height: 7em;
+    background-color: $white;
+    border: 0.2em solid $white;
     z-index: 500;
     position: relative;
     border-radius: 100%;
@@ -157,8 +158,8 @@ $black: #000;
 }
 
 .avatar-large {
-  width: 120px;
-  height: 120px;
+  width: 7em;
+  height: 7em;
 }
 
 .avatar-image {
@@ -172,6 +173,7 @@ $black: #000;
   position: relative;
   margin: auto;
   max-width: 10em;
+  margin-top: 1em;
   .resume {
     color: white;
     display: block;
@@ -192,7 +194,7 @@ $black: #000;
   font-family: "homemade apple";
   position: relative;
   font-size: 1.5625em;
-  top: 0.3em;
+  top: -2em;
   @media screen and (min-width: 20em) {
     font-size: 1.75em;
     letter-spacing: 0.1875em;
@@ -390,12 +392,12 @@ a {
     position: absolute;
     bottom: 0;
     left: 0;
-    background: #494949;
+    background: $nice-gray;
   }
   h4 {
     color: #ddd;
     text-transform: uppercase;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.3125em;
     font-size: 1.25em;
     position: relative;
     top: 4em;
@@ -404,7 +406,7 @@ a {
 
 @media screen and (min-width: 26.25em) {
   .footer h4 {
-    letter-spacing: 0.625em;
+    letter-spacing: 0.6em;
   }
 }
 
@@ -429,7 +431,7 @@ a {
       width: 7.5em;
       font-size: 14px;
       font-size: 0.875em;
-      color: #fff;
+      color: $white;
       position: absolute;
       bottom: 10px;
       bottom: 0.625em;
@@ -473,9 +475,9 @@ a {
       transform: scale(1);
     }
     .twitter .link-to, .pinterest .link-to, .dribbble .link-to, .github .link-to, .linkedin .link-to {
-      background: #494949;
+      background: $nice-gray;
       &:after {
-        background: #494949;
+        background: $nice-gray;
       }
     }
   }
@@ -591,57 +593,6 @@ a {
 }
 
 .icon-twitter, .icon-pinterest, .icon-dribbble, .icon-github, .icon-linkedin {
-  fill: #494949;
+  fill: $nice-gray;
 }
 
-/* MODAL */
-
-#modal {
-  background: white;
-  padding: 20px 30px;
-  max-width: 400px;
-  margin: 40px auto;
-  position: relative;
-  h1 {
-    font-size: 25px;
-    font-size: 1.5625em;
-  }
-  a {
-    color: #28BC91;
-    font-weight: bold;
-  }
-}
-
-.mfp-zoom-in {
-  .zoom-anim-dialog {
-    opacity: 0;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-  }
-  &.mfp-ready .zoom-anim-dialog {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-  }
-  &.mfp-emoving .zoom-anim-dialog {
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  &.mfp-bg {
-    opacity: .001;
-    -webkit-transition: opacity .3s ease-out;
-    transition: opacity 0.3s ease-out;
-  }
-  &.mfp-ready.mfp-bg {
-    opacity: 0.8;
-  }
-  &.mfp-emoving.mfp-bg {
-    opacity: 0;
-  }
-}
