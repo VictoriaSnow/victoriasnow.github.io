@@ -368,7 +368,7 @@ a {
         border-radius: 100% 0 1px 0; }
     .links li:hover .link-to {
       bottom: 53px;
-      bottom: 3.3125em;
+      bottom: 3.8em;
       opacity: 1;
       -webkit-transform: scale(1);
       -ms-transform: scale(1);
@@ -382,11 +382,6 @@ a {
   .links li {
     margin: 0 15px;
     margin: 0 0.9375em; } }
-.colophon {
-  color: #999;
-  border-bottom: 0.125em solid #999;
-  letter-spacing: 0.125em; }
-
 .animated:hover {
   -webkit-animation: wobble .75s both;
   animation: wobble 0.75s both; }
