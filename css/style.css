@@ -165,7 +165,7 @@ body {
 .quotes {
   list-style: none;
   position: relative;
-  height: 2.5em;
+  height: 5em;
   margin: 3.125em 0 1.5625em; }
   .quotes li {
     position: absolute;
