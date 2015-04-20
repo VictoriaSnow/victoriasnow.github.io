@@ -166,7 +166,8 @@ body {
   list-style: none;
   position: relative;
   height: 5em;
-  margin: 3.125em 0 1.5625em; }
+  margin: 2em auto;
+  max-width: 500px; }
   .quotes li {
     position: absolute;
     top: 0;
