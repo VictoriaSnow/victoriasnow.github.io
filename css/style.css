@@ -287,7 +287,15 @@ a {
   .thumb, .rift {
     width: 400px;
     height: 300px; } }
-/* CONTACT */
+/* INFORMATION */
+.info {
+  margin: 1em auto;
+  max-width: 500px;
+  position: relative; }
+  .info p {
+    font-size: 1.5em;
+    text-align: center; }
+
 /* FOOTER */
 .footer {
   opacity: .9;
