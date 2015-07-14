@@ -36,7 +36,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  font-family: "proxima-nova", "europa", "adobe-garamond-pro", "ff-market-web", "freight-sans-pro", "helvetica neue", "helvetica", "arial", sans-serif;
+  font-family: "europa", "proxima-nova", "adobe-garamond-pro", "ff-market-web", "freight-text-pro", "helvetica neue", "helvetica", "arial", sans-serif;
   line-height: 1.5;
   color: #494949;
 }
@@ -115,6 +115,7 @@ p {
   min-height: 425px;
   height: 100%;
   overflow: hidden;
+  position: relative;
 }
 .pane-left {
   left: 0;
@@ -183,8 +184,9 @@ p {
   opacity: .48;
   margin: 18% 0 8% 0;
 }
-.pane-left-cover-content-quote p {
-  margin: 0 28%;
+.pane-left-cover-content-quote h3 {
+  margin: 0 20%;
+  font-size: 18px;
 }
 .pane-left-cover-content-portfolio:hover {
   background: #fff;
