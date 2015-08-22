@@ -36,9 +36,9 @@ html {
 body {
   width: 100%;
   height: 100%;
-  font-family: "europa", "proxima-nova", "adobe-garamond-pro", "ff-market-web", "freight-text-pro", "helvetica neue", "helvetica", "arial", sans-serif;
+  font-family: "minion pro", "avenir", "proxima-nova", "freight-text-pro", "helvetica neue", "helvetica", "arial", sans-serif;
   line-height: 1.5;
-  color: #494949;
+  color: rgba(0, 0, 0, .8);
 }
 h1 {
   font-size: 36px;
@@ -56,60 +56,59 @@ p {
   font-size: 14px;
   line-height: 1.5;
 }
-
-.transition-subtle {
-  -webkit-transition: linear 0.2s;
-  -moz-transition: linear 0.2s;
-  transition: linear 0.2s;
-}
-
-.transition-elastic {
-  -webkit-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s;
-  -moz-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s;
-  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s;
-}
-
-.transition-friction {
-  -webkit-transition: cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
-  -moz-transition: cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
-  transition: cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
-}
-
-.transition-whoosh {
-  -webkit-transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
-  -moz-transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
-  transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
-}
 .shadow-left {
   box-shadow: -3px 0 6px 0 rgba(74, 74, 74, 0.48);
 }
 .img-scaled {
   width: 100%;
 }
-
 .img-scaled-wh {
   width: 100%;
   height: 100%;
 }
-
 .img-scaled-h {
   height: 100%;
 }
 .button-white {
+  font-family: "avenir", "proxima-nova", sans-serif;
   color: #fff;
-  padding: 12px 36px;
+  background-color: transparent;
+  padding: 15px 40px;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
-  border: 2px solid #fff;
+  border: 3px solid #fff;
   border-radius: 2px;
   letter-spacing: 1px;
   outline: none;
-  display: inline-block;
   cursor: pointer;
   transition: linear 0.3s;
 }
-
+.button-white:hover {
+  background: #fff;
+  color: #000;
+  transition: linear 0.6s;
+}
+.button-black {
+  font-family: "avenir", "proxima-nova", sans-serif;
+  color: #000;
+  background-color: transparent;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  border: 3px solid #000;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+  transition: linear 0.3s;
+}
+.button-black:hover {
+  background: #000;
+  color: #fff;
+  transition: linear 0.6s;
+}
 /* HOME */
 #container {
   min-height: 425px;
@@ -129,6 +128,7 @@ p {
 .pane-left-cover {
   width: 100%;
   height: 100%;
+  overflow: scroll;
 }
 .pane-left-cover-background {
   width: 100%;
@@ -158,40 +158,32 @@ p {
 .pane-left-cover-content {
   position: absolute;
   text-align: center;
-  top: calc(12%);
+  top: calc(10%);
   width: 100%;
 }
 .pane-left-cover-content-header {
-  color: #fff;
+  color: rgba(255, 255, 255, .48);
 }
 .pane-left-cover-content-header h1 {
-  font-family: "ff-market-web";
   font-size: 72px;
   font-weight: 700;
-  margin: 0 0 0 -24%;
+  margin: 0 0 0 -30%;
 }
 .pane-left-cover-content-header h2 {
-  font-family: "ff-market-web";
   font-size: 60px;
   font-weight: 700;
 }
 .pane-left-cover-content-quote {
-  font-family: "adobe-garamond-pro",sans-serif;
   font-style: italic;
   font-weight: 400;
   text-align: center;
   color: #fff;
-  opacity: .48;
+  opacity: .72;
   margin: 18% 0 8% 0;
 }
 .pane-left-cover-content-quote h3 {
-  margin: 0 20%;
-  font-size: 18px;
-}
-.pane-left-cover-content-portfolio:hover {
-  background: #fff;
-  color: #000;
-  transition: linear 0.6s;
+  margin: 0 25%;
+  font-weight: 400;
 }
 .pane-left-cover-content-links {
   list-style: none;
@@ -219,11 +211,30 @@ p {
   width: 50%;
   z-index: 10;
   background-color: #fff;
-  box-shadow: -3px 0 6px 0 rgba(74, 74, 74, 0.48);
+  box-shadow: -4px 0 8px 0 rgba(74, 74, 74, 0.48);
+  overflow: scroll;
+}
+.pane-right-content {
+  width: 70%;
+  height: 100%;
+  position: relative;
+  top: calc(10%);
+  margin: auto;
+}
+.pane-right-content-header {
+  position: relative;
+}
+.pane-right-content-header h1 {
+  font-family: "avenir", "proxima-nova", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.pane-right-content-about {
+  margin: 10% 0;
 }
 .logo {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   width: 6em;
   height: 6em;
