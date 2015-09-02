@@ -86,7 +86,7 @@ a {
 	font-weight: 700;
 	text-transform: uppercase;
 	font-style: normal;
-	background-color: #ffffff;
+	background-color: transparent;
 	letter-spacing: 2px;
 }
 
@@ -168,7 +168,7 @@ a {
 	font-family: "bodoni urw";
 	font-size: 36px;
 	letter-spacing: 5px;
-	margin: 20px 0;
+	margin: 60px 0 20px 0;
 }
 
 .main__resume {
