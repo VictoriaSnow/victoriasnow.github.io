@@ -8,4 +8,8 @@ $(document).ready(function() {
 		$('.work').hide();
 		$('.page').removeClass('noscroll');
 	})
+	$('.main__close').click(function() {
+		$('.main').hide();
+		$('.page').removeClass('noscroll');
+	})
 })
