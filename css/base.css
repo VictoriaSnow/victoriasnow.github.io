@@ -132,7 +132,7 @@ a {
 }
 
 .logo--light {
-	background-image: url(../img/logo.png);
+	background-image: url(../img/logo--light.png);
 }
 
 /* 36, 30, 24, 21, 18, 16, 14, 13, 12 */
@@ -211,7 +211,7 @@ em {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	z-index: 10;
+	z-index: 11;
 	top: 0;
 	text-align: center;
 }
@@ -251,6 +251,8 @@ em {
 	background-color: transparent;
 	padding: 40px 0 10px 0;
 	width: 100%;
+	position: fixed;
+	z-index: 10;
 }
 
 .nav--dark {
@@ -286,7 +288,7 @@ em {
 	width: calc(50% - 120px);
 	margin: 0 40px;
 	position: relative;
-	top: calc(50% - 270px);
+	top: calc(50% - 180px);
 }
 
 .intro__title {
@@ -344,7 +346,7 @@ em {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	z-index: 10;
+	z-index: 11;
 	top: 0;
 	text-align: center;
 	overflow-y: scroll;
@@ -443,7 +445,7 @@ em {
 }
 
 .footer {
-	background-color: ##ffffff;
+	background-color: #ffffff;
 	padding: 10px 0;
 	text-align: center;
 	color: #D79D9C;
@@ -452,6 +454,49 @@ em {
 	font-weight: 700;
 	letter-spacing: 3px;
 	border-top: 1px solid rgba(41, 41, 41, 0.1);
+	z-index: 10;
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: scroll;
+}
+
+.hero__cover {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+}
+
+.hero__photo {
+	height: 100%;
+}
+
+.hero__info {
+	text-align: left;
+	width: calc(75%);
+	margin: 0 40px;
+	position: relative;
+	top: calc(50% - 180px);
+}
+
+.hero__name {
+	color: #ffffff;
+	font-family: "bodoni urw";
+	font-size: 60px;
+}
+
+.content--light {
+	color: rgba(255, 255, 255, 0.8);
+	font-family: "raleway";
+	font-weight: 300;
+}
+
+.hero__link {
+	font-weight: 700;
+	color: #ffffff;
 }
 
 
