@@ -27,19 +27,19 @@
 		ga('send', 'pageview');
 	</script>
 </head>
-<body>
+<body class="page page--home">
 	<div class="main">
 		<div class="main__overlay"></div>
 		<div class="main__container">
-			<div class="logo logo--dark main__logo"></div>
+			<div class="main__logo logo logo--dark"></div>
 			<div class="main__msg">the new portfolio is coming soon.</div>
-			<button class="button button--large button--light main__resume transition--friction"><a href="doc/resume.pdf">CHECK OUT MY RESUME</a></button>	
+			<button class="main__resume button button--large button--light transition--friction"><a href="doc/resume.pdf">CHECK OUT MY RESUME</a></button>	
 		</div>
 	</div>
 	<nav class="nav nav--dark clearfix">
-		<a class="logo logo--dark nav__logo" href="/"></a>
+		<a class="nav__logo logo logo--dark" href="/"></a>
 		<div class="nav__menu">
-			<div class="nav__item"><a href="/about">ABOUT</a></div>
+			<div class="nav__item nav__about"><a href="/about">ABOUT</a></div>
 			<div class="nav__item nav__work">WORK</div>
 			<div class="nav__item nav__resume"><a href="doc/resume.pdf">RESUME</a></div>
 			<div class="nav__item nav__contact">CONTACT</div>
@@ -49,19 +49,19 @@
 		<div class="intro__subtitle">• THE PORTFOLIO OF VICTORIA BIAN</div>
 		<div class="intro__title">VICTORIA DESIGNS</div>
 		<div class="intro__description">Hi, I'm Victoria Bian, a 20-yr old UX designer currently studying Cognitive Science and Design at UC Berkeley. I am passionate about new technologies, products and ideas. I love playing around with layouts and colors to create simple and intuitive interfaces.</div>
-		<button class="intro__chat button button--large button--dark">LET'S CHAT</button><button class="intro__more button button--large button--light"><a href="/about">MORE ABOUT ME</a></button>
+		<button class="intro__chat button button--large button--dark">LET'S CHAT</button><button class="intro__more button button--large button--light transition--friction"><a href="/about">MORE ABOUT ME</a></button>
 	</section>
 	<section class="cover cover--rose">
 		<div class="cover__overlay"></div>
 		<div class="cover__photo">
-			<img class="img--wh cover__thumbnail" src="img/cover.jpeg">
+			<img class="img--wh" src="img/cover.jpeg">
 		</div>
 	</section>
 	<section class="work">
 		<div class="work__overlay"></div>
 		<ul class="work__menu">
 			<li class="work__header">FEATURED</li>
-			<li class="work__item">GRADESCOPE</li>
+			<li class="work__item"><a href="/gradescope/">GRADESCOPE</a></li>
 			<li class="work__item">CHILL</li>
 			<li class="work__item">ABOVEGEM</li>
 			<li class="work__item">YELP REDESIGN</li>
@@ -70,7 +70,7 @@
 			<li class="work__item">COURSERA REDESIGN</li>
 			<li class="work__item">HUMANS OF BERKELEY</li>
 		</ul>
-		<div class="icon icon--close work__close">
+		<div class="work__close icon icon--close">
 			<img class="img--wh" src="img/close.svg">
 		</div>
 	</section>

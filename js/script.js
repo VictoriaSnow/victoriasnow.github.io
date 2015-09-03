@@ -1,11 +1,11 @@
 $(document).ready(function() {
 	$('.nav__work').click(function() {
+		$('.page').addClass('noscroll');
+		$('.page').addClass('noscroll');
 		$('.work').show();
 	})
 	$('.work__close').click(function() {
 		$('.work').hide();
-	})
-	$('.main__go').click(function() {
-		$('.main').hide();
+		$('.page').removeClass('noscroll');
 	})
 })

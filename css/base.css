@@ -7,6 +7,7 @@ html {
 body {
 	height: 100%;
 	font-family: "raleway", "freight-text-pro", "helvetica neue", "helvetica", "arial", sans-serif;
+	font-style: normal;
 	line-height: 1.5;
 	position: relative;
 	color: #292929;
@@ -134,6 +135,76 @@ a {
 	background-image: url(../img/logo.png);
 }
 
+/* 36, 30, 24, 21, 18, 16, 14, 13, 12 */
+
+h2 {
+	font-size: 60px;
+	font-weight: 700;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	line-height: 1;
+	color: rgba(41, 41, 41, 0.8);
+}
+
+h3 {
+	font-size: 36px;
+	font-weight: 700;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	line-height: 1.2;
+	color: rgba(41, 41, 41, 0.8);
+}
+
+h4 {
+	font-size: 32px;
+	font-weight: 300;
+	margin-top: 40px;
+	margin-bottom: 5px;
+	line-height: 1.2;
+	color: rgba(41, 41, 41, 0.4);
+}
+
+p {
+	font-size: 22px;
+	line-height: 1.5;
+	font-weight: 400;
+	margin-bottom: 30px;
+	color: rgba(41, 41, 41, 0.8);
+	font-family: "minion pro";
+}
+
+hr {
+	display: block;
+	box-sizing: content-box;
+	height: 0;
+	width: 100px;
+	margin: 51px auto 41px auto;
+	border: 0;
+	border-top: 1px solid rgba(41, 41, 41, 0.10);
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: #292929;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #D79D9C;
+	outline: none;
+}
+
+.noscroll {
+	overflow: hidden;
+}
+
 .main {
 	display: block;
 	position: absolute;
@@ -141,7 +212,7 @@ a {
 	height: 100%;
 	z-index: 10;
 	top: 0;
-	overflow: scroll;
+	text-align: center;
 }
 
 .main__overlay {
@@ -154,9 +225,9 @@ a {
 
 .main__container {
 	position: relative;
-	text-align: center;
-	margin: 60px 0;
+	margin: 60px auto;
 	top: calc(50% - 200px);
+	display: inline-block;
 }
 
 .main__logo {
@@ -266,10 +337,6 @@ a {
 	overflow: hidden;
 }
 
-.cover__thumbnail {
-
-}
-
 .work {
 	display: none;
 	position: absolute;
@@ -277,7 +344,8 @@ a {
 	height: 100%;
 	z-index: 10;
 	top: 0;
-	overflow: scroll;
+	text-align: center;
+	overflow-y: scroll;
 }
 
 .work__overlay {
@@ -290,8 +358,10 @@ a {
 
 .work__menu {
 	position: relative;
-	text-align: center;
-	margin: 60px 0;
+	margin: 60px auto;
+	list-style: none;
+	display: inline-block;
+	margin-left: 10px;
 }
 
 .work__header {
@@ -307,6 +377,7 @@ a {
 	font-family: "bodoni urw";
 	letter-spacing: 1px;
 	margin: 50px 0;
+	cursor: pointer;
 }
 
 .icon {
@@ -322,9 +393,63 @@ a {
 	height: 30px;
 }
 
+.project {
+    position: relative;
+    width: 100%;
+    padding: 40px 0;
+}
 
+.project__info {
+	float: right;
+	text-align: right;
+	margin: 0 40px 40px auto;
+}
 
+.project__title {
+	font-family: "bodoni urw";
+	font-size: 96px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 1.0;
+}
 
+.project__subtitle {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 2.0;
+	letter-spacing: 3px;
+	color: rgba(41, 41, 41, 0.4);
+}
+
+.project__description {
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(41, 41, 41, 0.7);
+	line-height: 2.0;
+}
+
+.project__content {
+	display: block;
+	position: relative;
+	width: 720px;
+	height: 100%;
+	word-wrap: break-word;
+	visibility: visible;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+
+.footer {
+	background-color: ##ffffff;
+	padding: 10px 0;
+	text-align: center;
+	color: #D79D9C;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	border-top: 1px solid rgba(41, 41, 41, 0.1);
+}
 
 
 
