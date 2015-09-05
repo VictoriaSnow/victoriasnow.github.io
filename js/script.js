@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('body').show("fade", 1000);
+	// $('body').show("fade", 5000);
 	$('.nav__work').click(function() {
 		$('body').addClass('noscroll');
 		$('.work').show("fade", 500);
