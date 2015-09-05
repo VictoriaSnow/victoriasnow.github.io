@@ -20,13 +20,15 @@
 <body class="page page--about">
 	<nav class="nav nav--light clearfix">
 		<a class="nav__logo logo logo--light" href="/"></a>
-		<div class="nav__menu">
-			<div class="nav__item nav__about"><a href="../about">ABOUT</a></div>
-			<div class="nav__item nav__work">WORK</div>
-			<div class="nav__item nav__resume"><a href="../doc/resume.pdf">RESUME</a></div>
-			<div class="nav__item nav__contact">CONTACT</div>
-		</div>
+		<ul class="nav__menu">
+			<li class="nav__item nav__about"><a href="../about">ABOUT</a></li>
+			<li class="nav__item nav__work">WORK</li>
+			<li class="nav__item nav__resume"><a href="../doc/resume.pdf">RESUME</a></li>
+			<li class="nav__item nav__contact"><a href="mailto:hello@victoriabian.com">CONTACT</a></li>
+		</ul>
 	</nav>
+
+
 	<section class="hero">
 		<div class="hero__cover">
 			<div class="hero__overlay cover__overlay"></div>
@@ -42,20 +44,22 @@
 			</div>
 		</div>
 	</section>
+
+
 	<section class="work">
-		<div class="work__overlay"></div>
-		<ul class="work__menu">
-			<li class="work__header">FEATURED</li>
-			<li class="work__item"><a href="../gradescope">GRADESCOPE</a></li>
-			<li class="work__item">CHILL</li>
-			<li class="work__item">ABOVEGEM</li>
-			<li class="work__item">YELP REDESIGN</li>
-			<li class="work__header">OTHER PROJECTS</li>
-			<li class="work__item">BERKELEY INNOVATION</li>
-			<li class="work__item">HUMANS OF BERKELEY</li>
-			<li class="work__item">COURSERA REDESIGN</li>
-			<li class="work__item">PORTFOLIO DEVELOPMENT</li>
-		</ul>
+		<nav class="work__content">
+			<ul class="work__menu">
+				<li class="work__label">FEATURED</li>
+				<li class="work__item"><a href="/gradescope">GRADESCOPE</a></li>
+				<li class="work__item"><a href="/chill">CHILL</a></li>
+				<li class="work__item"><a href="/abovegem">ABOVEGEM</a></li>
+				<li class="work__item"><a href="/yelp">YELP REDESIGN</a></li>
+				<li class="work__label">OTHER PROJECTS</li>
+				<li class="work__item"><a href="/bi">BERKELEY INNOVATION</a></li>
+				<li class="work__item"><a href="/coursera">COURSERA REDESIGN</a></li>
+				<li class="work__item"><a href="/hofb">HUMANS OF BERKELEY</a></li>
+			</ul>
+		</nav>
 		<div class="work__close icon icon--close">
 			<img class="img--wh" src="../img/close.svg">
 		</div>
