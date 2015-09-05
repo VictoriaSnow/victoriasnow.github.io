@@ -5,7 +5,7 @@ html {
 }
 
 body {
-/*	display: none;*/
+	display: none;
 	position: relative;
 	height: 100%;
 	font-family: "raleway", "freight-text-pro", "helvetica neue", "helvetica", "arial", sans-serif;
@@ -358,11 +358,11 @@ em {
 }
 
 .intro__description {
-	font-size: 18px;
+	font-size: 16px;
 	color: rgba(41, 41, 41, 0.8);
 	line-height: 2.0;
 	margin-bottom: 40px;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 .cover {
