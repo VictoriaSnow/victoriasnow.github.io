@@ -12,7 +12,7 @@ body {
 	font-style: normal;
 	line-height: 1.5;
 	font-size: 18px;
-	color: #292929;
+	color: rgba(41, 41, 41, 0.8);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -119,15 +119,21 @@ a {
 	border: 0;
 }
 
+.button--dark:hover {
+	background: #a9a9a9;
+	color: #ffffff;
+	border: 0;
+}
+
 .button--light {
 	color: #292929;
 	border: 2px solid #292929;
 }
 
-/*.button--light:hover {
-	color: #ffffff;
-	background: #292929;
-}*/
+.button--light:hover {
+	color: #a9a9a9;
+	border: 2px solid #a9a9a9;
+}
 
 .button--rose {
 	background: #D79D9C;
@@ -205,6 +211,19 @@ strong {
 
 em {
 	font-style: italic;
+}
+
+ol {
+	padding-left: 30px;
+	margin-bottom: 30px;
+    list-style-type: decimal;
+}
+
+li {
+	font-size: 18px;
+	line-height: 32px;
+	font-weight: 400;
+	margin-bottom: 15px;
 }
 
 /*::-webkit-scrollbar {
@@ -301,6 +320,7 @@ em {
 .nav--dark {
 	color: #292929;
 	box-shadow: 0 0 1px rgba(41, 41, 41, 0.2);
+	background: rgba(255, 255, 255, 0.9);
 }
 
 .nav--light {
@@ -311,6 +331,7 @@ em {
 .nav--noscroll {
 	box-shadow: none;
 	padding: 40px 0 10px 0;
+	background: transparent;
 }
 
 .nav__logo {
@@ -320,18 +341,26 @@ em {
 
 .nav__menu {
 	float: left;
-	list-style: none;
 	display: inline-block;
 }
 
 .nav__item {
 	float: left;
-	margin-left: 30px;
-	font-size: 14px;
-	font-weight: 800;
-	letter-spacing: 2px;
-	line-height: 40px;
-	cursor: pointer;
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 40px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.nav__item:hover {
+	color: #a9a9a9;
+	-webkit-transition:linear .2s;
+	-moz-transition:linear .2s;
+	-o-transition:linear .2s;
+	transition:linear .2s;
 }
 
 #left {
@@ -349,6 +378,7 @@ em {
 .intro__title {
 	font-family: "bodoni urw";
 	font-size: 48px;
+    color: #292929;
 	margin: 20px 0 10px;
 	line-height: 60px;
 	letter-spacing: 1px;
@@ -379,6 +409,12 @@ em {
 
 .cover--rose {
 
+}
+
+.cover--full {
+	width: 100%;
+	height: 100%;
+	position: fixed;
 }
 
 .cover__overlay {
@@ -449,6 +485,14 @@ em {
 	overflow: hidden;
 }
 
+.work__close {
+	opacity: 0.4;
+}
+
+.work__close:hover {
+	opacity: 1.0;
+}
+
 .work__content {
 	overflow: scroll;
 }
@@ -456,7 +500,6 @@ em {
 .work__menu {
 	position: relative;
 	margin: 60px auto 30px auto;
-	list-style: none;
 	display: inline-block;
 }
 
@@ -466,20 +509,31 @@ em {
 	font-weight: 800;
 	letter-spacing: 10px;
 	margin: 20px 0;
+	line-height: 1.5;
 }
 
 .work__item {
 	font-size: 48px;
 	font-family: "bodoni urw";
+    color: #292929;
 	letter-spacing: 1px;
 	margin: 50px 0;
 	cursor: pointer;
+	line-height: 1.5;
+	-webkit-transition:linear .2s;
+	-moz-transition:linear .2s;
+	-o-transition:linear .2s;
+	transition:linear .2s;
+}
+
+.work__item:hover {
+	color: #a9a9a9;
 }
 
 .project {
     position: relative;
     width: 100%;
-    padding: 130px 0;
+    padding-top: 120px;
 }
 
 .project__info {
@@ -493,6 +547,7 @@ em {
 	font-family: "bodoni urw";
 	font-size: 96px;
 	font-weight: 400;
+    color: #292929;
 	letter-spacing: 1px;
 	line-height: 1.0;
 }
@@ -514,7 +569,9 @@ em {
 }
 
 .project__cover {
-    margin: 30px 0px;
+	margin-bottom: 30px;
+    display: inline-block;
+    height: 450px;
 }
 
 .project__content {
@@ -529,16 +586,91 @@ em {
 }
 
 .project__screenshot {
-	margin-bottom: 30px;
-	border: 1px solid rgba(41, 41, 41, 0.1);
+    margin: 0 auto 30px auto;
+/*    border: 1px solid rgba(41, 41, 41, 0.1);*/
+    display: block;
+}
+
+.project__footer {
+    height: 150px;
+    padding: 30px 0;
+    border-top: 1px solid rgba(41, 41, 41, 0.1);
+}
+
+.project__previous {
+    display: inline-block;
+    float: left;
+    margin-left: 40px;
+    text-align: left;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    z-index: 11;
+}
+
+.project__previous:hover {
+	opacity: 1.0;
+}
+
+.project__next {
+    display: inline-block;
+    float: right;
+    margin-right: 40px;
+    text-align: right;
+    opacity: 0.4;
+    position: absolute;
+    right: 0;
+    z-index: 11;
+}
+
+.project__next:hover {
+	opacity: 1.0;
+}
+
+.project__current {
+	text-align: center;
+    font-family: "bodoni urw";
+    color: #292929;
+    font-size: 60px;
+    letter-spacing: 1px;
+    width: 720px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+.project__arrow {
+	height: 28px;
+	display: inline-block;
+}
+
+.project__item {
+	font-size: 24px;
+	font-family: "bodoni urw";
+	color: #292929;
+	letter-spacing: 1px;
+}
+
+.project__navigate {
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 2.0;
+	letter-spacing: 2px;
+	color: rgba(41, 41, 41, 0.4);
 }
 
 .footer {
+	position: relative;
 	background: #ffffff;
 	padding: 10px 0;
 	text-align: center;
 	border-top: 1px solid rgba(41, 41, 41, 0.1);
 	z-index: 10;
+}
+
+.footer--light {
+	background: transparent;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer__msg {
@@ -550,10 +682,10 @@ em {
 }
 
 .hero {
-    width: 100%;
-    height: 100%;
+    width: 720px;
     position: relative;
-    overflow: scroll;
+    padding-top: 120px;
+    height: calc(100% - 37px);
 }
 
 .hero__cover {
@@ -568,10 +700,9 @@ em {
 
 .hero__info {
 	text-align: left;
-	width: calc(75%);
 	margin: 0 40px;
 	position: relative;
-	top: calc(50% - 180px);
+	height: 100%;
 }
 
 .hero__name {
@@ -580,10 +711,12 @@ em {
 	font-size: 60px;
 }
 
-.content--light {
+.content--light  {
 	color: rgba(255, 255, 255, 0.8);
-	font-family: "raleway";
-	font-weight: 400;
+    font-family: "raleway";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
 }
 
 .hero__link {
@@ -591,6 +724,38 @@ em {
 	color: #ffffff;
 }
 
+.grid {
+	width: 1024px;
+	position: relative;
+	margin-bottom: 60px;
+}
 
+.grid__panel {
+    position: relative;
+    /* float: left; */:;
+    margin: 0 40px;
+    height: 100%;
+}
 
+.grid__item {
+    text-align: left;
+    margin: 30px 40px 0 0;
+    display: inline-block;
+    position: relative;
+}
+
+.grid__caption {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.grid__nutshell {
+    font-size: 36px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+}
 
