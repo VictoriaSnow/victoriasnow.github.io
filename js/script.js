@@ -1,22 +1,17 @@
 var carouselIndex = 1;
 var carouselSlide = function() {
 	var carouselCurrent = $('.carousel__item:nth-child(' + carouselIndex + ')');
-	// var sliderCurrent = $('.slider__item:nth-child(' + carouselIndex + ')');
 	if (carouselIndex == 8) {
 		var carouselNext = $('.carousel__item:nth-child(1)');
-		// var sliderNext = $('.slider__item:nth-child(1)');
 		carouselIndex = 1;
 	} else {
 		var carouselNext = $('.carousel__item:nth-child(' + (carouselIndex + 1) + ')');
-		// var sliderNext = $('.slider__item:nth-child(' + (carouselIndex + 1) + ')');
 		carouselIndex++;
 	}
 	carouselNext.removeClass('carousel--inactive');
 	setTimeout(function() {
 		carouselCurrent.addClass('carousel--hidden');
-		// sliderCurrent.removeClass('slider--active');
 		carouselNext.addClass('carousel--active');
-		// sliderNext.addClass('slider--active');
 		setTimeout(function() {
 			carouselCurrent.addClass('carousel--inactive');
 			setTimeout(function() {
@@ -27,6 +22,7 @@ var carouselSlide = function() {
 }
 
 $(document).ready(function() {
+
 	setInterval(function() {
 		carouselSlide();
 	}, 4000);
@@ -35,18 +31,18 @@ $(document).ready(function() {
 		$('body').addClass('noscroll');
 		$('.work').show('fade', 500);
 		$('.work__menu').addClass('work--active');
-	})
+	});
 
 	$('.work__close').click(function() {
 		$('.work__menu').removeClass('work--active');
 		$('.work').hide('fade', 500);
 		$('body').removeClass('noscroll');
-	})
+	});
 
 	$('.main__close').click(function() {
 		$('.main').hide('fade', 500);
 		$('.page').removeClass('noscroll');
-	})
+	});
 
 	if ($('body').hasClass('pace-done')) {
 		console.log('pace done');
@@ -54,7 +50,7 @@ $(document).ready(function() {
 		$('.intro__content').addClass('intro--active');
 	}
 
-	if ($('.nav').hasClass('nav--dark')) {
+	if (!$('.nav').hasClass('nav--noscroll')) {
 		var breakpoint = 960;
 		if ($(window).width() > breakpoint) {
 			$(window).scroll(function() {
@@ -77,15 +73,16 @@ $(document).ready(function() {
 					}
 				} 
 				this.previousTop = currentTop;
-			})
+			});
 		}
 	}
-})
+});
 
 $(window).load(function() {
     Pace.on('done', function() {
     	var contentReady = function() {
 			$('.nav--preload').show('fade', 1500);
+			$('.chat--preload').show('fade', 1500);
 			$('.footer--preload').show('fade', 1500);
 			$('.intro').addClass('intro--ready');
 			$('.intro__content').addClass('intro--active');

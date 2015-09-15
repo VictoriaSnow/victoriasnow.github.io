@@ -330,7 +330,8 @@ li {
 	box-shadow: none;
 	padding: 40px 0 10px 0;
 	background: transparent;
-	position: fixed;
+	position: relative;
+	width: 600px;
 }
 
 .nav__logo {
@@ -365,12 +366,14 @@ li {
 }
 
 .intro {
-	position: fixed;
+	position: relative;
 	width: 100%;
-    height: 100%;
-    left: 0;
-    background: #ffffff;
+	height: 100%;
+	left: 0;
+	background: #ffffff;
 	z-index: 9;
+	float: left;
+	overflow: hidden;
 }
 
 .intro__content {
@@ -378,7 +381,7 @@ li {
 	max-width: 520px;
 	margin: 0 40px;
 	position: relative;
-	top: calc(50% - 145px);
+	top: calc(50% - 240px);
     opacity: 0;
 	-moz-transform: translate3d(-72px, 0, 0);
     -ms-transform: translate3d(-72px, 0, 0);
@@ -450,6 +453,7 @@ li {
 	margin-left: 600px;
 	height: 100%;
 	overflow: hidden;
+	position: relative;
 }
 
 .carousel__container {
@@ -561,7 +565,7 @@ li {
 	text-align: center;
 	margin: auto;
 	position: absolute;
-	top: calc(50% - 140px);
+	top: calc(50% - 120px);
 	right: calc(50% - 300px);
 	color: #ffffff;
 	z-index: 10;
@@ -955,6 +959,102 @@ li {
 .hero__link {
 	font-weight: 800;
 	color: #ffffff;
+}
+
+@media all and (max-width: 1024px) {
+	.carousel__question {
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+
+	.carousel__answer {
+		font-size: 36px;
+		letter-spacing: 2px;
+	}
+
+	.carousel__upperline {
+		width: 80px;
+		height: 2px;
+		margin-bottom: 10px;
+		border-bottom: 3px solid #ffffff;
+	}
+}
+
+@media all and (max-width: 960px) {
+
+	.intro {
+		float: none;
+	}
+
+	.carousel {
+		margin-left: 0;
+		height: 80%;
+	}
+
+	.carousel__caption {
+		top: calc(50% - 60px);
+	}
+}
+
+@media all and (max-width: 600px) {
+
+	.intro--ready {
+		width: 100%;
+	}
+
+	.intro__content {
+		margin: 0 20px;
+	}
+
+	.nav {
+	    padding: 10px 0 10px 0;
+	    box-shadow: 0 0 1px rgba(41, 41, 41, 0.2);
+	    background: rgba(255, 255, 255, 0.9);
+	}
+
+	.nav__logo {
+	    margin-left: 20px;
+	}
+
+	.intro__title {
+		font-size: 36px;
+		margin: 10px 0 5px;
+		line-height: 45px;
+	}
+
+	.intro__subtitle {
+		font-size: 12px;
+	}
+
+	.intro__chat {
+		display: none;
+	}
+	
+	.chat {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+		color: #ffffff;
+		font-size: 12px;
+		font-weight: 800;
+		height: 40px;
+		z-index: 10;
+		background: #292929;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	.chat--preload {
+		display: none;
+	}
+
+	.chat__new {
+		margin: auto;
+		width: 100%;
+		padding: 0;
+	}
+
 }
 
 
