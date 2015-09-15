@@ -540,27 +540,6 @@ li {
 	-o-transform: translateX(-100%);
 }
 
-/*.slider {
-    position: absolute;
-    right: 40px;
-    bottom: 40px;
-}
-
-.slider__item {
-    width: 35px;
-    height: 7px;
-    background: #ffffff;
-    margin: 0 0 0 5px;
-    display: inline-block;
-    float: left;
-    cursor: pointer;
-    opacity: 0.5;
-}
-
-.slider--active {
-	opacity: 1;
-}*/
-
 .carousel__caption {
 	text-align: center;
 	margin: auto;
@@ -961,7 +940,16 @@ li {
 	color: #ffffff;
 }
 
+.chat {
+	display: none;
+}
+/*
+.chat--preload {
+	display: none;
+}*/
+
 @media all and (max-width: 1024px) {
+
 	.carousel__question {
 		font-size: 18px;
 		margin-bottom: 5px;
@@ -1029,7 +1017,7 @@ li {
 	.intro__chat {
 		display: none;
 	}
-	
+
 	.chat {
 		position: absolute;
 		bottom: 0;
@@ -1043,10 +1031,6 @@ li {
 		background: #292929;
 		text-transform: uppercase;
 		letter-spacing: 2px;
-	}
-
-	.chat--preload {
-		display: none;
 	}
 
 	.chat__new {
