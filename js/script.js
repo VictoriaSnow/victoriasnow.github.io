@@ -23,10 +23,6 @@ var carouselSlide = function() {
 
 $(document).ready(function() {
 
-	setInterval(function() {
-		carouselSlide();
-	}, 4000);
-
 	$('.nav__work, .intro__more').click(function() {
 		$('body').addClass('noscroll');
 		$('.work').show('fade', 500);
@@ -97,6 +93,9 @@ $(window).load(function() {
 		} else {
 			contentReady();
 		}
+		setInterval(function() {
+			carouselSlide();
+		}, 4000);
     });
 });
 
