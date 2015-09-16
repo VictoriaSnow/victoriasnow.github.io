@@ -682,7 +682,6 @@ li {
 }
 
 .project {
-	opacity: 0;
     position: relative;
     width: 100%;
     padding-top: 120px;
@@ -691,10 +690,10 @@ li {
     -ms-transform: translate3d(0, 72px, 0);
     -webkit-transform: translate3d(0, 72px, 0);
     transform: translate3d(0, 72px, 0);
-    -moz-transition: -moz-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.8s;
-    -o-transition: -o-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.8s;
-    -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.8s;
-    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.8s;
+    -moz-transition: -moz-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.5s;
+    -o-transition: -o-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.5s;
+    -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.5s;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.5s;
     -moz-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);

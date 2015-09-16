@@ -81,11 +81,11 @@ $(document).ready(function() {
 $(window).load(function() {
     Pace.on('done', function() {
     	var contentReady = function() {
-			$('.nav--preload').show('fade', 1500);
-			$('.footer--preload').show('fade', 1500);
+			$('.nav--preload').show('fade', 1000);
+			$('.footer--preload').show('fade', 1000);
 			$('.intro').addClass('intro--ready');
 			if ($(window).width() < 960) {
-				$('.more').show('fade', 1500);	
+				$('.more').show('fade', 1000);	
 			}
 			$('.intro__content').addClass('intro--active');
 			$('.project').addClass('project--active');
