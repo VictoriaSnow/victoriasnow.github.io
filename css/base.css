@@ -395,6 +395,8 @@ li {
     -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -webkit-backface-visibility: hidden;
+   	backface-visibility: hidden;
 }
 
 .intro--ready {
@@ -603,6 +605,8 @@ li {
     -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -webkit-backface-visibility: hidden;
+   	backface-visibility: hidden;
 }
 
 .work--active {
@@ -695,6 +699,8 @@ li {
     -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -webkit-backface-visibility: hidden;
+   	backface-visibility: hidden;
 }
 
 .project--active {
@@ -1032,6 +1038,8 @@ li {
 	    -ms-transform: translate3d(0, 72px, 0);
 	    -webkit-transform: translate3d(0, 72px, 0);
 	    transform: translate3d(0, 72px, 0);
+	    -webkit-backface-visibility: hidden;
+	   	backface-visibility: hidden;
 	}
 
 	.intro--active {
