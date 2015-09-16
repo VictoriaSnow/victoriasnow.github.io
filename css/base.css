@@ -229,6 +229,7 @@ li {
 	line-height: 32px;
 	font-weight: 400;
 	margin-bottom: 15px;
+	color: rgba(41, 41, 41, 1);
 }
 
 .main {
@@ -772,6 +773,8 @@ li {
     margin: 0 auto 30px auto;
 /*    border: 1px solid rgba(41, 41, 41, 0.1);*/
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .project__footer {
@@ -999,6 +1002,21 @@ li {
 		margin-bottom: 15px;
 	}
 
+	li {
+		font-size: 16px;
+		line-height: 28px;
+	}
+
+	.nav {
+	    padding: 10px 0 10px 0;
+	    box-shadow: 0 0 1px rgba(41, 41, 41, 0.2);
+	    background: rgba(255, 255, 255, 0.9);
+	}
+
+	.nav__logo {
+	    margin-left: 20px;
+	}
+
 	.project__title {
 	    font-size: 72px;
 	}
@@ -1009,8 +1027,7 @@ li {
 	}
 
 	.project__info {
-		width: auto;
-    	margin: 0 40px 40px;
+    	margin: 0 30px 30px;
 	}
 
 	.project__subtitle {
@@ -1019,7 +1036,7 @@ li {
 
 	.project__content {
 	    width: auto;
-	    margin: 0 40px;
+	    margin: 0 20px;
 	}
 
 	.intro {
@@ -1117,6 +1134,26 @@ li {
 		height: 20px;
 	}
 
+	.project__item {
+	    font-size: 18px;
+	}
+
+	.project__navigate {
+	    font-size: 12px;
+	}
+
+	.project__previous {
+	    margin-left: 20px;
+	}
+
+	.project__next {
+	    margin-right: 20px;
+	}
+
+	.footer__msg {
+		display: none;
+	}
+
 }
 
 @media all and (max-width: 600px) {
@@ -1132,16 +1169,6 @@ li {
 
 	.carousel {
 		display: none;
-	}
-
-	.nav {
-	    padding: 10px 0 10px 0;
-	    box-shadow: 0 0 1px rgba(41, 41, 41, 0.2);
-	    background: rgba(255, 255, 255, 0.9);
-	}
-
-	.nav__logo {
-	    margin-left: 20px;
 	}
 
 	.intro__title {

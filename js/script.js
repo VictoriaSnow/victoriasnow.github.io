@@ -21,34 +21,12 @@ var carouselSlide = function() {
 	}, 0);
 }
 
-$(document).ready(function() {
-
-	$('.nav__work, .intro__more').click(function() {
-		$('body').addClass('noscroll');
-		$('.work').show('fade', 500);
-		$('.work__menu').addClass('work--active');
-	});
-
-	$('.work__close').click(function() {
-		$('.work__menu').removeClass('work--active');
-		$('.work').hide('fade', 500);
-		$('body').removeClass('noscroll');
-	});
-
-	$('.main__close').click(function() {
-		$('.main').hide('fade', 500);
-		$('.page').removeClass('noscroll');
-	});
-
-	if ($('body').hasClass('pace-done')) {
-		console.log('pace done');
-		$('.intro').addClass('intro--ready')
-		$('.intro__content').addClass('intro--active');
-	}
-
+var breakpoint = 960;
+var windowSize = $(window).width();
+var navAnimate = function() {
 	if (!$('.nav').hasClass('nav--noscroll')) {
-		var breakpoint = 960;
-		if ($(window).width() > breakpoint) {
+		console.log(windowSize);
+		if (windowSize > breakpoint) {
 			$(window).scroll(function() {
 				previousTop: 0;
 				var currentTop = $(window).scrollTop();
@@ -72,7 +50,7 @@ $(document).ready(function() {
 			});
 		}
 	}
-});
+}
 
 $(window).load(function() {
     Pace.on('done', function() {
@@ -99,14 +77,42 @@ $(window).load(function() {
     });
 });
 
+$(document).ready(function() {
+	navAnimate();
+	$('.nav__work, .intro__more').click(function() {
+		$('body').addClass('noscroll');
+		$('.work').show('fade', 500);
+		$('.work__menu').addClass('work--active');
+	});
+
+	$('.work__close').click(function() {
+		$('.work__menu').removeClass('work--active');
+		$('.work').hide('fade', 500);
+		$('body').removeClass('noscroll');
+	});
+
+	$('.main__close').click(function() {
+		$('.main').hide('fade', 500);
+		$('.page').removeClass('noscroll');
+	});
+
+	if ($('body').hasClass('pace-done')) {
+		console.log('pace done');
+		$('.intro').addClass('intro--ready')
+		$('.intro__content').addClass('intro--active');
+	}
+});
+
 $(window).resize(function() {
-	if ($(window).width() > 960) {
+	windowSize = $(window).width();
+	if (windowSize > breakpoint) {
 		$('.more').hide();
+		$('.nav').removeClass('nav--noscroll');
 	} else {
 		$('.more').show();
+		$('.nav').addClass('nav--noscroll');
 	}
-})
-
+});
 
 
 
