@@ -1090,6 +1090,33 @@ li {
 		width: 100%;
 		padding: 0;
 	}
+
+	.work__label {
+	    font-size: 14px;
+	    letter-spacing: 5px;
+	    margin: 15px 0;
+	}
+
+	.work__item {
+	    font-size: 36px;
+	    margin: 40px 0;
+	}
+
+	.work__menu {
+	    width: auto;
+	    margin: 30px 20px;
+	}
+
+	.work__close {
+	    top: 30px;
+	    right: 30px;
+	}
+
+	.icon--close {
+		width: 20px;
+		height: 20px;
+	}
+
 }
 
 @media all and (max-width: 600px) {
