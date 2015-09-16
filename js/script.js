@@ -82,11 +82,11 @@ $(window).load(function() {
     Pace.on('done', function() {
     	var contentReady = function() {
 			$('.nav--preload').show('fade', 1500);
-			if ($(window).width() <= 600) {
-				$('.chat').show('fade', 1500);
-			} 
 			$('.footer--preload').show('fade', 1500);
 			$('.intro').addClass('intro--ready');
+			if ($(window).width() < 960) {
+				$('.more').show('fade', 1500);	
+			}
 			$('.intro__content').addClass('intro--active');
 			$('.project').addClass('project--active');
 			$('.hero').addClass('hero--active');
@@ -101,10 +101,10 @@ $(window).load(function() {
 });
 
 $(window).resize(function() {
-	if ($(window).width() > 600) {
-		$('.chat').hide();
+	if ($(window).width() > 960) {
+		$('.more').hide();
 	} else {
-		$('.chat').show();
+		$('.more').show();
 	}
 })
 
