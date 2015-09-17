@@ -687,11 +687,33 @@ li {
     position: relative;
     width: 100%;
     padding-top: 120px;
-    opacity: 0;
-	-moz-transform: translate3d(0, 72px, 0);
+/*    opacity: 0;*/
+/*	-moz-transform: translate3d(0, 72px, 0);
     -ms-transform: translate3d(0, 72px, 0);
     -webkit-transform: translate3d(0, 72px, 0);
     transform: translate3d(0, 72px, 0);
+    -moz-transition: -moz-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.8s;
+    -o-transition: -o-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.8s;
+    -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.8s;
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.8s;
+    -moz-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -webkit-backface-visibility: hidden;
+   	backface-visibility: hidden;*/
+}
+
+.project__info {
+	float: right; 
+	text-align: right;
+	margin: 0 40px 40px auto;
+	max-width: 720px;
+    opacity: 0;
+	-moz-transform: translate3d(72px, 0, 0);
+    -ms-transform: translate3d(72px, 0, 0);
+    -webkit-transform: translate3d(72px, 0, 0);
+    transform: translate3d(72px, 0, 0);
     -moz-transition: -moz-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.8s;
     -o-transition: -o-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.8s;
     -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.8s;
@@ -706,10 +728,10 @@ li {
 
 .project--active {
 	opacity: 1;
- 	transform: translateY(0);
-	-webkit-transform: translateY(0);
-	-moz-transform: translateY(0);
-	-o-transform: translateY(0);
+ 	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-o-transform: translateX(0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
@@ -718,13 +740,6 @@ li {
     -o-transition-delay: 300ms;
     -webkit-transition-delay: 300ms;
     transition-delay: 300ms;
-}
-
-.project__info {
-	float: right; 
-	text-align: right;
-	margin: 0 40px 40px auto;
-	max-width: 720px;
 }
 
 .project__title {
@@ -754,12 +769,12 @@ li {
 }
 
 .project__cover {
+	display: none;
 	margin-bottom: 30px;
-    display: inline-block;
 }
 
 .project__content {
-	display: block;
+	display: none;
 	position: relative;
 	width: 720px;
 	height: 100%;
@@ -779,6 +794,7 @@ li {
 }
 
 .project__footer {
+	display: none;
     padding: 30px 0;
     /*    border-top: 1px solid rgba(41, 41, 41, 0.1);*/
     text-align: center;

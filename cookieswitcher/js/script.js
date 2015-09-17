@@ -85,7 +85,10 @@ $(document).ready(function() {
 				$('.more').show('fade', 1000);	
 			}
 			$('.intro__content').addClass('intro--active');
-			$('.project').addClass('project--active');
+			$('.project__info').addClass('project--active');
+			$('.project__cover').show('fade', 1000);
+			$('.project__content').show('fade', 1000);
+			$('.project__footer').show('fade', 1000);
 			$('.hero').addClass('hero--active');
 		};
 		$('.carousel--preload').show('fade', 1000);
