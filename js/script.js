@@ -24,10 +24,12 @@ var carouselSlide = function() {
 var breakpoint = 960;
 var windowSize = $(window).width();
 var navAnimate = function() {
-	if (!$('.nav').hasClass('nav--noscroll')) {
-		console.log(windowSize);
-		if (windowSize > breakpoint) {
-			$(window).scroll(function() {
+	console.log("nav animate");
+	if (!$('.nav').hasClass('nav--home')) {
+
+		$(window).scroll(function() {
+			if (windowSize > breakpoint) {
+		console.log("true");
 				previousTop: 0;
 				var currentTop = $(window).scrollTop();
 				if (currentTop < this.previousTop) {
@@ -47,8 +49,9 @@ var navAnimate = function() {
 					}
 				} 
 				this.previousTop = currentTop;
-			});
-		}
+			}
+		});
+		
 	}
 }
 
@@ -78,7 +81,12 @@ $(window).load(function() {
 });
 
 $(document).ready(function() {
+	if (windowSize < breakpoint) {
+		$('.nav').addClass('nav--mobile');
+	};
+
 	navAnimate();
+
 	$('.nav__work, .intro__more').click(function() {
 		$('body').addClass('noscroll');
 		$('.work').show('fade', 500);
@@ -107,10 +115,12 @@ $(window).resize(function() {
 	windowSize = $(window).width();
 	if (windowSize > breakpoint) {
 		$('.more').hide();
-		$('.nav').removeClass('nav--noscroll');
+			console.log("removing mobile");
+			$('.nav').removeClass('nav--mobile');
 	} else {
 		$('.more').show();
-		$('.nav').addClass('nav--noscroll');
+		$('.nav').addClass('nav--mobile');
+		console.log("mobile added");
 	}
 });
 

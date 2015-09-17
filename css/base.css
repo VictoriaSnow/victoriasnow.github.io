@@ -264,7 +264,7 @@ li {
 
 .main__msg {
 	color: #292929;
-	font-family: "bodoni-urw";
+	font-family: "bodoni-urw" "bodoni urw";
 	font-size: 36px;
 	letter-spacing: 5px;
 	margin: 60px 0 20px 0;
@@ -327,7 +327,7 @@ li {
 	box-shadow: 0 0 1px rgba(255, 255, 255, 0.6);
 }
 
-.nav--noscroll {
+.nav--home {
 	box-shadow: none;
 	padding: 40px 0 10px 0;
 	background: transparent;
@@ -425,7 +425,7 @@ li {
 }
 
 .intro__title {
-	font-family: "bodoni-urw";
+	font-family: "bodoni-urw" "bodoni urw";
 	font-size: 48px;
     color: #292929;
 	margin: 20px 0 10px;
@@ -670,7 +670,7 @@ li {
 
 .work__item {
 	font-size: 48px;
-	font-family: "bodoni-urw";
+	font-family: "bodoni-urw" "bodoni urw";
     color: #292929;
 	letter-spacing: 1px;
 	margin: 50px 0;
@@ -727,7 +727,7 @@ li {
 }
 
 .project__title {
-	font-family: "bodoni-urw";
+	font-family: "bodoni-urw" "bodoni urw";
 	font-size: 96px;
 	font-weight: 400;
     color: #292929;
@@ -815,7 +815,7 @@ li {
 
 .project__current {
 	text-align: center;
-    font-family: "bodoni-urw";
+    font-family: "bodoni-urw" "bodoni urw";
     color: #292929;
     font-size: 60px;
     letter-spacing: 1px;
@@ -832,7 +832,7 @@ li {
 
 .project__item {
 	font-size: 24px;
-	font-family: "bodoni-urw";
+	font-family: "bodoni-urw" "bodoni urw";
 	color: #292929;
 	letter-spacing: 1px;
 }
@@ -931,7 +931,7 @@ li {
 
 .hero__name {
 	color: #ffffff;
-	font-family: "bodoni-urw";
+	font-family: "bodoni-urw" "bodoni urw";
 	font-size: 60px;
 	letter-spacing: 1px;
 }
@@ -1007,12 +1007,6 @@ li {
 		line-height: 28px;
 	}
 
-	.nav {
-	    padding: 10px 0 10px 0;
-	    box-shadow: 0 0 1px rgba(41, 41, 41, 0.2);
-	    background: rgba(255, 255, 255, 0.9);
-	}
-
 	.nav__logo {
 	    margin-left: 20px;
 	}
@@ -1074,8 +1068,15 @@ li {
 	    transition-delay: 300ms;
 	}
 
-	.nav--noscroll {
+	.nav--home {
 		width: 100%;
+		padding: 10px 0 10px 0;
+	    box-shadow: 0 0 1px rgba(41, 41, 41, 0.2);
+	    background: rgba(255, 255, 255, 0.9);
+	}
+
+	.nav--mobile {
+
 	}
 
 	.carousel {
