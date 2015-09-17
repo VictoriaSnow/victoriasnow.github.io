@@ -57,6 +57,7 @@ var navAnimate = function() {
 }
 
 $(window).load(function() {
+
 	Pace.on('done', function() {
 		var contentReady = function() {
 			$('.nav--preload').show('fade', 1000);
