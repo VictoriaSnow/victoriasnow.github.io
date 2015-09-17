@@ -354,6 +354,7 @@ li {
     line-height: 40px;
     cursor: pointer;
     margin-bottom: 0;
+    color: #292929;
 }
 
 .nav__item:hover {
@@ -382,7 +383,7 @@ li {
 	max-width: 520px;
 	margin: 0 40px;
 	position: relative;
-	top: calc(50% - 240px);
+	top: calc(50% - 200px);
     opacity: 0;
 	-moz-transform: translate3d(-72px, 0, 0);
     -ms-transform: translate3d(-72px, 0, 0);
@@ -685,7 +686,7 @@ li {
 .project {
     position: relative;
     width: 100%;
-    padding-top: 120px;
+    top: 120px;
     opacity: 0;
 	-moz-transform: translate3d(0, 72px, 0);
     -ms-transform: translate3d(0, 72px, 0);
@@ -835,7 +836,7 @@ li {
 	line-height: 16px;
 	font-weight: 800;
 	letter-spacing: 2px;
-	color: #292929;
+	color: rgba(41, 41, 41, 0.8);
 }
 
 .footer--preload {
@@ -1131,13 +1132,15 @@ li {
 	    font-size: 12px;
 	}
 
-	.footer__msg {
+	.footer__links {
 		display: none;
 	}
 
-	.footer__links {
+	.footer__msg {
 		text-align: center;
 		margin: 0;
+		display: block;
+		position: relative;
 	}
 
 }
