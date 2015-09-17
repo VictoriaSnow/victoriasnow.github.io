@@ -26,10 +26,8 @@ var windowSize = $(window).width();
 var navAnimate = function() {
 	console.log("nav animate");
 	if (!$('.nav').hasClass('nav--home')) {
-
 		$(window).scroll(function() {
-			if (windowSize > breakpoint) {
-		console.log("true");
+			if ($(this).width() > breakpoint) {
 				previousTop: 0;
 				var currentTop = $(window).scrollTop();
 				if (currentTop < this.previousTop) {
@@ -46,18 +44,23 @@ var navAnimate = function() {
 					if(currentTop > 60 && !$('.nav').hasClass('nav--fixed')) {
 						$('.nav').addClass('nav--fixed');
 						$('.nav').addClass('nav--hidden');
-					}
-				} 
+					}		
+				}
 				this.previousTop = currentTop;
 			}
 		});
-		
+		$(window).resize(function() { 
+			if ($(this).width() < breakpoint) {
+				$('.nav').removeClass('nav--fixed');
+				$('.nav').removeClass('nav--active');
+			}
+		});
 	}
 }
 
 $(window).load(function() {
-    Pace.on('done', function() {
-    	var contentReady = function() {
+	Pace.on('done', function() {
+		var contentReady = function() {
 			$('.nav--preload').show('fade', 1000);
 			$('.footer--preload').show('fade', 1000);
 			$('.intro').addClass('intro--ready');
@@ -67,7 +70,7 @@ $(window).load(function() {
 			$('.intro__content').addClass('intro--active');
 			$('.project').addClass('project--active');
 			$('.hero').addClass('hero--active');
-    	};
+		};
 		$('.carousel--preload').show('fade', 1000);
 		if ($('.carousel').hasClass('carousel--preload')) {
 			setTimeout(contentReady, 200);
@@ -77,13 +80,10 @@ $(window).load(function() {
 		setInterval(function() {
 			carouselSlide();
 		}, 4000);
-    });
+	});
 });
 
 $(document).ready(function() {
-	if (windowSize < breakpoint) {
-		$('.nav').addClass('nav--mobile');
-	};
 
 	navAnimate();
 
@@ -115,12 +115,10 @@ $(window).resize(function() {
 	windowSize = $(window).width();
 	if (windowSize > breakpoint) {
 		$('.more').hide();
-			console.log("removing mobile");
-			$('.nav').removeClass('nav--mobile');
+		$('.nav').removeClass('nav--mobile');
 	} else {
 		$('.more').show();
 		$('.nav').addClass('nav--mobile');
-		console.log("mobile added");
 	}
 });
 
