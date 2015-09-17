@@ -60,18 +60,13 @@ $(window).load(function() {
 	Pace.on('done', function() {
 		var contentReady = function() {
 			$('.nav--preload').show('fade', 1000);
-			console.log('navigation');
 			$('.footer--preload').show('fade', 1000);
-			console.log('footer');
 			$('.intro').addClass('intro--ready');
-			console.log('intro ready');
 			if ($(window).width() < 960) {
 				$('.more').show('fade', 1000);	
 			}
 			$('.intro__content').addClass('intro--active');
-			console.log('content active');
 			$('.project').addClass('project--active');
-			console.log('project active');
 			$('.hero').addClass('hero--active');
 		};
 		$('.carousel--preload').show('fade', 1000);

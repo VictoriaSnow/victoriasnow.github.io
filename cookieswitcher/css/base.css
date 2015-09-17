@@ -714,10 +714,10 @@ li {
     -ms-transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    -moz-transition-delay: 300ms;
+/*    -moz-transition-delay: 300ms;
     -o-transition-delay: 300ms;
     -webkit-transition-delay: 300ms;
-    transition-delay: 300ms;
+    transition-delay: 300ms;*/
 }
 
 .project__info {
