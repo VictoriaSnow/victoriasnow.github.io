@@ -686,7 +686,7 @@ li {
 .project {
     position: relative;
     width: 100%;
-    top: 120px;
+    padding-top: 120px;
     opacity: 0;
 	-moz-transform: translate3d(0, 72px, 0);
     -ms-transform: translate3d(0, 72px, 0);

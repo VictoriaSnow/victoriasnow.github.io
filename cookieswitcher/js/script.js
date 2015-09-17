@@ -24,7 +24,6 @@ var carouselSlide = function() {
 var breakpoint = 960;
 var windowSize = $(window).width();
 var navAnimate = function() {
-	console.log("nav animate");
 	if (!$('.nav').hasClass('nav--home')) {
 		$(window).scroll(function() {
 			if ($(this).width() > breakpoint) {
@@ -61,13 +60,18 @@ $(window).load(function() {
 	Pace.on('done', function() {
 		var contentReady = function() {
 			$('.nav--preload').show('fade', 1000);
+			console.log('navigation');
 			$('.footer--preload').show('fade', 1000);
+			console.log('footer');
 			$('.intro').addClass('intro--ready');
+			console.log('intro ready');
 			if ($(window).width() < 960) {
 				$('.more').show('fade', 1000);	
 			}
 			$('.intro__content').addClass('intro--active');
+			console.log('content active');
 			$('.project').addClass('project--active');
+			console.log('project active');
 			$('.hero').addClass('hero--active');
 		};
 		$('.carousel--preload').show('fade', 1000);
@@ -102,12 +106,6 @@ $(document).ready(function() {
 		$('.main').hide('fade', 500);
 		$('.page').removeClass('noscroll');
 	});
-
-	if ($('body').hasClass('pace-done')) {
-		console.log('pace done');
-		$('.intro').addClass('intro--ready')
-		$('.intro__content').addClass('intro--active');
-	}
 });
 
 $(window).resize(function() {
