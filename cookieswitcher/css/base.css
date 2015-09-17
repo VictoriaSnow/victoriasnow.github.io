@@ -692,10 +692,10 @@ li {
     -ms-transform: translate3d(0, 72px, 0);
     -webkit-transform: translate3d(0, 72px, 0);
     transform: translate3d(0, 72px, 0);
-    -moz-transition: -moz-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.5s;
-    -o-transition: -o-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.5s;
-    -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.5s;
-    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.5s;
+    -moz-transition: -moz-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.8s;
+    -o-transition: -o-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.8s;
+    -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.8s;
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.8s;
     -moz-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -714,10 +714,10 @@ li {
     -ms-transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-/*    -moz-transition-delay: 300ms;
-    -o-transition-delay: 300ms;
-    -webkit-transition-delay: 300ms;
-    transition-delay: 300ms;*/
+    -moz-transition-delay: 500ms;
+    -o-transition-delay: 500ms;
+    -webkit-transition-delay: 500ms;
+    transition-delay: 500ms;
 }
 
 .project__info {
