@@ -51,8 +51,7 @@ var navAnimate = function() {
 		});
 		$(window).resize(function() { 
 			if ($(this).width() < breakpoint) {
-				$('.nav').removeClass('nav--fixed');
-				$('.nav').removeClass('nav--active');
+				$('.nav').removeClass('nav--active nav--fixed nav--hidden');
 			}
 		});
 	}
