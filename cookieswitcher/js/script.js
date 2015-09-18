@@ -86,7 +86,6 @@ $(document).ready(function() {
 			}
 			$('.intro__content').addClass('intro--active');
 			$('.project').addClass('project--active');
-			$('.hero').addClass('hero--active');
 		};
 		$('.carousel--preload').show('fade', 1000);
 		if ($('.carousel').hasClass('carousel--preload')) {

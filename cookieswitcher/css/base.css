@@ -232,48 +232,6 @@ li {
 	color: rgba(41, 41, 41, 0.8);
 }
 
-.main {
-	display: block;
-/*	display: none;*/
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: 11;
-	top: 0;
-	text-align: center;
-}
-
-.main__overlay {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	background: #ffffff;
-}
-
-.main__container {
-	position: relative;
-	margin: 60px auto;
-	top: calc(50% - 200px);
-	display: inline-block;
-}
-
-.main__logo {
-	margin: auto;
-}
-
-.main__msg {
-	color: #292929;
-	font-family: "bodoni-urw" "bodoni urw";
-	font-size: 36px;
-	letter-spacing: 5px;
-	margin: 60px 0 20px 0;
-}
-
-.main__resume {
-	margin: 0;
-}
-
 .nav {
 	background: transparent;
 	padding: 10px 0 10px 0;
@@ -361,10 +319,19 @@ li {
 	color: #D79D9C;
 }
 
-.nav__chat {
-	margin-right: 40px;
-	right: 0;
+.icon {
 	position: absolute;
+	cursor: pointer;
+}
+
+.icon--close {
+	position: fixed;
+	width: 30px;
+	height: 30px;
+	top: 40px;
+	right: 40px;
+	z-index: 100;
+	overflow: hidden;
 }
 
 .intro {
@@ -383,7 +350,7 @@ li {
 	max-width: 520px;
 	margin: 0 40px;
 	position: relative;
-	top: calc(50% - 200px);
+	top: calc(50% - 240px);
     opacity: 0;
 	-moz-transform: translate3d(-72px, 0, 0);
     -ms-transform: translate3d(-72px, 0, 0);
@@ -481,7 +448,7 @@ li {
 }
 
 .overlay--rose {
-	background: rgba(215, 157, 156, 0.2);
+	background: rgba(215, 157, 156, 0.3);
 }
 
 .overlay--yellow {
@@ -579,7 +546,6 @@ li {
 	letter-spacing: 3px;
 }
 
-
 .work {
 	display: none;
 	position: fixed;
@@ -625,21 +591,6 @@ li {
     -o-transition-delay: 300ms;
     -webkit-transition-delay: 300ms;
     transition-delay: 300ms;
-}
-
-.icon {
-	position: absolute;
-	cursor: pointer;
-}
-
-.icon--close {
-	position: fixed;
-	width: 30px;
-	height: 30px;
-	top: 40px;
-	right: 40px;
-	z-index: 100;
-	overflow: hidden;
 }
 
 .work__close {
@@ -701,8 +652,6 @@ li {
     -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    -webkit-backface-visibility: hidden;
-   	backface-visibility: hidden;
 }
 
 .project--active {
@@ -772,7 +721,6 @@ li {
 
 .project__screenshot {
     margin: 0 auto 30px auto;
-/*    border: 1px solid rgba(41, 41, 41, 0.1);*/
     display: block;
     max-width: 100%;
     height: auto;
@@ -780,7 +728,6 @@ li {
 
 .project__footer {
     padding: 30px 0;
-    /*    border-top: 1px solid rgba(41, 41, 41, 0.1);*/
     text-align: center;
 }
 
@@ -793,23 +740,6 @@ li {
 .project__next:hover {
 	opacity: 1.0;
 	color: #D79D9C;
-}
-
-.project__current {
-	text-align: center;
-    font-family: "bodoni-urw" "bodoni urw";
-    color: #292929;
-    font-size: 60px;
-    letter-spacing: 1px;
-    width: 720px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 10;
-}
-
-.project__arrow {
-	height: 28px;
-	display: inline-block;
 }
 
 .project__item {
@@ -866,64 +796,6 @@ li {
 	color: #D79D9C;
 }
 
-.hero {
-    width: 720px;
-    position: relative;
-    padding-top: 120px;
-    height: calc(100% - 37px);
-    opacity: 0;
-	-moz-transform: translate3d(-72px, 0, 0);
-    -ms-transform: translate3d(-72px, 0, 0);
-    -webkit-transform: translate3d(-72px, 0, 0);
-    transform: translate3d(-72px, 0, 0);
-    -moz-transition: -moz-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.8s;
-    -o-transition: -o-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.8s;
-    -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.8s;
-    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 0.8s;
-    -moz-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.hero--active {
-	opacity: 1;
- 	transform: translateX(0);
-	-webkit-transform: translateX(0);
-	-moz-transform: translateX(0);
-	-o-transform: translateX(0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -moz-transition-delay: 300ms;
-    -o-transition-delay: 300ms;
-    -webkit-transition-delay: 300ms;
-    transition-delay: 300ms;
-}
-
-.hero__info {
-	text-align: left;
-	margin: 0 40px;
-	position: relative;
-	height: 100%;
-}
-
-.hero__name {
-	color: #ffffff;
-	font-family: "bodoni-urw" "bodoni urw";
-	font-size: 60px;
-	letter-spacing: 1px;
-}
-
-.content--light  {
-	color: rgba(255, 255, 255, 0.8);
-    font-family: "raleway";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 28px;
-}
-
 .hero__link {
 	font-weight: 800;
 	color: #ffffff;
@@ -932,10 +804,6 @@ li {
 .more {
 	display: none;
 }
-/*
-.chat--preload {
-	display: none;
-}*/
 
 @media all and (max-width: 1024px) {
 
@@ -1003,7 +871,7 @@ li {
 	.project__info {
     	margin: 0 20px 20px;
     	width: auto;
- }
+    }
 
 	.project__subtitle {
 	    font-size: 12px;
@@ -1034,6 +902,7 @@ li {
 	.intro__content {
 		margin: auto;
 		text-align: center;
+		top: calc(50% - 200px);
 		-moz-transform: translate3d(0, 72px, 0);
 	    -ms-transform: translate3d(0, 72px, 0);
 	    -webkit-transform: translate3d(0, 72px, 0);
