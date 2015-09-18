@@ -1,5 +1,6 @@
 html {
 	height: 100%;
+	overflow: hidden;
 }
 
 body {
@@ -293,6 +294,10 @@ li {
 	width: 600px;
 }
 
+.nav__container {
+	margin: auto;
+}
+
 .nav__logo {
 	float: left;
 	margin-left: 40px;
@@ -317,6 +322,14 @@ li {
 
 .nav__item:hover {
 	color: #D79D9C;
+}
+
+.nav__mobile {
+	display: none;
+}
+
+.nav__explore {
+	display: none;
 }
 
 .icon {
@@ -857,6 +870,38 @@ li {
 
 	.nav__logo {
 	    margin-left: 20px;
+	    float: none;
+	    display: inline-block;
+	    vertical-align: middle;
+	}
+
+	.nav__menu {
+		float: right;
+	}
+
+	.nav__work, .nav__resume, .nav__contact {
+		display: none;
+	}
+
+	.nav__mobile {
+		display: block;
+		margin: 0 20px 0 0;
+	}
+
+	.nav__explore {
+	    display: block;
+	    float: right;
+	    width: 25px;
+	    height: auto;
+	    margin: 7.5px 20px;
+	    cursor: pointer;
+	}
+
+	.nav__bar {
+	    height: 2px;
+	    background: #292929;
+	    margin: 7px 0;
+	    border-radius: 1px;
 	}
 
 	.project__title {
@@ -934,10 +979,6 @@ li {
 	    background: rgba(255, 255, 255, 0.9);
 	}
 
-	.nav--mobile {
-
-	}
-
 	.intro__more {
 		display: none;
 	}
@@ -953,6 +994,7 @@ li {
 	}
 
 	.more {
+		display: block;
 		position: absolute;
 		bottom: 0;
 		width: 100%;
@@ -984,13 +1026,13 @@ li {
 	}
 
 	.work__close {
-	    top: 30px;
-	    right: 30px;
+	    top: 18px;
+	    right: 20px;
 	}
 
 	.icon--close {
-		width: 20px;
-		height: 20px;
+		width: 25px;
+		height: 25px;
 	}
 
 	.project__item {
