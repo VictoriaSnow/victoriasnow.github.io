@@ -290,7 +290,6 @@ li {
 	box-shadow: none;
 	padding: 40px 0 10px 0;
 	background: transparent;
-	position: relative;
 	width: 600px;
 }
 
@@ -303,7 +302,7 @@ li {
 	margin-left: 40px;
 }
 
-.nav__menu {
+.nav__list {
 	float: left;
 	display: inline-block;
 }
@@ -318,6 +317,7 @@ li {
     cursor: pointer;
     margin-bottom: 0;
     color: #292929;
+    text-transform: uppercase;
 }
 
 .nav__item:hover {
@@ -328,8 +328,22 @@ li {
 	display: none;
 }
 
-.nav__explore {
+.nav__menu {
 	display: none;
+}
+
+.rotate--clockwise {
+    -webkit-transform: translateY(4.5px) rotate(45deg);
+	-moz-transform: translateY(4.5px) rotate(45deg);
+    -ms-transform: translateY(4.5px) rotate(45deg);
+    transform: translateY(4.5px) rotate(45deg);
+}
+
+.rotate--counterclockwise {
+    -webkit-transform: translateY(-4.5px) rotate(-45deg);
+	-moz-transform: translateY(-4.5px) rotate(-45deg);
+    -ms-transform: translateY(-4.5px) rotate(-45deg);
+    transform: translateY(-4.5px) rotate(-45deg);
 }
 
 .icon {
@@ -356,6 +370,7 @@ li {
 	z-index: 9;
 	float: left;
 	overflow: hidden;
+	padding-top: 150px;
 }
 
 .intro__content {
@@ -528,7 +543,7 @@ li {
 	text-align: center;
 	margin: auto;
 	position: absolute;
-	top: calc(50% - 120px);
+	top: calc(50% - 90px);
 	right: calc(50% - 300px);
 	color: #ffffff;
 	z-index: 10;
@@ -573,6 +588,9 @@ li {
 }
 
 .work__menu {
+	position: relative;
+	margin: 80px auto 30px auto;
+	display: inline-block;
     opacity: 0;
 	-moz-transform: translate3d(0, 72px, 0);
     -ms-transform: translate3d(0, 72px, 0);
@@ -618,12 +636,6 @@ li {
 	overflow: scroll;
 }
 
-.work__menu {
-	position: relative;
-	margin: 60px auto 30px auto;
-	display: inline-block;
-}
-
 .work__label {
 	color: #D79D9C;
 	font-size: 18px;
@@ -631,6 +643,7 @@ li {
 	letter-spacing: 10px;
 	margin: 20px 0;
 	line-height: 1.5;
+	text-transform: uppercase;
 }
 
 .work__item {
@@ -641,6 +654,7 @@ li {
 	margin: 50px 0;
 	cursor: pointer;
 	line-height: 1.5;
+	text-transform: uppercase;
 }
 
 .work__link:hover {
@@ -699,6 +713,7 @@ li {
 	letter-spacing: 1px;
 	line-height: 1.0;
 	text-align: right;
+	text-transform: uppercase;
 }
 
 .project__subtitle {
@@ -707,6 +722,7 @@ li {
 	line-height: 2.0;
 	letter-spacing: 2px;
 	color: rgba(41, 41, 41, 0.4);
+	text-transform: uppercase;
 }
 
 .project__description {
@@ -759,6 +775,7 @@ li {
 	font-size: 36px;
 	font-family: "bodoni-urw" "bodoni urw";
 	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 
 .project__navigate {
@@ -767,6 +784,7 @@ li {
 	line-height: 2.0;
 	letter-spacing: 2px;
 	color: #292929;
+	text-transform: uppercase;
 }
 
 .footer {
@@ -798,11 +816,13 @@ li {
 	text-align: left;
 	left: 0;
 	display: inline-block;
+	text-transform: uppercase;
 }
 
 .footer__links {
 	margin-right: 40px;
 	text-align: right;
+	text-transform: uppercase;
 }
 
 .footer__link:hover {
@@ -812,10 +832,6 @@ li {
 .hero__link {
 	font-weight: 800;
 	color: #ffffff;
-}
-
-.more {
-	display: none;
 }
 
 @media all and (max-width: 1024px) {
@@ -868,6 +884,10 @@ li {
 		line-height: 28px;
 	}
 
+	.nav {
+		z-index: 100;
+	}
+
 	.nav__logo {
 	    margin-left: 20px;
 	    float: none;
@@ -875,7 +895,7 @@ li {
 	    vertical-align: middle;
 	}
 
-	.nav__menu {
+	.nav__list {
 		float: right;
 	}
 
@@ -888,13 +908,14 @@ li {
 		margin: 0 20px 0 0;
 	}
 
-	.nav__explore {
+	.nav__menu {
 	    display: block;
 	    float: right;
 	    width: 25px;
 	    height: auto;
 	    margin: 7.5px 20px;
 	    cursor: pointer;
+	    z-index: 200;
 	}
 
 	.nav__bar {
@@ -938,6 +959,7 @@ li {
 
 	.intro {
 		float: none;
+		padding-top: 120px;
 	}
 
 	.intro--ready {
@@ -972,6 +994,10 @@ li {
 	    transition-delay: 300ms;
 	}
 
+	.intro__more {
+		display: none;
+	}
+
 	.nav--home {
 		width: 100%;
 		padding: 10px 0 10px 0;
@@ -979,8 +1005,8 @@ li {
 	    background: rgba(255, 255, 255, 0.9);
 	}
 
-	.intro__more {
-		display: none;
+	.menu--active {
+		box-shadow: none;
 	}
 
 	.carousel {
@@ -990,23 +1016,7 @@ li {
 	}
 
 	.carousel__caption {
-		top: calc(50% - 60px);
-	}
-
-	.more {
-		display: block;
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		text-align: center;
-		z-index: 10;
-		text-transform: uppercase;
-	}
-
-	.more__slider {
-		margin: auto;
-		width: 100%;
-		padding: 0;
+		top: calc(50% - 45px);
 	}
 
 	.work__label {
@@ -1022,12 +1032,13 @@ li {
 
 	.work__menu {
 	    width: auto;
-	    margin: 30px 20px;
+		margin: 80px 20px 30px 20px;
 	}
 
 	.work__close {
 	    top: 18px;
 	    right: 20px;
+	    display: none;
 	}
 
 	.icon--close {
