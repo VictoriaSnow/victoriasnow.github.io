@@ -147,27 +147,27 @@
 		</div>
 	</section>
 	<section class="chat">
-		<div class="chat__window">
+		<form class="chat__window">
 			<div class="chat__form chat__name">
 				<div class="chat__question transition--elastic">Hi, I am Victoria.<br>What's your name?</div>
 				<div class="chat__answer transition--whoosh">
 					<div class="chat__caption">My name is...</div>
-					<input class="chat__input">
+					<input id="name" class="chat__input">
 				</div>					
 			</div>
 			<div class="chat__form chat__topic">
 				<div class="chat__question transition--elastic">Nice to meet you!<br>What would you like to talk about?</div>
 				<div class="chat__answer transition--whoosh">
 					<div class="chat__caption">I'd like to talk about...</div>
-					<input class="chat__input">
+					<input id="topic" class="chat__input">
 					<div class="chat__help">E.g. an internship opportunity, a freelance project, or just grab coffee</div>
 				</div>					
 			</div>
-			<div class="chat__form chat__info">
+			<div class="chat__form chat__details">
 				<div class="chat__question transition--elastic">Cool! Could you tell me more about it?</div>
 				<div class="chat__answer transition--whoosh">
 					<div class="chat__caption">It is... / I need...</div>
-					<input class="chat__input">
+					<input id="details" class="chat__input">
 					<div class="chat__help">E.g. (it is) a design internship at X company, (I need) UI design for a music app</div>
 				</div>					
 			</div>
@@ -175,17 +175,17 @@
 				<div class="chat__question transition--elastic">Thanks for reaching out to me! Can I have your email address?</div>
 				<div class="chat__answer transition--whoosh">
 					<div class="chat__caption">My email address is...</div>
-					<input class="chat__input">
+					<input id="email" class="chat__input">
 				</div>					
 			</div>
-			<div class="chat__form chat__more">
+			<div class="chat__form chat__comments">
 				<div class="chat__question transition--elastic">Good to talk to you!<br>I'll get back to you very soon :D</div>
 				<div class="chat__answer transition--whoosh">
 					<div class="chat__caption">Anything else you'd like to share?</div>
-					<input class="chat__input">
+					<input id="comments" class="chat__input">
 				</div>					
 			</div>
-		</div>
+		</form>
 		<div class="chat__close icon icon--close transition--subtle">
 			<img class="img--wh" src="img/close.svg">
 		</div>

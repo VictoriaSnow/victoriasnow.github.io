@@ -50,6 +50,11 @@ a {
 	text-decoration: none;
 }
 
+input {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
 .clearfix::after {
 	clear: both;
 	display: block;
@@ -702,6 +707,11 @@ li {
     background: transparent;
 }
 
+.input--error {
+	color: #de6868;
+    border-bottom: 4px solid #de6868;
+}
+
 .chat__help {
 	font-size: 18px;
 	color: rgba(41, 41, 41, 0.4);
@@ -709,7 +719,7 @@ li {
 	text-align: left;
 }
 
-.chat__topic, .chat__info, .chat__email, .chat__more {
+.chat__topic, .chat__details, .chat__email, .chat__comments {
 	display: none;
 }
 
@@ -1119,7 +1129,7 @@ li {
 	}
 
 	.chat__window {
-	    padding: 100px 40px 30px 40px;
+	    padding: 100px 50px 30px 50px;
 	    width: calc(100% - 40px);
 	}
 
@@ -1129,7 +1139,7 @@ li {
 	}
 
 	.chat__answer {
-		width: calc(100% - 80px);
+		width: calc(100% - 100px);
 	}
 
 	.chat__caption {
