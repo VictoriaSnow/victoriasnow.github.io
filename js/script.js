@@ -95,23 +95,13 @@ function submitForm() {
     else {
 
     }
-
-    console.log("submitted");
-    console.log(name);
-    console.log(topic);
-    console.log(details);
-    console.log(email);
-    console.log(comments); 
 }
 
 var chatIndex = 1;
 function sendMsg() {
 	console.log(chatIndex);
 	var chatCurrent = $('.chat__form:nth-child(' + chatIndex + ')');
-	if (chatIndex == 4) {
-		submitForm();
-	}
-	if (chatIndex <= 4 ) {
+	if (chatIndex <= 5 ) {
 		var chatNext = $('.chat__form:nth-child(' + (chatIndex + 1) + ')');
 		chatIndex++;
 		chatCurrent.children('.chat__question').addClass('hidden--up');
@@ -121,11 +111,17 @@ function sendMsg() {
 			chatCurrent.children('.chat__question').removeClass('hidden--up');
 			chatCurrent.children('.chat__answer').removeClass('hidden--fade');
 			setTimeout(function() {
+				if (chatIndex == 2) {
+					$('.chat__placeholder').text($('#name').val());
+				};
 				chatNext.show('fade', 500);
 				this.$('.chat__input').focus();
 			}, 200);
 		}, 800);
 	}
+	if (chatIndex == 6) {
+		submitForm();
+	};
 }
 
 function resetMsg() {
@@ -137,6 +133,7 @@ function resetMsg() {
 	chatFirst.show('fade', 1000);
 	$('.chat__input').val("");
 	$('.chat__input').focus();
+	$('.chat__placeholder').text("");
 }
 
 $(document).ready(function() {
@@ -230,13 +227,6 @@ $(document).ready(function() {
 		}, 4000);
 	});
 });
-
-// $(document).bind(
-// 	'touchmove',
-// 	function(e) {
-// 		e.preventDefault();
-// 	}
-// );
 
 
 

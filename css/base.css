@@ -243,7 +243,7 @@ li {
 
 .main {
 	display: block;
-/*	display: none;*/
+	display: none;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -721,7 +721,7 @@ li {
 }
 
 .chat__question {
-	font-size: 60px;
+	font-size: 48px;
     color: #292929;
     text-align: left;
     margin-bottom: 40px;
@@ -765,7 +765,7 @@ li {
 	text-align: left;
 }
 
-.chat__topic, .chat__details, .chat__email, .chat__comments {
+.chat__topic, .chat__details, .chat__email, .chat__comments, .chat__submission {
 	display: none;
 }
 
@@ -1180,7 +1180,7 @@ li {
 	}
 
 	.chat__question {
-		font-size: 48px;
+		font-size: 36px;
 		margin-bottom: 20px;
 	}
 
