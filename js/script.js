@@ -71,7 +71,7 @@ function submitForm() {
     if ((name !== "") && (topic !== "") && (details !== "") && (email !== "") && (validateEmail(email))) {
         $.ajax({
             url: "https://docs.google.com/forms/d/1OVK0vTGsyEXaoeu-UspWhzZV0g67JAxtZsJF9KVGsqs/formResponse",
-            data: {"entry.1" : name, "entry.2" : topic, "entry.3": details, "entry.4" : email, "entry.5" : comments},
+            data: {"entry.786838171" : name, "entry.1926658953" : topic, "entry.1794396059": details, "entry.1622086121" : email, "entry.1575326303" : comments},
             type: "POST",
             dataType: "xml",
             statusCode: {
