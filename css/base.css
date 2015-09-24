@@ -28,10 +28,6 @@ body {
 	overflow: hidden;
 }
 
-.overflow--auto {
-	overflow: auto;
-}
-
 img {
 	object-fit: cover;
 }
