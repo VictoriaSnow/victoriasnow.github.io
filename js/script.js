@@ -36,12 +36,11 @@ function navAnimate() {
 						$('.nav__item').addClass('transition--subtle');
 					} else {
 						$('.nav').removeClass('nav--active nav--fixed nav--hidden');
-					}
-				} else {
+					}			
+				} else if (currentTop > this.previousTop && currentTop > 0) {
 					$('.nav__item').removeClass('transition--subtle');
 					$('.nav').removeClass('nav--active');
 					if(currentTop > 60 && !$('.nav').hasClass('nav--fixed')) {
-
 						$('.nav').addClass('nav--fixed');
 						$('.nav').addClass('nav--hidden');
 					}		
@@ -188,7 +187,7 @@ $(document).ready(function() {
 				$('.chat').hide('fade', 500);
 			} else {
 				$('.chat').hide('fade', 500);
-			};
+			}
 			$('body').removeClass('overflow--hidden');
 			$('html').removeClass('overflow--hidden');			
 			setTimeout(function() {
