@@ -5,7 +5,7 @@
 	<title>Victoria Designs</title>
 	<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="Victoria Bian, Product Designer, UC Berkeley, Class of 2017, UI & UX Designer, Web Designer and Front-End Web Developer, iOS Developer.">
+	<meta name="description" content="Victoria Bian, Product Designer, UC Berkeley, Class of 2017, UI, UX Designer, Web Designer and Front-End Web Developer, iOS Developer.">
 	<meta name="keywords" content="Victoria Bian, Portfolio, Product Designer, Cal, UC Berkeley, Designer, Developer, Computer Science, User Interface, User Experience, iOS, Web Design">
 	<meta name="author" content="Victoria Bian">
 	<link rel="shortcut icon" href="../favicon.ico">
@@ -21,140 +21,163 @@
 	<link rel="stylesheet" type="text/css" href="../css/base.css">
 </head>
 <body class="page page--project">
-	<nav class="nav nav--dark clearfix">
-		<a class="nav__logo logo logo--dark" href="/"></a>
-		<ul class="nav__menu">
-			<li class="nav__item nav__about"><a href="../about">ABOUT</a></li>
-			<li class="nav__item nav__work">WORK</li>
-			<li class="nav__item nav__resume"><a href="../doc/resume.pdf">RESUME</a></li>
-			<li class="nav__item nav__contact"><a href="mailto:hello@victoriabian.com">CONTACT</a></li>
-		</ul>
+	<nav class="nav nav--dark nav--preload clearfix">
+		<div class="nav__container">
+			<a class="nav__logo logo logo--dark" href="/"></a>
+			<ul class="nav__list">
+				<li class="nav__item nav__work transition--subtle">work</li>
+				<li class="nav__item nav__resume transition--subtle"><a href="doc/resume.pdf">resume</a></li>
+				<li class="nav__item nav__contact transition--subtle"><a href="mailto:hello@victoriabian.com">contact</a></li>
+			</ul>
+			<div class="nav__menu">
+				<div class="nav__bar transition--friction"></div>
+				<div class="nav__bar transition--friction"></div>
+			</div>		
+		</div>
 	</nav>
 	<section class="project">
 		<div class="project__info">
-			<div class="project__title">CHILL</div>
+			<div class="project__title">chill</div>
 			<div class="project__description">"Chill" is an iOS app that provides you with customized movie recommendations catered to your own interests. My design focuses on simplifying the process of getting users' preferences as well as the way of presenting movie recommendations.</div>
-			<div class="project__subtitle">SUMMER 2015 • ENTERTAINMENT • USER EXPERIENCE DESIGN</div>
+			<div class="project__subtitle">summer 2015 • entertainment • user experience design • visual design</div>
 		</div>
 		<div class="project__cover">
-			<img class="img--wh" src="../img/chill.png">
+			<img class="project__img img--w" src="../img/chill_cover.png">
 		</div>
 		<div class="project__content">
-			<p>Over the summer, I worked with Shawn Park, a fantastic product designer, to design an iOS app that gives you personalized movie recommendations. We are excited to show you our final work, but before that, let’s check out our design process!</p>
-			<h3>Intro</h3>
-			<p>“What movie are we gonna watch tonight?” How many times have you asked this question? The answer is almost every time when you plan to enjoy the night with your friends, a good movie and maybe some popcorns. And then again, how long does it usually take to find something interesting to watch? What if you’re tired of theaters which shows nothing but most recent very-hollywood Tom Cruise actions and romantic cliches?</p>
-			<hr>
-			<h3>Problem</h3>
-			<p>It seems that internet has been gradually reshaping our lifestyles and habits. You don’t have to turn on your TV to catch up with “Two Broke Girls”; you go to Netflix. You don’t have to dress up for a concert to enjoy wonderful music; you go to Spotify.</p>
-			<p>The reason why we choose staying at home over going out is that entertainment services like Netflix and Spotify provide us with shows and songs catered to our own interests.</p>
-			<p>However, finding a movie to watch at home on a couch is not an easy task. Sometimes, it takes even longer than the movie itself. </p>
-			<hr>
-			<h3>User Research</h3>
-			<p>It is good to know that everyone seems to know about Yelp. I spoke to many people before I began to conduct the usability testing so that I can get a general idea about their experiences with Yelp.</p>
-			<p>Most people I talked to told me that their friends’ recommendation was the reason that they started to use Yelp in the first place. One user also mentioned that she started to use Yelp because every time she googled things up to find a spot to eat, a link to Yelp’s reviews always pops up as the first result. However, Yelp to users is more like a tool to check out reviews and discover restaurants instead of a social network where you can know more friends. Half of the users even told me that they had no idea that they could add friends on Yelp.</p>
-			<p>With mobile apps getting more and more popular, people seem to forget about the web age when they started to socialize online. It is true that mobile apps are developed to perform tasks than can be done on web, but when it comes social network, people are still used to go online and check up on their friends and get to know new people. Facebook is a good example.</p>
-			<p>The goal for Yelp is not just about building a robust review system, is more about bringing people together. What’s the fun of writing a review for yourself?</p>
-			<p>The importance of user details page can be easily underestimated. User details page plays crucial part in connecting people. A good design of this page should be well organized, balanced and simple, just enough for user to get to know about the profile owner. And also the design should be inviting and intuitive.</p>
-			<hr>
-			<h3>Usability Testing</h3>
-			<p>I conducted a usability testing before I started my redesign for the user details page. The users I chose were active Yelp users with knowledge about Yelp’s regular features. But they were neither the very enthusiastic type with lots of badges, nor the type that knows nothing about Yelp. For the user details page, I chose an elite user who uses Yelp very frequently and engages many activities, because the profile is comprehensive which helps demonstrate the design principles.</p>
-			<p>From the feedbacks that I’ve gathered, the three main issues with Yelp user details page are:</p>
-			<p><strong>Layout: lack of hierarchy</strong></p>
-			<p>Visual hierarchy is an important concept to user experience. A well balanced hierarchy allows user identify the important elements on a web page in a short time. And then engages user into more in-depth content on a web page.</p>
-			<p>At first glance, most users I tested got totally lost. When I asked them to describe what they saw, they literally listed everything, which suggests that the visual hierarchy has failed to emphasize the most important information. Instead, it jumps directly to the second step for more in-depth content. That is, the first layer of visual hierarchy doesn’t exist in current layout. Information is all over the places.</p>
-			<p><strong>Navigation: confusing and repetitive</strong></p>
-			<p>There are actually three navigations here on the user details page. The main one below the search bar. The breadcrumb navigation. And the layout of the sections, which serves as navigation as well. Navigation is good for user to find the information they want quickly. But redundant navigation can only provides a barrier between user and the information they need. Not to mention that a super long navigation with a lot of items on it doesn’t do any good but confuse the users even more. Each navigation should have a reason to be there, and that reason has to be unique.</p>
-			<p><strong>Content: equally important with no focus</strong></p>
-			<p>It is not uncommon that users find text much more annoying. We get it. People love graphics, because they’re more direct, more visually attractive, and most of all, more intuitive. Some users even told me how they chose restaurants and order. “Just by pictures”, they said. Indeed, pictures and graphs are always the first things to pop up on a web page. A user especially mentioned that she noticed the rating distribution immediately. Wisely using pictures and graphics on the web page can largely increases the importance of certain elements that users need to see before they dig deeper. For example, the picture of the restaurant.</p>
-			<p>Some other elements that can be wisely used are for example, typography and space. Well chosen font size and weight can make a huge difference. Also space helps user to identify the relationship between elements and help them filter the information at one glance.</p>
-			<p>There’re many other methods can be applied to avoid the current highly cluttered visual effects.</p>
-			<hr>
-			<h3>Redesign</h3>
-			<p>Based on the feedbacks I’ve gathered, I focused on three areas when redesigning Yelp user details page:</p>
-			<ol>
-				<li>Improve hierarchy by reorganizing the layout and the positions of elements</li>
-				<li>Take out repetitive navigations and create a more direct navigation experience</li>
-				<li>Make important features more accessible by bringing them out of the ambiguous buttons and create more visually intuitive effects</li>
-			</ol>
-			<p>Aside from these three user experience issues, I wanted to give some aesthetic facelift and some branding overhaul to make the website feel more like a website for social network, not a tool. Right now, Yelp is more like a place where people only go to search things up and get reviews, as if it’s nothing more than a vending machine where they input target places and get reviews as outputs.</p>
-			<p>The website especially the user details page should be full of people and their conversations, not just wall of text. Above all, the app should feel lively and engaging and yet should stay simple and clean.</p>
-			<p>I first created a few documentations to organize my thoughts on the page’s purpose and the priorities of features. Then, I went for a quick sketch of the page.</p>
-			<img class="project__screenshot img--w" src="../img/yelp_current.jpeg">
-			<img class="project__screenshot img--w" src="../img/yelp_sketch.jpeg">
-			<hr>
-			<h3>Final Design</h3>
-			<h4>Branding</h4>
-			<p>I learned from my Perception class that red color can stimulate people’s appetite. So I think it would be good to keep the original red to color the important elements. And I also I kept the gradience from red to yellow to indicate ratings. I used white as background for sections.</p>
-			<p>The font I used is Proxima Nova, a slightly less formal font compared to Helvetica Neue. The color for headlines is darker than those used for other information, but is not complete black. I tried to play around with size and weight to distinguish elements.</p>
-			<p>The logo I used here was from the official Yelp style guide, the one with 0.5 px wide black bolder with 50% opacity.</p>
-			<p>And thanks to Stephen Verhalleman who designed the official icons for Yelp. I used some of them in my redesign.</p>
-			<img class="project__screenshot img--h" src="../img/yelp_logo.png">
-			<p>Colors: red range — #C41200, #EB050B, #F48149, #F0A527, #E4B92B, #D79322, grey range — #494949, #888888</p>
-			<p>Typography: Proxima Nova — regular for general content, semibold for titles, light for text, sizes — 10 to 24 with larger sizes for titles and headers and smaller ones for text.</p>
-			<h4>Layout</h4>
-			<p>A good thing about Yelp’s website is that it’s very informative. However, it is also the reason why it’s hard to keep everything organized. The design goal of the layout is to clearly shows those elements that users expect to see in the right places. The result is a simply organized three-column layout, with the activities in the middle, user information on the left side , and social features and photos on the right side.</p>
-			<img class="project__screenshot img--w" src="../img/yelp_layout.png">
-			<h4>Navigation</h4>
-			<p>To redesign the navigation part first we need to figure out which items to keep.</p>
-			<p>Although most people know to click the logo to get back to home page, it is more direct to have “Home” on navigation bar. Many users find it handy to have a write a review button somewhere they can see all the time, and it is good for us to keep it in the main navigation bar that way. “About Me”, “Messages”, and “Find Friends” are very personal. It would be better to group them together. Both “Talk” and “Events” are major public pages. We can also keep them. The search bar is definitely the most important part. And it should be large and easy to notice.</p>
-			<p>The result is a five-section navigation. From left to right is logo, search, page titles, actions, and user profile photo.</p>
-			<img class="project__screenshot img--w" src="../img/yelp_navigation.png">
-			<h4>User Profile</h4>
-			<img class="project__screenshot img--h" src="../img/yelp_profile.png">
-			<p>The profile should be as simple as possible. But it should also offer enough information. When the badges start to diverge people’s attention, and small font sizes annoy the users, it’s time to figure out a way to make the most information pop out. In addition to what we discussed above about what kind of information to keep, it is also important to notice that an “Add Friend” button is absolutely necessary and extremely crucial. What’s the point of viewing another person’s profile? To build friendship with this person of course! But we don’t want to throw too much information to make the profile look intimidating. So that’s why we just expand the most important part that every user will look at. It’s only one click away from knowing the entire universe.</p>
-			<img class="project__screenshot img--h" src="../img/yelp_rating.png">
-			<img class="project__screenshot img--h" src="../img/yelp_compliments.png">
-			<p>Some people may feel hesitant before they friend strangers. Well, on Yelp, they don’t need to worry about that. People can be friends on Yelp just because they appreciate each other’s reviews, or they happen to feel the same way about a place. That’s why information such as rating distribution, compliments, still matters.</p>
-			<h4>Activities</h4>
-			<p>Activities include reviews, lists, bookmarks, etc. I found it very useful to have a menu to navigate around different content, instead of having different sections all over the places.</p>
-			<p>As for reviews, some of them are very long and users don’t really read every single line. Long reviews also take time for users to scroll down. They tend to filter the reviews and find what interest them most. Therefore, collapsing reviews seems like a good way to go.</p>
-			<img class="project__screenshot img--h" src="../img/yelp_menu.png">
-			<img class="project__screenshot img--h" src="../img/yelp_activities.png">
-			<h4>Social</h4>
-			<p>The right column is where you show off the photos! And be social! It is a trend that more users tend to upload photos rather than type thousands of words. Users find very convenient to share their experiences using Yelp’s app. As mentioned before, people get visually attracted by photos more easily. So if users have amazing photos, why should they hide them. That explains why we need a section to display photos.</p>
-			<img class="project__screenshot img--h" src="../img/yelp_friends.png">
-			<img class="project__screenshot img--h" src="../img/yelp_photos.png">
-			<p>In addition to the friends and photos, I’d like to add another section at the bottom right. It used to be the “Lists” feature. Since we have already organized “Lists” as part of our “Activities”, it seems redundant to have another one. Also, most users were confused about the “Lists” feature and asked questions like, “why is this even here”. I think “Lists” is a quite helpful feature. It’s just because most people pay more attention to other things that they ignore the feature of less importance to them. I think some Twitter fans don’t even know Twitter has a list feature as well.</p>
-			<p>To replace this section with something else, I conducted some interviews with one question to ask, “what is one thing that you expect Yelp to have?”.</p>
-			<p>Some users mentioned that they would to have a “tag” or “group” feature to organize their bookmarks, because they have so many bookmarks but forget about the reason why they bookmarked in the first place. I think it’s cool. And some users mentioned about a “map” idea, a map to mark the user’s favorite spots based on the reviews. It’s is really convenient for users to find local spots to dine. And here it’s a rough illustration.</p>
-			<img class="project__screenshot img--h" src="../img/yelp_spots.png">
-			<p>This section is very flexible. It can be a recommendation section, a map, a tag lists, or anything. It could be the next cool feature of Yelp.</p>
-			<hr>
-			<h3>Notes</h3>
-			<p>The design is not interactive, so there’re many features hidden in a drop-down menu. This a very interesting practice for me and I’d like to get more opinions on the redesign. Thanks for reading, and I hope you like it! ☺</p>
-			<img class="project__screenshot img--w" src="../img/yelp_final.png">
+		<h3>Intro</h3>
+		<p>“What movie are we going to watch tonight?” How many times have you asked this question? Probably many times when you plan to enjoy the night with your friends. And then again, how long does it usually take to find something interesting to watch? I bet you’re tired of those hollywood actions and romance cliches playing in theaters. Sometimes, finding the right movie to watch takes much more time than the movie itself.</p>
+		<h4>Problem</h4>
+		<p>When we pick movies, we tend to pick those are similar to the ones we’ve watched before in terms of storyline, context, theme (message the movies try to convey). For example, I would like to find a movie that’s similar to “Inception”, so I go to iTunes, but all I can see are giant charts of popular and top movies rather than a list of movie related to “Inception”. To make this question more complicated, I grew my own interests over time as I watch more and more movies. Time traveling, multi-dimensional space, adventures are the particular themes that I like. But neither iTunes nor Google search ever learned from my streaming histories and give me recommendations based on them. Traditional movie apps, on the other hand, have simple rating system that do not take into account our own past experience and personal tastes.</p>
+		<blockquote class="project__quote quote--heavy">Not everyone watches the most recent movies. <br>We watch movies based on our interests.</blockquote>
+		<h4>Validating our Hypothesis</h4>
+		<p>We would like to validate this hypothesis  — is this the problem faced by many others? To validate our hypothesis, I worked with <a href="http://designbyroka.com/">Shawn Park</a> to interview a dozen people about their ways of discovering movies.</p>
+		<p>Here are some of the questions we asked:</p>
+		<ol>
+			<li>How often do you go to theaters? If not often, why?</li>
+			<li>Do you watch movie online? If so, what kind of movies do you usually watch online?</li>
+			<li>What do you usually consider when you choose a movie to watch?</li>
+			<li>How do you find the movie that you like?</li>
+		</ol>
+		<p>We found out that:</p>
+		<ol>
+			<li>Many people go to theater only when they are with friends</li>
+			<li>Quite a few of the interviewees have their own taste of movies and hold very strong and negative opinions to those movies that are not their “type”, for instance, Christy turns away from all horror movies and action movies</li>
+			<blockquote class="project__quote quote--light">“Personally I don’t like the action movies in theaters but the type of movies that I really like are usually not in theater.”</blockquote>
+			<li>If they like a movie, they will tend to find more movies that are either directed by the same director or starred by an actor they like</li>
+			<li>They don’t really rely on reviews as those offered on IMDb and Rotten Tomatoes, but they do take into account their friends’ opinions about a movie</li>
+			<li>They google trailers before they makes their decisions</li>
+		</ol>
+		<p>Although it’s not sufficient based on the feedbacks to make the assumption that a lot of movie lovers prefer watching movie at home (online) to going to theaters, it is fair to say that people who have watched movies online have also experienced trouble finding the right movies to play. And their decisions when choosing movies are largely dependent on their own interests which are usually impacted by the movies that they watched and enjoyed.</p>
+		<hr>
+		<h3>Prototype</h3>
+		<h4>Goal</h4>
+		<p>Based on the feedbacks we got from the interviews, we decided that our goal is to figure out a means of collecting users’ preferences and give recommendations based on them.</p>
+		<h4>Brainstorming</h4>
+		<p>There are two stages for this app. In order to arrive at a solution that is both able to efficiently get input from users and able to give satisfying recommendations back to users, we further refined our value propositions.</p>
+		<ol>
+			<li><strong>Save time:</strong> take away any redundant information, so that users can make decisions at a quick glance</li>
+			<li><strong>Simplify user interaction:</strong> the recommendation should work in a simple and binary (like / hate) way</li>
+		</ol>
+		<p>Therefore, when designing the user experience, we first focused on streamlining the process of getting users’ interests.</p>
+		<p>We quickly did some low fidelity mockups using “Crazy Eights” approach. Basically, we brainstormed all the ideas we had and quickly sketched on paper within 40 seconds and repeat the same process 8 times to produce 8 different ideas in just 5 minutes.</p>
+		<p>We came up with solutions such as Q&A, list view, single movie view with swipe action, grid layout, etc.</p>
+		<img class="project__screenshot" src="../img/chill_crazy1.png">
+		<img class="project__screenshot" src="../img/chill_crazy2.png">
+		<p>One of the solutions we really liked is a means of collecting users’ interests. Rather than asking people questions about their habits, such as themes and actors they like, we start with presenting users the main interface from the first time they use the app, where they can establish their preferences by selecting the movies. This way, the process of getting users’ interests is perfectly merged with the process of giving back recommendations because as picking the movies on the interface, recommendations get narrowed down based on their selections.</p>
+		<p>We eventually locked down the design into two possible versions:</p>
+		<p><strong>Version 1:</strong> show user one movie — finger swipe interface<br><strong>Version 2:</strong> show user multiple movies at a time — scroll and click</p>
+		<img class="project__screenshot" src="../img/chill_singleview_lowfi.png">		
+		<img class="project__screenshot" src="../img/chill_multiview_lowfi.png">
+		<p>On the one hand, swipe-gesture focuses on one movie at a time, giving user more time to think through and encourages user to make a choice cautiously. The swipe-gesture is also very intuitive for users to indicate their preferences in a binary way with a simple, fun interaction.</p>
+		<p>On the other hand, scroll and click with multiple movies at once offers user more options to choose from at a glance. On top of that, scrolling has the least cost of action, yet still does a good job in keeping user engaged as the user scrolls down to explore more options.</p>
+		<h4>Testing</h4>
+		<p>To come to a conclusion, we conducted a second run of usability testings. We mocked up two views in web versions and prepared 20 movies for each one to let the user pick the movies that they like. While observing users’ interactions, we asked questions about usability of the layout and list out the factors that impacted their decision making.</p>
+		<img class="project__screenshot" src="../img/chill_singleview_hifi.png">		
+		<img class="project__screenshot" src="../img/chill_multiview_hifi.png">		
+		<p>Here are some of the questions we asked:</p>
+		<ol>
+			<li>How did you make your decisions?</li>
+			<li>How does the layout affect your decisions?</li>
+			<li>Which interface do you prefer (one movie at a time, or multiple movie at once)?</li>
+		</ol>
+		<p>Interestingly, out of the users we interviewed, most of them preferred browsing multiple movies at a time but they spent more time on single view version (one movie at a time).</p>
+		<blockquote class="project__quote quote--light">“Scroll is interesting and pleasing, because I can go through all the posters very quickly”</blockquote>
+		<blockquote class="project__quote quote--light">“I feel like single view brings more attention to individual movies, as for multi view, you just jump around till you see something familiar or you like, so when I scroll I am looking for my style of movie”</blockquote>
+		<blockquote class="project__quote quote--light">“For single view, you have to see whether you like it or not because you can only say yes or no, when I am neutral about a movie, I would choose yes than no, whereas on multi view I can either save or not save”</blockquote>
+		<p>We found that multi view allows them to “preview” all the movies at a time, and scrolling does not force them to choose. Users also tend to say more “yes” than “no” on single view when they hold neutral opinion about a movie.</p>
+		<p>Single view also has its merits: it’s easier for them to interact with larger element like a card with swipe gesture than clicking on a smaller area such as a “save” button.</p>
+		<p>We also learned about the factors that influence users’ decisions. Although our goal was to keep the content as concise as possible, it turned out that users didn’t really pay any attention to anything other than the poster itself. In addition, they mentioned that trailers could also help make a decision about the movie.</p>
+		<blockquote class="project__quote quote--light">“Mostly look at the poster to get a glimpse about what the movie is, but not reading the description (that’s just me I guess)”</blockquote>	
+		<blockquote class="project__quote quote--light">“Nope, I never looked at the description, I am too lazy to read so I am only looking at the poster”</blockquote>
+		<blockquote class="project__quote quote--light">“I will watch the trailer if I have no idea what’s about or poster itself is interesting”</blockquote>
+		<p>One feature we missed out when we were prototyping is social network integration. Many users mentioned that they don’t watch movies by themselves most of the times, so they value  their friends’ comments on movies when it comes to decision making.</p>
+		<blockquote class="project__quote quote--light">“Friends’ comments matter, for example a popup with my friends’ comments will make a difference”</blockquote>
+		<blockquote class="project__quote quote--light">“l would use it if I am looking for movies to watch, wouldn’t go on it to just play around, so it would be helpful if a group of friends trying to decide”</blockquote>
+		<p>From our study, we arrived at the following conclusion:</p>
+		<blockquote class="project__quote quote--heavy">In terms of discovery, people prefer quick consumption of content through scroll. As for action, they prefer the convenience and sense of reward from swipe.</blockquote>
+		<hr>
+		<h3>Solution</h3>
+		<p>We decided to combine the merit of the single view and the multi view by designing an interface with scroll as a means of discovery and swipe as a means of action.</p>
+		<p>In terms of the layout, we opted for a three-screen layout to order the three main features of this app in a horizontal, linear space: Recommendations, Likes, and Search.</p>
+		<h4>Recommendations</h4>
+		<p>We decided to promote two main features to get the users engaged with the interface.</p>
+		<ol>
+			<li>Scroll to see more movies; swipe left or right to dislike or like a movie.</li>
+			<li>Swipe ten times to get new recommendations based on the dislikes and likes on movies.</li>
+		</ol>
+		<p>For the recommendation card, we decided to get rid of the synopsis and title, because most users make their decision quickly just by looking at the posters, which usually show the movie titles. Most of the times, people care about synopsis and other details when they have developed an initial interest in the movie and they would like to know more about it.</p>
+		<img class="project__screenshot" src="../img/chill_recommendations.png">
+		<h4>Card</h4>	
+		<p>The purpose of the card view is to provide more details about a movie. As such, our goal is to organize the information into a digestible layout. First we start with movie poster and trailer to set the tone of this page that’s carried over from the recommendation view. We present the information in the order of importance: title, genre, synopsis, call-to-actions, snapshots and casts.</p>	
+		<img class="project__screenshot" src="../img/chill_details.png">
+		<h4>Likes</h4>			
+		<p>To view all of the movies that you liked on Chill, simply click on the heart icon on the top right corner. Here, you can see all of your favorite movies on Chill in a grid view. We used the grid view to show more movies per screen because for Likes, it’s far more important to quickly go through movies that you have <strong>already discovered</strong>.</p>
+		<img class="project__screenshot" src="../img/chill_likes.png">
+		<h4>Search</h4>	
+		<p>To get better results on Chill, sometimes you need to explicitly tell the app what movies you like. That’s why we have Search. You can search by clicking on the search icon on the top-left corner from anywhere you are. You can search by title, genre, director, actor, or other metadata associated with the movie. We also present the search results in the same layout as the recommendations because the primary call to action (Like / Dislike) is the same.</p>	
+		<img class="project__screenshot" src="../img/chill_search.png">	
+		<h4>Onboarding</h4>	
+		<p>Having a good first time user experience is key to reducing user confusion, especially for such a gesture-based interface. We designed the onboarding experience to be engaging from the very beginning by showing movies in the same grid layout and letting users to pick 10 movies to get started. In addition, we used an overlay on top of the interface along with arrows and a few words to tell the users what actions they can take.</p>
+		<img class="project__screenshot" src="../img/chill_onboarding.png">
+		<h4>Branding</h4>
+		<p>We also created a design language to illustrate the overall style and mood for our app.</p>
+		<img class="project__screenshot" src="../img/chill_branding.png">
+		<hr>
+		<h3>Retrospective</h3>
+		<p>In retrospect, I really wish Chill could become a reality. Due to the technical difficulty of programming the recommendation system in a limited time, Chill still remains to be a pure concept on Sketch artboards. If we had more time working on it, we could have made it interactive to better demonstrate this concept.</p>
+		<p>Another improvement we can make for Chill is the social network integration. When I was designing Chill, a lot of interviewers mentioned how much they value their friends’ comments on movies and how much fun they could have if choosing movies could involve their friends as well.</p>
+		<p>Yet, we believe we have sketched out an exciting concept for reimagining the movie discovery experience. It was also an opportunity for me to refine my design process, from discovering the problem and interviewing users to prototyping and polishing the final design. With the learnings I’ve learned, perhaps someday, we will come back to make Chill a reality in the future :)</p>
+		<hr>
 		</div>
 		<div class="project__footer">
-			<div class="project__previous">
-				<a class="project__item" href="/abovegem">ABOVEGEM</a>
-				<div class="project__navigate">PREVIOUS PROJECT</div>
-			</div>
-			<div class="project__next">
-				<a class="project__item" href="/bi">BERKELEY INNOVATION</a>
-				<div class="project__navigate">NEXT PROJECT</div>
-			</div>
+			<a class="project__next transition--subtle" href="/yelp">
+				<div class="project__item">yelp redesign</div>
+				<div class="project__navigate">next project</div>
+			</a>
 		</div>
 	</section>
 	<section class="work">
 		<nav class="work__content">
 			<ul class="work__menu">
-				<li class="work__label">FEATURED</li>
-				<li class="work__item"><a href="/gradescope">GRADESCOPE</a></li>
-				<li class="work__item"><a href="/chill">CHILL</a></li>
-				<li class="work__item"><a href="/abovegem">ABOVEGEM</a></li>
-				<li class="work__item"><a href="/yelp">YELP REDESIGN</a></li>
-				<li class="work__label">OTHER PROJECTS</li>
-				<li class="work__item"><a href="/bi">BERKELEY INNOVATION</a></li>
-				<li class="work__item"><a href="/coursera">COURSERA REDESIGN</a></li>
-				<li class="work__item"><a href="/hofb">HUMANS OF BERKELEY</a></li>
+				<li class="work__label">featured</li>
+				<li class="work__item"><a class="work__link transition--subtle" href="../gradescope">gradescope</a></li>
+				<li class="work__item"><a class="work__link transition--subtle" href="../chill">chill</a></li>
+				<li class="work__item"><a class="work__link transition--subtle" href="../yelp">yelp redesign</a></li>
+				<li class="work__label">other projects</li>
+				<li class="work__item"><a class="work__link transition--subtle" href="../abovegem">abovegem</a></li>
+				<li class="work__item"><a class="work__link transition--subtle" href="../bi">berkeley innovation</a></li>
+				<li class="work__item"><a class="work__link transition--subtle" href="../coursera">coursera redesign</a></li>
+				<li class="work__item"><a class="work__link transition--subtle" href="../hofb">humans of berkeley</a></li>
 			</ul>
 		</nav>
-		<div class="work__close icon icon--close">
+		<div class="work__close icon icon--close transition--subtle">
 			<img class="img--wh" src="../img/close.svg">
 		</div>
 	</section>
-	<footer class="footer">
-		<div class="footer__msg">MADE WITH LOTS OF STARBUCKS AT BERKELEY, CA.</div>
+	<footer class="footer footer--preload">
+		<div class="footer__msg">THE PORTFOLIO OF VICTORIA BIAN</div>
+		<div class="footer__links"><a class="footer__link transition--subtle" href="https://www.linkedin.com/in/victoriabian" target="_blank">LINKEDIN</a> / <a class="footer__link transition--subtle" href="https://medium.com/@jesuisVic" target="_blank">MEDIUM</a> / <a class="footer__link transition--subtle" href="https://dribbble.com/VictoriaBian" target="_blank">DRIBBBLE</a> / <a class="footer__link transition--subtle" href="https://github.com/VictoriaSnow" target="_blank">GITHUB</a></div>
 	</footer>
 	<!-- SCRIPTS -->
 	<script src="../js/jquery-1.11.3.min.js"></script>

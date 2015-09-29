@@ -136,6 +136,16 @@ function resetMsg() {
 	$('.chat__placeholder').text("");
 }
 
+function openMenu() {
+	$('.nav__bar:nth-child(1)').addClass('rotate--clockwise');
+	$('.nav__bar:nth-child(2)').addClass('rotate--counterclockwise');
+}
+
+function closeMenu() {
+	$('.nav__bar:nth-child(1)').removeClass('rotate--clockwise');
+	$('.nav__bar:nth-child(2)').removeClass('rotate--counterclockwise');
+}
+
 $(document).ready(function() {
 	navAnimate();
 	$('.nav__work, .nav__mobile, .intro__more').click(function() {
@@ -143,12 +153,13 @@ $(document).ready(function() {
 		$('html').addClass('overflow--hidden');
 		$('.work').show('fade', 500);
 		$('.work__menu').addClass('work--active');
+		$('.nav').addClass('menu--active');
+		openMenu();
 	});
 	$('.intro__chat').click(function() {
 		$('body').addClass('overflow--hidden');
 		$('html').addClass('overflow--hidden');
-		$('.nav__bar:nth-child(1)').addClass('rotate--clockwise');
-		$('.nav__bar:nth-child(2)').addClass('rotate--counterclockwise');
+		openMenu();
 		$('.chat').show('fade', 500);
 		resetMsg();
 		$('.nav').addClass('menu--active');
@@ -170,8 +181,7 @@ $(document).ready(function() {
 	});
 	$('.nav__menu').click(function() {
 		if ($(this).hasClass('clicked--once')) {
-			$('.nav__bar:nth-child(1)').removeClass('rotate--clockwise');
-			$('.nav__bar:nth-child(2)').removeClass('rotate--counterclockwise');
+			closeMenu();
 			if ($('.work__menu').hasClass('work--active')) {
 				$('.work__menu').removeClass('work--active');
 				$('.work').hide('fade', 500);
@@ -187,8 +197,7 @@ $(document).ready(function() {
 			$(this).removeClass('clicked--once');
 		} else {
 			$(this).addClass("clicked--once");
-			$('.nav__bar:nth-child(1)').addClass('rotate--clockwise');
-			$('.nav__bar:nth-child(2)').addClass('rotate--counterclockwise');
+			openMenu();
 			$('body').addClass('overflow--hidden');
 			$('html').addClass('overflow--hidden');
 			$('.work').show('fade', 500);
@@ -199,12 +208,16 @@ $(document).ready(function() {
 
 	$('.work__close').click(function() {
 		$('.work__menu').removeClass('work--active');
+		closeMenu();
+		$('.nav').removeClass('menu--active');
 		$('.work').hide('fade', 500);
 		$('body').removeClass('overflow--hidden');
 		$('html').removeClass('overflow--hidden');
 	});
 	$('.chat__close').click(function() {
 		$('.chat').hide('fade', 500);
+		closeMenu();
+		$('.nav').removeClass('menu--active');
 		$('body').removeClass('overflow--hidden');
 		$('html').removeClass('overflow--hidden');
 	});
