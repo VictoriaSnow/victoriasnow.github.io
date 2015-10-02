@@ -21,14 +21,83 @@
 	<link rel="stylesheet" type="text/css" href="../css/base.css">
 </head>
 <body class="page page--project">
-	<section class="main">
-		<div class="main__overlay"></div>
-		<div class="main__container">
-			<div class="main__logo logo logo--dark"></div>
-			<div class="main__msg">this project is not ready for the new portfolio yet.<br>VIC is working really hard to get it done...</div>
-			<button class="intro__more button button--large button--light transition--subtle">explore other projects</button>	
+	<nav class="nav nav--dark nav--preload clearfix">
+		<div class="nav__container">
+			<a class="nav__logo logo logo--dark" href="/"></a>
+			<ul class="nav__list">
+				<li class="nav__item nav__work transition--subtle">work</li>
+				<li class="nav__item nav__resume transition--subtle"><a href="doc/resume.pdf">resume</a></li>
+				<li class="nav__item nav__contact transition--subtle"><a href="mailto:hello@victoriabian.com">contact</a></li>
+			</ul>
+			<div class="nav__menu">
+				<div class="nav__bar transition--friction"></div>
+				<div class="nav__bar transition--friction"></div>
+			</div>		
 		</div>
-	</div>
+	</nav>
+	<section class="project">
+		<div class="project__info">
+			<div class="project__title">abovegem</div>
+			<div class="project__description">"AboveGem" is an iOS app that helps you manage and grow your direct selling business. I worked on designing their primary features and brainstormed different ways of connecting business with potential distributors.</div>
+			<div class="project__subtitle">may-june 2015 • business • user interface design • product design</div>
+		</div>
+		<div class="project__cover">
+			<img class="project__img img--w" src="../img/abovegem_cover.png">
+		</div>
+		<div class="project__content">
+		<h3>Intro</h3>
+		<p>Most people are not familiar with direct selling and how this kind of business works. Simply speaking, direct selling is the sale of a consumer product or service, person-to-person, away from a fixed retail location, marketed through independent sales representatives. Moving from traditional way of direct selling, companies nowadays hold a couple of sales and marketing conventions every year to attract potential distributors to join their business and connect with more customers.</p>
+		<hr>
+		<h3>Problem</h3>
+		<p>Although by holding conventions, companies have attracted a lot more attentions from people who are interested in their business, it is still not efficient enough to get people connected easily during these events.</p>
+		<p>We discovered the following problems:</p>
+		<ol>
+			<li>People have too many ways of connecting each other, but eventually they get lost in touch because they don’t have a means of organizing contacts that’s just for direct selling business</li>
+			<li>Attendees who get in touch with potential distributors during conventions have a hard time keeping track of the progress</li>
+			<li>There’s no easy way for people who are outside of business to discover local conventions and opportunities to connect with retailers</li>
+		</ol>
+		<p>It may sound very foreign to you. Basically, there are a couple of steps for people who are interested in direct selling business to get in touch with distributors and retailers. Attendees who join the conventions are either distributors and retailers or potential distributors who are interested in the business. Conventions serve as a means of inviting more people to join as distributors. If during a convention, a potential distributor gets connected with a distributor, then the distributor will be the “mentor” of the potential one and keep in touch until the potential distributor become a distributor and sell the company’s products.</p>
+		<hr>
+		<h3>Brainstorming</h3>
+		<p>Our main goal of this app is to help manage and grow direct selling business. To achieve this, we further defined our three value propositions:</p>
+		<ol>
+			<li>Discover local conventions easily and get informed in time</li>
+			<li>Connect with like-minded people who are interested in this business</li>
+			<li>Keep in touch with connections</li>
+		</ol>
+		<p>When we were brainstorming ideas, I found out that the major challenge was how to get users quickly onboard and engaged. Then again, although the main feature of this app is chat, the app itself should reflect and take advantage of the values of local conventions as much as possible. That is, through discovering local conventions, people find opportunities to learn about a company, a product and its distributors.</p>
+		<p>Additionally, to keep people connected, we decided to create a timeline feature from which users could post their events, product feedbacks as well as stories and photos. Timeline is more of a semi-business feature to let people get to know each other.</p>
+		<hr>
+		<h3>Prototype</h3>
+		<p>After brainstorming, we figured that starting with an exploration of local conventions is a better idea than showing an empty state for users themselves to act upon. Because the first time users open the app they won’t have any connections ready, so either through recommendations or personal contacts, they have to take actions and effort to add contacts. Instead, we could take advantage of conventions based on their interested industries and let the user easily and conveniently learn about the company as well as people they may know.</p>
+		<h4>Onboarding</h4>
+		<p>For onboarding experience, I focused on guiding user through our main features with optional slide view. Users are also able to express their interests in certain industries to help them set up their account.</p>
+		<img class="project__screenshot" src="../img/abovegem_onboarding.png">
+		<h4>Discover</h4>
+		<p>Discover page is the view right after onboarding for first time users because by exploring nearby conventions, users can not only learn about the events held by their interested companies but also get in touch with people they may know.</p>
+		<img class="project__screenshot" src="../img/abovegem_discover.png">
+		<h4>Chats</h4>
+		<p>Chats is the main functionality of this app. Different from a common chat, our chats feature focuses on getting users’ chats organized depending on the identities of people they chat with. Users are able to filter chats by contacts. This way, users can always learn about the topics of their chats at a glance and keep track of the progresses with their clients.</p>
+		<img class="project__screenshot" src="../img/abovegem_chats.png">
+		<h4>Contacts</h4>	
+		<p>For the contacts page, I decided to approach with the similar concept as the chats feature. Users are able to filter their contacts by identities. Scanning QR code allows users to quickly add contact even if they don’t have each others’ emails or numbers. This is particularly useful for conventions where users can just take out their phone and scan to add a contact.</p>	
+		<img class="project__screenshot" src="../img/abovegem_contacts.png">
+		<h4>Branding</h4>			
+		<p>Initially I approached the design for this app with a more professional and business appealing. However, it also added a very dull and formal feeling to the users who just want to get connected and have fun hearing from other people. Additionally, since some users are distributors who will use this app every day, we wanted to make it lively and bright so they don’t feel stressed while using this app to get more potential clients and distributors.</p>
+		<img class="project__screenshot" src="../img/abovegem_branding.png">
+		<hr>
+		<h3>Retrospective</h3>
+		<p>In retrospect, I wish I could have more time working on it. Due to final exams and internship, I didn’t get a chance to work on the “timeline” feature and wrap up the rest of the design. In addition, we should have spent more time talking with engineers from the very beginning. Some of the solutions we came up with were hard to implement so we had to give up a lot of thoughts and started over.</p>
+		<p>In terms of design, I think I spent way too much time doing pixel perfections rather than paying attention to those details that really matter. When I had meetings with the client, I always realized about the small features I forgot to include in my design.</p>
+		<p>Overall, it was a pleasant experience working with the people who truly care about business and think a lot about how to make direct selling successful. I like the idea of AboveGem and I hope their “timeline” feature can work out and help more people in direct selling business get connected.</p>
+		<hr>
+		</div>
+		<div class="project__footer">
+			<a class="project__next transition--subtle" href="/yelp">
+				<div class="project__item">yelp redesign</div>
+				<div class="project__navigate">next project</div>
+			</a>
+		</div>
 	</section>
 	<section class="work">
 		<nav class="work__content">
@@ -48,6 +117,10 @@
 			<img class="img--wh" src="../img/close.svg">
 		</div>
 	</section>
+	<footer class="footer footer--preload">
+		<div class="footer__msg">THE PORTFOLIO OF VICTORIA BIAN</div>
+		<div class="footer__links"><a class="footer__link transition--subtle" href="https://www.linkedin.com/in/victoriabian" target="_blank">LINKEDIN</a> / <a class="footer__link transition--subtle" href="https://medium.com/@jesuisVic" target="_blank">MEDIUM</a> / <a class="footer__link transition--subtle" href="https://dribbble.com/VictoriaBian" target="_blank">DRIBBBLE</a> / <a class="footer__link transition--subtle" href="https://github.com/VictoriaSnow" target="_blank">GITHUB</a></div>
+	</footer>
 	<!-- SCRIPTS -->
 	<script src="../js/jquery-1.11.3.min.js"></script>
 	<script src="../js/jquery-ui-1.11.4.min.js"></script>

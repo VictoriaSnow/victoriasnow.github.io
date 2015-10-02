@@ -196,7 +196,6 @@ h4 {
 }
 
 p {
-
 	font-size: 18px;
 	line-height: 32px;
 	font-weight: 400;
@@ -241,6 +240,11 @@ li {
 	font-weight: 400;
 	margin-bottom: 15px;
 	color: rgba(41, 41, 41, 0.8);
+}
+
+blockquote {
+	font-size: 18px;
+	line-height: 32px;
 }
 
 .main {
@@ -917,7 +921,7 @@ li {
 }
 
 .quote--light {
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 18px;
 }
 
@@ -1058,6 +1062,25 @@ li {
 		line-height: 28px;
 	}
 
+	blockquote {
+		font-size: 14px;
+		line-height: 28px
+	}
+
+	.project__quote {
+		margin: 10px auto 20px auto;
+		line-height: 1.5;
+		font-style: italic;
+	}
+
+	.quote--heavy {
+		font-size: 18px;
+	}
+
+	.quote--light {
+		font-size: 14px;
+	}
+
 	.nav {
 		z-index: 100;
 	}
@@ -1100,7 +1123,7 @@ li {
 	}
 
 	.project__title {
-	    font-size: 60px;
+	    font-size: 48px;
 	}
 
 	.project__description {
