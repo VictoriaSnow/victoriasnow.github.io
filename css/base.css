@@ -5,7 +5,7 @@ html {
 body {
 	position: relative;
 	height: 100%;
-	font-family: "raleway", "freight-text-pro", "helvetica neue", "helvetica", "arial", sans-serif;
+	font-family: "raleway", "lato", "helvetica neue", "helvetica", "arial", sans-serif;
 	font-style: normal;
 	line-height: 1.5;
 	font-size: 18px;
@@ -165,8 +165,6 @@ input {
 .logo--light {
 	background-image: url(../img/logo--light.png);
 }
-
-/* 36, 30, 24, 21, 18, 16, 14, 13, 12 */
 
 h2 {
 	font-size: 60px;
@@ -556,10 +554,6 @@ blockquote {
 .overlay--pink {
 	background: rgba(185, 49, 172, 0.2);
 }
-
-/*.overlay--black {
-	background: rgba(0, 0, 0, 0.2);
-}*/
 
 .carousel__item {
 	width: 100%;
