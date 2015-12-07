@@ -17,7 +17,7 @@ function carouselSlide() {
 			setTimeout(function() {
 				carouselCurrent.removeClass('carousel--hidden carousel--active');
 			}, 0);
-		}, 1200);
+		}, 1000);
 	}, 0);
 }
 
@@ -237,7 +237,7 @@ $(document).ready(function() {
 		}
 		setInterval(function() {
 			carouselSlide();
-		}, 4000);
+		}, 2500);
 	});
 });
 
