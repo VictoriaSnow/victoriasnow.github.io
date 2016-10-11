@@ -26,28 +26,34 @@
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
-	<link rel="stylesheet" type="text/css" href="../css/base.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
 </head>
 <body class="page page--project">
-	<nav class="nav nav--dark nav--preload clearfix">
-		<div class="nav__container">
-			<a class="nav__logo logo logo--dark" href="/"></a>
+	<div class="background"></div>
+	<nav class="nav clearfix">
+		<div class="nav__container clearfix">
 			<ul class="nav__list">
-				<li class="nav__item nav__work transition--subtle">work</li>
-				<li class="nav__item nav__resume transition--subtle"><a href="../doc/resume.pdf" target="/">resume</a></li>
-				<li class="nav__item nav__contact transition--subtle"><a href="mailto:hello@victoriabian.com">contact</a></li>
+				<li class="nav__item nav__home transition--subtle">home</li>
+				<li class="nav__item nav__about transition--subtle"><a href="/about">about</a></li>
+				<li class="nav__item nav__work transition--subtle">projects</li>
 			</ul>
+			<a class="nav__logo" href="/"></a>
 			<div class="nav__menu">
 				<div class="nav__bar transition--friction"></div>
 				<div class="nav__bar transition--friction"></div>
-			</div>		
+			</div>
+			<ul class="nav__list">
+				<li class="nav__item nav__resume transition--subtle"><a href="doc/resume.pdf" target="/">resume</a></li>
+				<li class="nav__item nav__contact transition--subtle"><a href="mailto:hello@victoriabian.com">contact</a></li>
+				<li class="nav__item nav__linkedin transition--subtle"><a href="https://www.linkedin.com/in/victoriabian">linkedin</a></li>
+			</ul>
 		</div>
 	</nav>
 	<section class="project">
 		<div class="project__info">
-			<div class="project__title">waygo</div>
-			<div class="project__description">Waygo is an instant translation app that turns your iPhone camera into a portable translator for Asian languages. I worked with other Berkeley Innovation members to redesign the user experience of this app.</div>
-			<div class="project__subtitle">october-december 2015 • educational • reference • interaction design</div>
+			<h5 class="project__subtitle">fall 2015 • productivity</h5>
+			<h2 class="project__title">waygo</h2>
+			<p class="project__description">Waygo is an instant translation app that turns your iPhone camera into a portable translator for Asian languages. I worked with other Berkeley Innovation members to redesign the user experience of this app.</p>
 		</div>
 		<div class="project__cover">
 			<img class="project__img img--w" src="../img/waygo_cover.jpg">
@@ -58,39 +64,51 @@
 			<img class="project__screenshot" src="../img/waygo.png">
 		<hr>
 		</div>
-		<div class="project__footer">
-			<a class="project__next transition--subtle" href="/bi">
-				<div class="project__item">berkeley innovation</div>
-				<div class="project__navigate">next project</div>
-			</a>
-		</div>
 	</section>
-	<section class="work">
-		<nav class="work__content">
-			<ul class="work__menu">
-				<li class="work__label">featured</li>
-				<li class="work__item"><a class="work__link transition--subtle" href="../gradescope">gradescope</a></li>
-				<li class="work__item"><a class="work__link transition--subtle" href="../chill">chill</a></li>
-				<li class="work__item"><a class="work__link transition--subtle" href="/waygo">waygo</a></li>
-				<li class="work__label">other projects</li>
-				<li class="work__item"><a class="work__link transition--subtle" href="../abovegem">abovegem</a></li>
-				<li class="work__item"><a class="work__link transition--subtle" href="../bi">berkeley innovation</a></li>
-				<li class="work__item"><a class="work__link transition--subtle" href="../yelp">yelp redesign</a></li>
-				<li class="work__item"><a class="work__link transition--subtle" href="../coursera">coursera redesign</a></li>
-				<li class="work__item"><a class="work__link transition--subtle" href="../others">some other stuff</a></li>
+	<footer class="footer">
+		<div class="footer__container">
+			<h1 class="footer__headline">next project</br><span class="text--red">gradescope</span></h1>
+			<button><a href="../gradescope">learn more</a></button>
+		</div>
+		<nav class="nav clearfix">
+			<div class="nav__container clearfix">
+				<ul class="nav__list">
+					<li class="nav__item nav__home transition--subtle">home</li>
+					<li class="nav__item nav__about transition--subtle"><a href="/about">about</a></li>
+					<li class="nav__item nav__work transition--subtle">projects</li>
+				</ul>
+				<a class="nav__logo" href="/"></a>
+				<ul class="nav__list">
+					<li class="nav__item nav__resume transition--subtle"><a href="doc/resume.pdf" target="/">resume</a></li>
+					<li class="nav__item nav__contact transition--subtle"><a href="mailto:hello@victoriabian.com">contact</a></li>
+					<li class="nav__item nav__linkedin transition--subtle"><a href="https://www.linkedin.com/in/victoriabian">linkedin</a></li>
+				</ul>
+			</div>
+		</nav>
+		<h5 class="footer__note">made with love by victoria at berkeley, ca.</h5></h5>
+	</footer>
+	<section class="index">
+		<nav class="index__content">
+			<ul class="index__menu">
+				<li class="index__label"><h5 class="text--red">featured</h5></li>
+				<li class="index__item"><a class="index__link index__etsy transition--subtle" href="../etsy"><h2>etsy</h2></a></li>
+				<li class="index__item"><a class="index__link index__fossa transition--subtle" href="../fossa"><h2>fossa</h2></a></li>
+				<li class="index__item"><a class="index__link index__waygo transition--subtle" href="../waygo"><h2>waygo</h2></a></li>
+				<li class="index__item"><a class="index__link index__gradescope transition--subtle" href="../gradescope"><h2>gradescope</h2></a></li>
+				<li class="index__item"><a class="index__link index__chill transition--subtle" href="../chill"><h2>chill</h2></a></li>
+				<li class="index__label"><h5 class="text--red">other projects</h5></li>
+				<li class="index__item"><a class="index__link index__abovegem transition--subtle" href="../abovegem"><h2>abovegem</h2></a></li>
+				<li class="index__item"><a class="index__link index__bi transition--subtle" href="../bi"><h2>berkeley innovation</h2></a></li>
+				<li class="index__item"><a class="index__link index__yelp transition--subtle" href="../yelp"><h2>yelp redesign</h2></a></li>
 			</ul>
 		</nav>
-		<div class="work__close icon icon--close transition--subtle">
+		<div class="index__close icon icon--close transition--subtle">
 			<img class="img--wh" src="../img/close.svg">
 		</div>
 	</section>
-	<footer class="footer footer--preload">
-		<div class="footer__msg">THE PORTFOLIO OF VICTORIA BIAN</div>
-		<div class="footer__links"><a class="footer__link transition--subtle" href="https://www.linkedin.com/in/victoriabian" target="_blank">LINKEDIN</a> / <a class="footer__link transition--subtle" href="https://medium.com/@jesuisVic" target="_blank">MEDIUM</a> / <a class="footer__link transition--subtle" href="https://dribbble.com/VictoriaBian" target="_blank">DRIBBBLE</a> / <a class="footer__link transition--subtle" href="https://github.com/VictoriaSnow" target="_blank">GITHUB</a></div>
-	</footer>
 	<!-- SCRIPTS -->
 	<script src="../js/jquery-1.11.3.min.js"></script>
 	<script src="../js/jquery-ui-1.11.4.min.js"></script>
-	<script type="text/javascript" src="../js/script.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../js/script.js" charset="utf-8"></script>
 </body>
 </html>

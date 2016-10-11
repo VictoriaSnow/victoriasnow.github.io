@@ -26,28 +26,34 @@
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
-	<link rel="stylesheet" type="text/css" href="../css/base.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
 </head>
 <body class="page page--project">
-	<nav class="nav nav--dark nav--preload clearfix">
-		<div class="nav__container">
-			<a class="nav__logo logo logo--dark" href="/"></a>
+	<div class="background"></div>
+	<nav class="nav clearfix">
+		<div class="nav__container clearfix">
 			<ul class="nav__list">
-				<li class="nav__item nav__work transition--subtle">work</li>
-				<li class="nav__item nav__resume transition--subtle"><a href="../doc/resume.pdf" target="/">resume</a></li>
-				<li class="nav__item nav__contact transition--subtle"><a href="mailto:hello@victoriabian.com">contact</a></li>
+				<li class="nav__item nav__home transition--subtle">home</li>
+				<li class="nav__item nav__about transition--subtle"><a href="/about">about</a></li>
+				<li class="nav__item nav__work transition--subtle">projects</li>
 			</ul>
+			<a class="nav__logo" href="/"></a>
 			<div class="nav__menu">
 				<div class="nav__bar transition--friction"></div>
 				<div class="nav__bar transition--friction"></div>
-			</div>		
+			</div>
+			<ul class="nav__list">
+				<li class="nav__item nav__resume transition--subtle"><a href="doc/resume.pdf" target="/">resume</a></li>
+				<li class="nav__item nav__contact transition--subtle"><a href="mailto:hello@victoriabian.com">contact</a></li>
+				<li class="nav__item nav__linkedin transition--subtle"><a href="https://www.linkedin.com/in/victoriabian">linkedin</a></li>
+			</ul>
 		</div>
 	</nav>
 	<section class="project">
 		<div class="project__info">
-			<div class="project__title">yelp redesign</div>
-			<div class="project__description">I've been an avid user of Yelp for years. However, its web interface hasn't changed much especially the user profile page which plays an important role for building an online social community. I had a chance to redesign Yelp's user details page for my interview challenge to make it clean and more personal.</div>
-			<div class="project__subtitle">march 2015 • social • user interface design • visual design</div>
+			<h5 class="project__subtitle">spring 2015 • travel</h5>
+			<h2 class="project__title">yelp redesign</h2>
+			<p class="project__description">I've been an avid user of Yelp for years. However, its web interface hasn't changed much especially the user profile page which plays an important role for building an online social community. I had a chance to redesign Yelp's user details page for my interview challenge to make it clean and more personal.</p>
 		</div>
 		<div class="project__cover">
 			<img class="project__img img--w" src="../img/yelp_cover.jpg">
@@ -91,9 +97,7 @@
 			<h4>Branding</h4>
 			<p>I like the original red color which eye-cathing and brings people's attention. I also kept the gradience from red to yellow to indicate ratings. I used white as background for sections to increase contrast and legibility.</p>
 			<p>The font I used is Proxima Nova, a slightly less formal font compared to Helvetica Neue. I also played around with sizes and weights to distinguish elements.</p>
-			<p>The logo I used here was from the official Yelp style guide, the one with 0.5 px wide black bolder with 50% opacity.</p>
 			<p>Thanks to Stephen Verhalleman who designed the burst icons for Yelp. I used some in my redesign to lift the spirit and give it a lively touch.</p>
-			<img class="project__screenshot" src="../img/yelp_logo.png">
 			<p>Colors: red range — #C41200, #EB050B, #F48149, #F0A527, #E4B92B, #D79322, grey range — #494949, #888888</p>
 			<p>Typography: Proxima Nova — regular for general content, semibold for titles, light for text, sizes — 10 to 24 with larger sizes for titles and headers and smaller ones for text.</p>
 			<h4>Layout</h4>
@@ -127,39 +131,51 @@
 			<img class="project__screenshot" src="../img/yelp_final.jpg">
 			<hr>
 		</div>
-		<div class="project__footer">
-			<a class="project__next transition--subtle" href="/abovegem">
-				<div class="project__item">abovegem</div>
-				<div class="project__navigate">next project</div>
-			</a>
-		</div>
 	</section>
-	<section class="work">
-		<nav class="work__content">
-			<ul class="work__menu">
-				<li class="work__label">featured</li>
-				<li class="work__item"><a class="work__link transition--subtle" href="../gradescope">gradescope</a></li>
-				<li class="work__item"><a class="work__link transition--subtle" href="../chill">chill</a></li>
-				<li class="work__item"><a class="work__link transition--subtle" href="/waygo">waygo</a></li>
-				<li class="work__label">other projects</li>
-				<li class="work__item"><a class="work__link transition--subtle" href="../abovegem">abovegem</a></li>
-				<li class="work__item"><a class="work__link transition--subtle" href="../bi">berkeley innovation</a></li>
-				<li class="work__item"><a class="work__link transition--subtle" href="../yelp">yelp redesign</a></li>
-				<li class="work__item"><a class="work__link transition--subtle" href="../coursera">coursera redesign</a></li>
-				<li class="work__item"><a class="work__link transition--subtle" href="../others">some other stuff</a></li>
+	<footer class="footer">
+		<div class="footer__container">
+			<h1 class="footer__headline">next project</br><span class="text--red">etsy</span></h1>
+			<button><a href="../etsy">learn more</a></button>
+		</div>
+		<nav class="nav clearfix">
+			<div class="nav__container clearfix">
+				<ul class="nav__list">
+					<li class="nav__item nav__home transition--subtle">home</li>
+					<li class="nav__item nav__about transition--subtle"><a href="/about">about</a></li>
+					<li class="nav__item nav__work transition--subtle">projects</li>
+				</ul>
+				<a class="nav__logo" href="/"></a>
+				<ul class="nav__list">
+					<li class="nav__item nav__resume transition--subtle"><a href="doc/resume.pdf" target="/">resume</a></li>
+					<li class="nav__item nav__contact transition--subtle"><a href="mailto:hello@victoriabian.com">contact</a></li>
+					<li class="nav__item nav__linkedin transition--subtle"><a href="https://www.linkedin.com/in/victoriabian">linkedin</a></li>
+				</ul>
+			</div>
+		</nav>
+		<h5 class="footer__note">made with love by victoria at berkeley, ca.</h5></h5>
+	</footer>
+	<section class="index">
+		<nav class="index__content">
+			<ul class="index__menu">
+				<li class="index__label"><h5 class="text--red">featured</h5></li>
+				<li class="index__item"><a class="index__link index__etsy transition--subtle" href="../etsy"><h2>etsy</h2></a></li>
+				<li class="index__item"><a class="index__link index__fossa transition--subtle" href="../fossa"><h2>fossa</h2></a></li>
+				<li class="index__item"><a class="index__link index__waygo transition--subtle" href="../waygo"><h2>waygo</h2></a></li>
+				<li class="index__item"><a class="index__link index__gradescope transition--subtle" href="../gradescope"><h2>gradescope</h2></a></li>
+				<li class="index__item"><a class="index__link index__chill transition--subtle" href="../chill"><h2>chill</h2></a></li>
+				<li class="index__label"><h5 class="text--red">other projects</h5></li>
+				<li class="index__item"><a class="index__link index__abovegem transition--subtle" href="../abovegem"><h2>abovegem</h2></a></li>
+				<li class="index__item"><a class="index__link index__bi transition--subtle" href="../bi"><h2>berkeley innovation</h2></a></li>
+				<li class="index__item"><a class="index__link index__yelp transition--subtle" href="../yelp"><h2>yelp redesign</h2></a></li>
 			</ul>
 		</nav>
-		<div class="work__close icon icon--close transition--subtle">
+		<div class="index__close icon icon--close transition--subtle">
 			<img class="img--wh" src="../img/close.svg">
 		</div>
 	</section>
-	<footer class="footer footer--preload">
-		<div class="footer__msg">THE PORTFOLIO OF VICTORIA BIAN</div>
-		<div class="footer__links"><a class="footer__link transition--subtle" href="https://www.linkedin.com/in/victoriabian" target="_blank">LINKEDIN</a> / <a class="footer__link transition--subtle" href="https://medium.com/@jesuisVic" target="_blank">MEDIUM</a> / <a class="footer__link transition--subtle" href="https://dribbble.com/VictoriaBian" target="_blank">DRIBBBLE</a> / <a class="footer__link transition--subtle" href="https://github.com/VictoriaSnow" target="_blank">GITHUB</a></div>
-	</footer>
 	<!-- SCRIPTS -->
 	<script src="../js/jquery-1.11.3.min.js"></script>
 	<script src="../js/jquery-ui-1.11.4.min.js"></script>
-	<script type="text/javascript" src="../js/script.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../js/script.js" charset="utf-8"></script>
 </body>
 </html>

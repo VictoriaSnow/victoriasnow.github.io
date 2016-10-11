@@ -26,28 +26,34 @@
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
-	<link rel="stylesheet" type="text/css" href="../css/base.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
 </head>
 <body class="page page--project">
-	<nav class="nav nav--dark nav--preload clearfix">
-		<div class="nav__container">
-			<a class="nav__logo logo logo--dark" href="/"></a>
+	<div class="background"></div>
+	<nav class="nav clearfix">
+		<div class="nav__container clearfix">
 			<ul class="nav__list">
-				<li class="nav__item nav__work transition--subtle">work</li>
-				<li class="nav__item nav__resume transition--subtle"><a href="../doc/resume.pdf" target="/">resume</a></li>
-				<li class="nav__item nav__contact transition--subtle"><a href="mailto:hello@victoriabian.com">contact</a></li>
+				<li class="nav__item nav__home transition--subtle">home</li>
+				<li class="nav__item nav__about transition--subtle"><a href="/about">about</a></li>
+				<li class="nav__item nav__work transition--subtle">projects</li>
 			</ul>
+			<a class="nav__logo" href="/"></a>
 			<div class="nav__menu">
 				<div class="nav__bar transition--friction"></div>
 				<div class="nav__bar transition--friction"></div>
-			</div>		
+			</div>
+			<ul class="nav__list">
+				<li class="nav__item nav__resume transition--subtle"><a href="doc/resume.pdf" target="/">resume</a></li>
+				<li class="nav__item nav__contact transition--subtle"><a href="mailto:hello@victoriabian.com">contact</a></li>
+				<li class="nav__item nav__linkedin transition--subtle"><a href="https://www.linkedin.com/in/victoriabian">linkedin</a></li>
+			</ul>
 		</div>
 	</nav>
 	<section class="project">
 		<div class="project__info">
-			<div class="project__title">gradescope</div>
-			<div class="project__description">Design Intern at Gradescope since April 2015: products, processes, and lessons. Gradescope streamlines the tedious parts of grading so you can focus on what you do best: giving great feedback. I worked at Gradescope as a consultant and intern, helping polish existing UI and design for upcoming features.</div>
-			<div class="project__subtitle">april-august 2015 • educational • product design</div>
+			<h5 class="project__subtitle">summer 2015 • education</h5>
+			<h2 class="project__title">gradescope</h2>
+			<p class="project__description">Design Intern at Gradescope since April 2015: products, processes, and lessons. Gradescope streamlines the tedious parts of grading so you can focus on what you do best: giving great feedback. I worked at Gradescope as a consultant and intern, helping polish existing UI and design for upcoming features.</p>
 		</div>
 		<div class="project__cover">
 			<img class="project__img img--w" src="../img/gradescope_cover.jpg">
@@ -62,7 +68,7 @@
 			<img class="project__screenshot" src="../img/gradescope_intro_splash.png">
 			<h4>How it works</h4>
 			<p>Before we get into the design, I want to show you a graph of its workflow:</p>
-			<img class="project__screenshot" src="../img/gradescope_intro_workflow.png">
+			<img class="project__screenshot" src="../img/gradescope_intro_workflow.jpg">
 			<p>Basically, for instructors, all they have to do is:</p>
 			<ol>
 				<li>Create an assignment on Gradescope</li>
@@ -178,7 +184,7 @@
 			<h4>Project File Management</h4>
 			<p>For the first step of the workflow, we realized that we had never had a type of assignment that had  multiple files. We know that in the near future, we will have more assignments like coding project. We didn’t want to limit the ability of what users could do on Gradescope. Therefore, we decided to build a tangible file management interface for users to take full control over their files.</p>
 			<p>I collaborated with Eric on designing the interface for project file management. We started with an idea of a “drag and drop” for project files. When instructors upload files, they can just drag their project folders directly onto the interface. By clicking on individual or multiple rows, users can modify files such as deleting, moving and marking as student editable.</p>
-			<img class="project__screenshot" src="../img/gradescope_proj3_file_management.png">
+			<img class="project__screenshot" src="../img/gradescope_proj3_file_management.jpg">
 			<img class="project__screenshot" src="../img/gradescope_proj3_file_management_selected.png">
 			<h4>Grade Submissions</h4>	
 			<p>For grade submission part, since the workflow is not unidirectional, we needed an interface that could accommodate both manual and auto grading progress. We decided to bring a dashboard view as a means to keep track of both auto and manual grading.</p>	
@@ -187,13 +193,13 @@
 			<h4>Manual Grading</h4>
 			<p>Manual grading is the step when instructors manually look at students’ submissions and leave comments and scores for their coding style. The goal of this part is to allow users to easily switch between files, comment on specific lines of code and review all the comments based their contexts.</p>
 			<p>For instructors, the workflow starts with opening a student’s submission files, then reviewing their code line by line, and commenting on the lines of code that can be improved in terms of style. In the comment view, instructors can easily create a comment by clicking on a specific line. Other instructors can collaborate by editing existing comment or appending another comment.</p>
-			<img class="project__screenshot" src="../img/gradescope_proj3_add_comment.png">
-			<img class="project__screenshot" src="../img/gradescope_proj3_commented.png">	
-			<img class="project__screenshot" src="../img/gradescope_proj3_append_comment.png">	
+			<img class="project__screenshot" src="../img/gradescope_proj3_add_comment.jpg">
+			<img class="project__screenshot" src="../img/gradescope_proj3_commented.jpg">	
+			<img class="project__screenshot" src="../img/gradescope_proj3_append_comment.jpg">	
 			<p>Although comments is the primary feature, students and instructors get easily get lost in hundreds lines of code when trying to find the part that has been commented on. We needed a view for users to review their comments and get a quick glance of all the comments without switching between files and scanning through the code.</p>	
 			<p>This is why I designed Preview. For students, they can view the comments in the context of the problematic code. For instructors, Preview provides a summary of all the comments before they give the final score for the submission.</p>
-			<img class="project__screenshot" src="../img/gradescope_proj3_comments_instructor.png">	
-			<img class="project__screenshot" src="../img/gradescope_proj3_comments_student.png">
+			<img class="project__screenshot" src="../img/gradescope_proj3_comments_instructor.jpg">	
+			<img class="project__screenshot" src="../img/gradescope_proj3_comments_student.jpg">
 			<h4>Summary</h4>
 			<p>This is one of my favorite projects that I worked on with Eric. Throughout the entire design process, I learned a lot about how to refine user flow from Eric. Before we started prototyping, we went through two runs of brainstorming and storyboarding. I learned that sketching on a whiteboard is a completely different experience from drawing on a sketch paper. When we were storyboarding, we had a lot of white space to fill out the use cases and draw out the possible scenarios that users could encounter. By doing this, we could clearly see a big picture of the user flow as well as the more detailed interactions.</p>
 			<img class="project__screenshot" src="../img/gradescope_proj3_sketch1.png">
@@ -210,39 +216,51 @@
 			<p>Special thanks to Sergey and Arjun for leading the team, Kevin for mentorship, and big thanks to the entire team for working so hard to make everything happen. You’re the best! Go Pandas!</p>
 			<hr>
 		</div>
-		<div class="project__footer">
-			<a class="project__next transition--subtle" href="/chill">
-				<div class="project__item">chill</div>
-				<div class="project__navigate">next project</div>
-			</a>
-		</div>
 	</section>
-	<section class="work">
-		<nav class="work__content">
-			<ul class="work__menu">
-				<li class="work__label">featured</li>
-				<li class="work__item"><a class="work__link transition--subtle" href="../gradescope">gradescope</a></li>
-				<li class="work__item"><a class="work__link transition--subtle" href="../chill">chill</a></li>
-				<li class="work__item"><a class="work__link transition--subtle" href="/waygo">waygo</a></li>
-				<li class="work__label">other projects</li>
-				<li class="work__item"><a class="work__link transition--subtle" href="../abovegem">abovegem</a></li>
-				<li class="work__item"><a class="work__link transition--subtle" href="../bi">berkeley innovation</a></li>
-				<li class="work__item"><a class="work__link transition--subtle" href="../yelp">yelp redesign</a></li>
-				<li class="work__item"><a class="work__link transition--subtle" href="../coursera">coursera redesign</a></li>
-				<li class="work__item"><a class="work__link transition--subtle" href="../others">some other stuff</a></li>
+	<footer class="footer">
+		<div class="footer__container">
+			<h1 class="footer__headline">next project</br><span class="text--red">chill</span></h1>
+			<button><a href="../chill">learn more</a></button>
+		</div>
+		<nav class="nav clearfix">
+			<div class="nav__container clearfix">
+				<ul class="nav__list">
+					<li class="nav__item nav__home transition--subtle">home</li>
+					<li class="nav__item nav__about transition--subtle"><a href="/about">about</a></li>
+					<li class="nav__item nav__work transition--subtle">projects</li>
+				</ul>
+				<a class="nav__logo" href="/"></a>
+				<ul class="nav__list">
+					<li class="nav__item nav__resume transition--subtle"><a href="doc/resume.pdf" target="/">resume</a></li>
+					<li class="nav__item nav__contact transition--subtle"><a href="mailto:hello@victoriabian.com">contact</a></li>
+					<li class="nav__item nav__linkedin transition--subtle"><a href="https://www.linkedin.com/in/victoriabian">linkedin</a></li>
+				</ul>
+			</div>
+		</nav>
+		<h5 class="footer__note">made with love by victoria at berkeley, ca.</h5></h5>
+	</footer>
+	<section class="index">
+		<nav class="index__content">
+			<ul class="index__menu">
+				<li class="index__label"><h5 class="text--red">featured</h5></li>
+				<li class="index__item"><a class="index__link index__etsy transition--subtle" href="../etsy"><h2>etsy</h2></a></li>
+				<li class="index__item"><a class="index__link index__fossa transition--subtle" href="../fossa"><h2>fossa</h2></a></li>
+				<li class="index__item"><a class="index__link index__waygo transition--subtle" href="../waygo"><h2>waygo</h2></a></li>
+				<li class="index__item"><a class="index__link index__gradescope transition--subtle" href="../gradescope"><h2>gradescope</h2></a></li>
+				<li class="index__item"><a class="index__link index__chill transition--subtle" href="../chill"><h2>chill</h2></a></li>
+				<li class="index__label"><h5 class="text--red">other projects</h5></li>
+				<li class="index__item"><a class="index__link index__abovegem transition--subtle" href="../abovegem"><h2>abovegem</h2></a></li>
+				<li class="index__item"><a class="index__link index__bi transition--subtle" href="../bi"><h2>berkeley innovation</h2></a></li>
+				<li class="index__item"><a class="index__link index__yelp transition--subtle" href="../yelp"><h2>yelp redesign</h2></a></li>
 			</ul>
 		</nav>
-		<div class="work__close icon icon--close transition--subtle">
+		<div class="index__close icon icon--close transition--subtle">
 			<img class="img--wh" src="../img/close.svg">
 		</div>
 	</section>
-	<footer class="footer footer--preload">
-		<div class="footer__msg">THE PORTFOLIO OF VICTORIA BIAN</div>
-		<div class="footer__links"><a class="footer__link transition--subtle" href="https://www.linkedin.com/in/victoriabian" target="_blank">LINKEDIN</a> / <a class="footer__link transition--subtle" href="https://medium.com/@jesuisVic" target="_blank">MEDIUM</a> / <a class="footer__link transition--subtle" href="https://dribbble.com/VictoriaBian" target="_blank">DRIBBBLE</a> / <a class="footer__link transition--subtle" href="https://github.com/VictoriaSnow" target="_blank">GITHUB</a></div>
-	</footer>
 	<!-- SCRIPTS -->
 	<script src="../js/jquery-1.11.3.min.js"></script>
 	<script src="../js/jquery-ui-1.11.4.min.js"></script>
-	<script type="text/javascript" src="../js/script.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../js/script.js" charset="utf-8"></script>
 </body>
 </html>

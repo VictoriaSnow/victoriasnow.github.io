@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
     <title>noun_163727_cc</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Home-&gt;-Intro-Copy-9" sketch:type="MSArtboardGroup" transform="translate(-1330.000000, -60.000000)" fill="#292929">
-            <g id="noun_163727_cc" sketch:type="MSLayerGroup" transform="translate(1330.000000, 60.000000)">
-                <path d="M49.8147436,48.4538462 L26.3596154,25 L49.8134615,1.54615385 L48.4538462,0.186538462 L25,23.6397436 L1.54487179,0.186538462 L0.18525641,1.54615385 L23.6397436,25 L0.18525641,48.4538462 L1.54487179,49.8134615 L25,26.3589744 L48.4551282,49.8134615 L49.8147436,48.4538462 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-292.000000, -132.000000)" fill="#FFFFFF">
+            <g id="close" transform="translate(292.000000, 132.000000)">
+                <g id="noun_163727_cc">
+                    <g id="Page-1">
+                        <g id="Home-&gt;-Intro-Copy-9">
+                            <g id="noun_163727_cc">
+                                <polygon id="Shape" points="49.8147436 48.4538462 26.3596154 25 49.8134615 1.54615385 48.4538462 0.186538462 25 23.6397436 1.54487179 0.186538462 0.18525641 1.54615385 23.6397436 25 0.18525641 48.4538462 1.54487179 49.8134615 25 26.3589744 48.4551282 49.8134615"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
             </g>
         </g>
     </g>
