@@ -396,9 +396,9 @@ button {
 }
 
 .work__intro {
-    width: 720px;
+    width: 600px;
     margin-bottom: 40px;
-    padding-left: calc(50% - 520px);
+    margin-left: calc(50% - 540px);
 }
 
 .work__description, .cover__intro, .about__intro {
@@ -418,8 +418,8 @@ button {
 .float--right {
 	float: right;
 	text-align: right;
-	padding-left: 0;
-	padding-right: calc(50% - 520px);
+	margin-left: 0;
+	margin-right: calc(50% - 540px);
 }
 
 .cover, .about__cover {
@@ -664,6 +664,8 @@ button {
     top: 0;
     z-index: -1;
     height: 800px;
+    opacity: 0.6;
+    width: 100%;
 }
 
 .project__screenshot {
@@ -892,11 +894,11 @@ button {
 
 @media all and (max-width: 1200px) {
 	.work__intro {
-	    padding-left: calc(50% - 480px);
+	    margin-left: calc(50% - 480px);
 	}
 
 	.float--right {
-	    padding-right: calc(50% - 480px);
+	    margin-right: calc(50% - 480px);
 	}
 	.cover__container, .footer__container {
 	    width: 960px;
